@@ -23,6 +23,8 @@ ZSH_THEME="kafeitu"
 # vim theme
 source "$HOME/.vim/plugged/gruvbox/gruvbox_256palette.sh"
 
+# https://github.com/zsh-users/antigen
+source ~/.lxsh/antigen.zsh
 # https://github.com/rupa/z
 . ~/.lxsh/z.sh
 
