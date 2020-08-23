@@ -4,16 +4,16 @@
 
 ## Commands
 
-* .gitconfg
-* .zshrc
+* [.gitconfg](commands/.gitconfig)
+* [.zshrc](commands/.zshrc)
 * ...
 
 ## VSCode
 
-* vscode/settings.json
+* [settings.json](vscode/settings.json)
 
 ### [User Snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
 
-* vscode/user_snippets/javascript.json
-* vscode/user_snippets/rust.json
+* [javascript.json](vscode/user_snippets/javascript.json)
+* [rust.json](vscode/user_snippets/rust.json)
 * ...
