@@ -1,0 +1,32 @@
+# Copyright 2020 lencx
+# license that can be found in the LICENSE file or at
+# https://opensource.org/licenses/MIT.
+
+# use: ~/.gitconfig
+
+[user]
+	name = lencx
+	email = cxin1314@gmail.com
+[alias]
+    aa = add .
+    st = status
+    cm = commit -m
+    co = checkout
+    cb = checkout -b
+    br = branch
+    df = diff
+    rh = reset --hard
+    rb = branch -D
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    last = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -1 HEAD
+    rnlast = commit --amend
+    au = remote add upstream
+    gao = remote add origin
+    gpo = push -u origin
+[core]
+    editor = vim
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
