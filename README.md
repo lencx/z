@@ -8,7 +8,7 @@
 * [.zshrc](commands/.zshrc)
 * ...
 
-## VSCode
+## vscode
 
 * [settings.json](vscode/settings.json)
 
@@ -17,3 +17,5 @@
 * [javascript.json](vscode/user_snippets/javascript.json)
 * [rust.json](vscode/user_snippets/rust.json)
 * ...
+
+### [vscode Extensions](vscode/extensions.md)
