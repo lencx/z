@@ -46,5 +46,8 @@
 * [rust-analyzer](https://rust-analyzer.github.io/manual.html#vs-code)
 * [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 * [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+* [LeetCode](https://marketplace.visualstudio.com/items?itemName=LeetCode.vscode-leetcode)
+* [MDX](https://marketplace.visualstudio.com/items?itemName=silvenon.mdx)
+* [MDX Preview](https://marketplace.visualstudio.com/items?itemName=xyc.vscode-mdx-preview)
 * ...
-s
