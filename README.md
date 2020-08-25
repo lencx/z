@@ -62,8 +62,6 @@
 
 ### [Extensions List](vscode/extensions.md)
 
----
-
 ## Browser Extensions
 
 * [chrome web store](https://chrome.google.com/webstore/category/extensions)
@@ -72,8 +70,6 @@
 * [Chrome Extension Downloader](https://chrome-extension-downloader.com)
 * [«镜像» chrome 网上应用店](https://www.gugeapps.net)
 * [Chrome插件网](http://www.cnplugins.com)
-
----
 
 > ID: chrome extension id
 
@@ -102,4 +98,8 @@
 
 * ...
 
+---
+
 **Continuously updated...**
+
+<span style="font-size:12px;color:#666">MIT License | Copyright (c) 2020 lencx</span>
