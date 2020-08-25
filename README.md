@@ -102,4 +102,5 @@
 
 **Continuously updated...**
 
-<span style="font-size:12px;color:#666">MIT License | Copyright (c) 2020 lencx</span>
+MIT License\
+Copyright (c) 2020 lencx
