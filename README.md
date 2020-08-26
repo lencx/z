@@ -98,6 +98,18 @@
 
 * ...
 
+## Online
+
+* [Squoosh!](https://squoosh.app): Make images smaller using best-in-class codecs, right in the browser.
+* [Photopea](https://www.photopea.com): Photopea is a free online tool for editing raster 🎨 and vector graphics with support for PSD, XCF and Sketch files.
+* [Online Tools](https://emn178.github.io/online-tools): Online tools provides md2, md5, sha1, sha2, sha512, bas64, html encode / decode functions.
+* [Online Image Tools](https://onlineimagetools.com): Online image tools is a collection of useful image utilities for working with graphics files. All image tools are simple, free and easy to use. There are no ads, popups or other garbage.
+* [Color Conversion](https://www.nofwl.com/tools/converter): Color conversion provides HEX, RGB, RGBA, HSL, HSLA etc.
+* [JSON Editor](https://jsoneditoronline.org): JSON Editor is a web-based tool to view, edit, format, and validate JSON. It has various modes such as a tree editor, a code editor, and a plain text editor.
+* [BEJSON](http://www.bejson.com): JSON压缩、JSON转义、压缩并转义JSON、JSON去除转义、Unicode转中文、中文转Unicode、JSON中中文符号转英文符号
+* [TinyPNG](https://tinypng.com): Smart PNG and JPEG compression. More than 1 billion PNG and JPEG images optimized and still counting!
+* ...
+
 ---
 
 **Continuously updated...**
