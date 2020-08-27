@@ -21,6 +21,7 @@
   * [history-substring-search](https://github.com/zsh-users/zsh-history-substring-search): 🐠 ZSH port of Fish history search (up arrow)
 * [asciinema](https://asciinema.org): Record and share your terminal sessions, the right way.
 * [bat](https://github.com/sharkdp/bat): A cat(1) clone with wings.
+* [fff](https://github.com/dylanaraps/fff): 📁 A simple file manager written in bash.
 * [tmux](https://github.com/tmux/tmux): tmux is a terminal multiplexer.
 * [tig](https://github.com/jonas/tig): Text-mode interface for git.
 * [starship](https://github.com/starship/starship): ☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell!
@@ -78,7 +79,7 @@
 * [Google Translate](https://translate.google.com)(ID: `aapbdbdomjkkjkaonfhkkikfgjllcleb`): View translations easily as you browse the web. By the Google Translate team.
 * [Tampermonkey](https://www.tampermonkey.net)(ID: `dhdgffkkebhmkfjojejmpbldmpobfkfo`): Tampermonkey is the most popular userscript manager, with over 10 million users.
 * [«react» Redux DevTools](https://github.com/zalmoxisus/redux-devtools-extension)(ID: `fmkadmapgofadopljbjfkapdkoienihi`): Redux DevTools extension.
-* [JSON Viewer](https://github.com/tulios/json-viewer)(ID: `gbmdgpbipfallnflgajpaliibnhdgobh`): The most beautiful and customizable JSON/JSONP highlighter that your eyes have ever seen.
+* [«json» JSON Viewer](https://github.com/tulios/json-viewer)(ID: `gbmdgpbipfallnflgajpaliibnhdgobh`): The most beautiful and customizable JSON/JSONP highlighter that your eyes have ever seen.
 * [SimpleExtManager](http://blandlifedev.blogspot.com)(ID: `kniehgiejgnnpgojkdhhjbgbllnfkfdk`): A simple menu to enable, disable and access options of extensions.
 * [Axure RP Extension for Chrome](https://www.axure.com)(ID: `dogkpdfcklifaemcdfbildhcofnopogp`): An extension that allows local viewing of Axure RP prototypes from Google Chrome.
 * [Lighthouse](https://developers.google.com/web)(ID: `blipmdconlkpinefehnmjammfjpmpbjk`): Lighthouse is an open-source, automated tool for improving the performance, quality, and correctness of your web apps.
@@ -100,14 +101,18 @@
 
 ## Online
 
-* [Squoosh!](https://squoosh.app): Make images smaller using best-in-class codecs, right in the browser.
-* [Photopea](https://www.photopea.com): Photopea is a free online tool for editing raster 🎨 and vector graphics with support for PSD, XCF and Sketch files.
+* [«image» Squoosh!](https://squoosh.app): Make images smaller using best-in-class codecs, right in the browser.
+* [«image» Photopea](https://www.photopea.com): Photopea is a free online tool for editing raster 🎨 and vector graphics with support for PSD, XCF and Sketch files.
+* [«image» TinyPNG](https://tinypng.com): Smart PNG and JPEG compression. More than 1 billion PNG and JPEG images optimized and still counting!
+* [«image» Online Image Tools](https://onlineimagetools.com): Online image tools is a collection of useful image utilities for working with graphics files. All image tools are simple, free and easy to use. There are no ads, popups or other garbage.
 * [Online Tools](https://emn178.github.io/online-tools): Online tools provides md2, md5, sha1, sha2, sha512, bas64, html encode / decode functions.
-* [Online Image Tools](https://onlineimagetools.com): Online image tools is a collection of useful image utilities for working with graphics files. All image tools are simple, free and easy to use. There are no ads, popups or other garbage.
 * [Color Conversion](https://www.nofwl.com/tools/converter): Color conversion provides HEX, RGB, RGBA, HSL, HSLA etc.
-* [JSON Editor](https://jsoneditoronline.org): JSON Editor is a web-based tool to view, edit, format, and validate JSON. It has various modes such as a tree editor, a code editor, and a plain text editor.
-* [BEJSON](http://www.bejson.com): JSON压缩、JSON转义、压缩并转义JSON、JSON去除转义、Unicode转中文、中文转Unicode、JSON中中文符号转英文符号
-* [TinyPNG](https://tinypng.com): Smart PNG and JPEG compression. More than 1 billion PNG and JPEG images optimized and still counting!
+* [«JSON» JSON Editor](https://jsoneditoronline.org): JSON Editor is a web-based tool to view, edit, format, and validate JSON. It has various modes such as a tree editor, a code editor, and a plain text editor.
+* [«JSON» BEJSON](http://www.bejson.com): JSON压缩、JSON转义、压缩并转义JSON、JSON去除转义、Unicode转中文、中文转Unicode、JSON中中文符号转英文符号
+* [«code» Carbon](https://carbon.now.sh): Create and share beautiful images of your source code. Start typing or drop a file into the text area to get started.
+* [«IDE» CodePen](https://codepen.io): The best place to build, test, and discover front-end code.
+* [«IDE» CodeSandbox](https://codesandbox.io): Web Development Made Faster. An instant IDE and prototyping tool for rapid web development.
+* [«palette» coolors](https://coolors.co): The super fast color schemes generator!
 * ...
 
 ---
