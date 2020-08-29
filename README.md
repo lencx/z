@@ -115,6 +115,14 @@
 * [«palette» coolors](https://coolors.co): The super fast color schemes generator!
 * ...
 
+## Community & News
+
+* [Hacker News](https://news.ycombinator.com)
+* [The Hacker News](https://thehackernews.com)
+* [Stack Overflow](http://stackoverflow.com)
+* [freeCodeCamp](https://www.freecodecamp.org)
+* ...
+
 ---
 
 **Continuously updated...**
