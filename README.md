@@ -26,6 +26,7 @@
 * [tig](https://github.com/jonas/tig): Text-mode interface for git.
 * [starship](https://github.com/starship/starship): ☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell!
 * [z](https://github.com/rupa/z): z - jump around.
+* [cavif](https://github.com/kornelski/cavif): PNG/JPEG to AVIF converter
 * ...
 
 ### Mac Application
@@ -112,11 +113,25 @@
 * [«code» Carbon](https://carbon.now.sh): Create and share beautiful images of your source code. Start typing or drop a file into the text area to get started.
 * [«IDE» CodePen](https://codepen.io): The best place to build, test, and discover front-end code.
 * [«IDE» CodeSandbox](https://codesandbox.io): Web Development Made Faster. An instant IDE and prototyping tool for rapid web development.
+* [Can I use](https://caniuse.com): "Can I use" provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.
+* [«file» File Converter](https://convertio.co): Convert your files to any format
+* ...
+
+## Design
+
 * [«palette» coolors](https://coolors.co): The super fast color schemes generator!
+* [Pinterest](https://www.pinterest.com): Discover recipes, home ideas, style inspiration and other ideas to try.
+* [Dribbble](https://dribbble.com): Discover the world’s top designers & creatives.
+* [Iconfinder](https://www.iconfinder.com): Iconfinder is the leading search engine and market place for vector icons in SVG, PNG, CSH and AI format.
+* [icons8](https://icons8.com): Designers, download the design stuff for free — icons, photos, UX illustrations, and music for your videos.
+* [iconfont](https://www.iconfont.cn): Iconfont-国内功能很强大且图标内容很丰富的矢量图标库，提供矢量图标下载、在线存储、格式转换等功能。阿里巴巴体验团队倾力打造，设计和前端开发的便捷工具
 * ...
 
 ## Community & News
 
+* [CSS Tricks](https://css-tricks.com): Daily articles about CSS, HTML, JavaScript, and all things related to web design and development.
+* [Medium](https://medium.com): Medium is not like any other platform on the internet. Our sole purpose is to help you find compelling ideas, knowledge, and perspectives. We don’t serve ads—we serve you, the curious reader who loves to learn new things. Medium is home to thousands of independent voices, and we combine humans and technology to find the best reading for you—and filter out the rest.
+* [sitepoint](https://www.sitepoint.com)
 * [Hacker News](https://news.ycombinator.com)
 * [The Hacker News](https://thehackernews.com)
 * [Stack Overflow](http://stackoverflow.com)
@@ -127,5 +142,4 @@
 
 **Continuously updated...**
 
-MIT License\
-Copyright (c) 2020 lencx
+[MIT](https://opensource.org/licenses/MIT) © lencx
