@@ -129,13 +129,15 @@
 
 ## Community & News
 
+* [Hacker News](https://news.ycombinator.com)
 * [CSS Tricks](https://css-tricks.com): Daily articles about CSS, HTML, JavaScript, and all things related to web design and development.
 * [Medium](https://medium.com): Medium is not like any other platform on the internet. Our sole purpose is to help you find compelling ideas, knowledge, and perspectives. We don’t serve ads—we serve you, the curious reader who loves to learn new things. Medium is home to thousands of independent voices, and we combine humans and technology to find the best reading for you—and filter out the rest.
-* [sitepoint](https://www.sitepoint.com)
-* [Hacker News](https://news.ycombinator.com)
-* [The Hacker News](https://thehackernews.com)
-* [Stack Overflow](http://stackoverflow.com)
-* [freeCodeCamp](https://www.freecodecamp.org)
+* [sitepoint](https://www.sitepoint.com): Learn Web Design & Development with SitePoint tutorials, courses and books - HTML5, CSS3, JavaScript, PHP, mobile app development, Responsive Web Design.
+* [The Hacker News](https://thehackernews.com): The Hacker News is the most trusted, widely-read infosec source of the latest hacking news, cyber attacks, computer security, and cybersecurity for ethical hackers, penetration testers, and information technology professionals.
+* [Stack Overflow](http://stackoverflow.com): Stack Overflow is the largest, most trusted online community for developers to learn, share their programming knowledge, and build their careers.
+* [freeCodeCamp](https://www.freecodecamp.org): Learn to code at home. Build projects. Earn certifications. Since 2014, more than 40,000, freeCodeCamp.org graduates have gotten jobs at tech, companies including Google, Apple, Amazon, and Microsoft.
+* [DEV](https://dev.to): A constructive and inclusive social network. Open source and radically transparent.
+* [reddit](https://www.reddit.com): Reddit is a network of communities based on people's interests. Find communities you're interested in, and become part of an online community!
 * ...
 
 ---
