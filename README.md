@@ -38,6 +38,12 @@
 
 ### Mac Application
 
+* [Titanium Software](https://www.titanium-software.fr/en/onyx.html): These are reliable applications which provide a clean interface to many tasks that would otherwise require complex commands to be typed using a command-line interface.
+  * [OnyX](https://www.titanium-software.fr/en/onyx.html): OnyX is a multifunction utility that you can use to verify the structure of the system files, to run miscellaneous maintenance and cleaning tasks, to configure parameters in the Finder, Dock, Safari, and some Apple applications, to delete caches, to remove certain problematic folders and files, to rebuild various databases and indexes, and more.
+  * [Maintenance](https://www.titanium-software.fr/en/maintenance.html): Maintenance is an operating system maintenance and cleaning utility for macOS that you can use to perform miscellaneous tasks of computer maintenance: run periodic scripts; rebuild the databases; delete application, font, and system caches; and more.
+  * [Deeper](https://www.titanium-software.fr/en/deeper.html): Deeper is a personalization utility for macOS that you can use to enable and disable the hidden functions of the Finder, Dock, Safari, iTunes/Music, login window, and many Apple applications, and more.
+  * [CalHash](https://www.titanium-software.fr/en/calhash.html): CalHash is an utility for macOS that you can use to calculate and compare the checksum (also known as a message-digest-fingerprint) for a file.
+  * [Access Menu](https://www.titanium-software.fr/en/accessmenu.html): Access Menu is an customizable utility for macOS that you can use to quickly access the startup disk's folders from the menu bar.
 * [Itsycal](https://www.mowglii.com/itsycal): Itsycal is a tiny menu bar calendar.
 * [iTerm2](https://iterm2.com): iTerm2 is a terminal emulator for macOS that does amazing things.
 * [ImageOptim](https://imageoptim.com/mac): Removes bloated metadata. Saves disk space & bandwidth by compressing images without losing quality.
