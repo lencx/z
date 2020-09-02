@@ -14,6 +14,7 @@
   * [terminal theme](./terminal/lencx.terminal)
   * [iTerm2 theme](./terminal/Profiles.json)
 
+* [«win» Windows Terminal](https://github.com/microsoft/terminal): The new Windows Terminal and the original Windows console host, all in the same place!
 * [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh): Oh My Zsh will not make you a 10x developer...but you may feel like one.
   * [antigen](https://github.com/zsh-users/antigen): The plugin manager for zsh.
   * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions): Fish-like autosuggestions for zsh.
@@ -26,7 +27,13 @@
 * [tig](https://github.com/jonas/tig): Text-mode interface for git.
 * [starship](https://github.com/starship/starship): ☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell!
 * [z](https://github.com/rupa/z): z - jump around.
-* [cavif](https://github.com/kornelski/cavif): PNG/JPEG to AVIF converter
+* [cavif](https://github.com/kornelski/cavif): PNG/JPEG to AVIF converter.
+* [ripgrep](https://github.com/BurntSushi/ripgrep): ripgrep recursively searches directories for a regex pattern.
+* [fd](https://github.com/sharkdp/fd): A simple, fast and user-friendly alternative to 'find'
+* [exa](https://github.com/ogham/exa): A modern version of ‘ls’.
+* [lsd](https://github.com/Peltoche/lsd): The next gen ls command.
+* [hexyl](https://github.com/sharkdp/hexyl): A command-line hex viewer.
+* [xsv](https://github.com/BurntSushi/xsv): A fast CSV command line toolkit written in Rust.
 * ...
 
 ### Mac Application
