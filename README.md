@@ -138,6 +138,7 @@
 * [Iconfinder](https://www.iconfinder.com): Iconfinder is the leading search engine and market place for vector icons in SVG, PNG, CSH and AI format.
 * [icons8](https://icons8.com): Designers, download the design stuff for free — icons, photos, UX illustrations, and music for your videos.
 * [iconfont](https://www.iconfont.cn): Iconfont-国内功能很强大且图标内容很丰富的矢量图标库，提供矢量图标下载、在线存储、格式转换等功能。阿里巴巴体验团队倾力打造，设计和前端开发的便捷工具
+* [CSS Gradient](https://cssgradient.io): As a free css gradient generator tool, this website lets you create a colorful gradient background for your website, blog, or social media profile.
 * ...
 
 ## Community & News
@@ -151,6 +152,18 @@
 * [freeCodeCamp](https://www.freecodecamp.org): Learn to code at home. Build projects. Earn certifications. Since 2014, more than 40,000, freeCodeCamp.org graduates have gotten jobs at tech, companies including Google, Apple, Amazon, and Microsoft.
 * [DEV](https://dev.to): A constructive and inclusive social network. Open source and radically transparent.
 * [reddit](https://www.reddit.com): Reddit is a network of communities based on people's interests. Find communities you're interested in, and become part of an online community!
+* ...
+
+## Blog
+
+* [rw;eruch](https://www.robinwieruch.de): Software Engineer for React.js, Node.js, GraphQL and JavaScript.
+* [overreacted](https://overreacted.io): Personal blog by Dan Abramov. I explain with words and code.
+* [2ality](https://2ality.com): JavaScript and more.
+* [CODING HORROR](https://blog.codinghorror.com): programming and human factors
+* [Marius Schulz](https://mariusschulz.com): Front End Engineer
+* [«paulgraham» essays](http://paulgraham.com/articles.html): If you're not sure which to read, try Life is Short, Do Things that Don't Scale, or The Refragmentation.
+* [«alligator» Front-End Web Development, Chewed Up](https://alligator.io): Angular 2+, Vue.js, React, Svelte, JavaScript, CSS, Node.js...
+* [Wes Bos](https://wesbos.com): I'm here to help you become a really good web developer.
 * ...
 
 ---
