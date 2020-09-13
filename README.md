@@ -1,6 +1,8 @@
-# MTC
-
-> my tools and configuration
+<div align="center">
+  <img width="269" height="100" src="./static/mtc.png" alt="mtc">
+  <br>
+  <p>My tools & config, and awesome lists</p>
+</div>
 
 ## Commands
 
