@@ -110,7 +110,12 @@
 * [«github» CodeCopy](https://github.com/zenorocha/codecopy)(ID: `fkbfebkcoelajmhanocgppanfoojcdmg`): Because copy to clipboard buttons should exist on every code snippet.
 * [«github» Githunt](https://github.com/kamranahmedse/githunt)(ID: `khpcnaokfebphakjgdgpinmglconplhp`): Replace the new tab with a list of trending repositories on github belonging to any technology that you chose.
 * [«github» File Icon for GitHub and GitLab](https://github.com/homerchen19/github-file-icons)(ID: `ficfmibkjjnpogdcfhfokmihanoldbfe`): 🌈 🗂 A browser extension which gives different filetypes different icons to GitHub, GitLab, gitea and gogs.
+* ...
 
+## Dev tools
+
+* [«mobile» Eruda](https://github.com/liriliri/eruda): Console for mobile browsers
+* [«mobile» vConsole](https://github.com/Tencent/vConsole): A lightweight, extendable front-end developer tool for mobile web page.
 * ...
 
 ## Online
@@ -128,6 +133,7 @@
 * [«IDE» CodeSandbox](https://codesandbox.io): Web Development Made Faster. An instant IDE and prototyping tool for rapid web development.
 * [Can I use](https://caniuse.com): "Can I use" provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.
 * [«file» File Converter](https://convertio.co): Convert your files to any format
+* [AST Explorer](https://astexplorer.net): An online AST explorer.
 * ...
 
 ## Design
