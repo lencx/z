@@ -189,6 +189,6 @@
 
 ---
 
-**Continuously updated...**
+**Keep updating...**
 
 [MIT](https://opensource.org/licenses/MIT) © lencx
