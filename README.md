@@ -36,6 +36,17 @@
 * [lsd](https://github.com/Peltoche/lsd): The next gen ls command.
 * [hexyl](https://github.com/sharkdp/hexyl): A command-line hex viewer.
 * [xsv](https://github.com/BurntSushi/xsv): A fast CSV command line toolkit written in Rust.
+* [csview](https://github.com/wfxr/csview): 📠 A high performance csv viewer with cjk/emoji support.
+* [GitHub CLI](https://github.com/cli/cli): GitHub’s official command line tool.
+* ...
+
+## Roadmaps
+
+* [Developer Roadmaps](https://roadmap.sh): Step by step guides and paths to learn different tools or technologies
+  * [Frontend Developer](https://roadmap.sh/frontend): Step by step guide to becoming a modern frontend developer.
+  * [Backend Developer](https://roadmap.sh/backend): Step by step guide to becoming a modern backend developer.
+  * [DevOps Developer](https://roadmap.sh/devops): Step by step guide for DevOps or any other Operations Role.
+* [React Developer Roadmap](https://github.com/adam-golab/react-developer-roadmap): Roadmap to becoming a React developer.
 * ...
 
 ### Mac Application
@@ -171,6 +182,7 @@
 * [freeCodeCamp](https://www.freecodecamp.org): Learn to code at home. Build projects. Earn certifications. Since 2014, more than 40,000, freeCodeCamp.org graduates have gotten jobs at tech, companies including Google, Apple, Amazon, and Microsoft.
 * [DEV](https://dev.to): A constructive and inclusive social network. Open source and radically transparent.
 * [reddit](https://www.reddit.com): Reddit is a network of communities based on people's interests. Find communities you're interested in, and become part of an online community!
+* [GeeksforGeeks](https://www.geeksforgeeks.org): A Computer Science portal for geeks. It contains well written, well thought and well explained computer science and programming articles, quizzes and practice/competitive programming/company interview Questions.
 * ...
 
 ## Blog
