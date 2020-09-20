@@ -76,6 +76,8 @@
 * [Maccy](https://maccy.app): Clipboard manager for macOS which does one job - keep your copy history at hand. Lightweight. Open source. No fluff.
 * [Clipy](https://clipy-app.com): Clipboard extension app for macOS.
 * [Dropover](https://dropoverapp.com): Dropover is a utility that makes it easier to manage and move content between folders, applications, windows and workspaces using Drag and Drop.
+* [f.lux](https://justgetflux.com): Software to warm up your computer display at night, to match your indoor lighting.
+* [CheatSheet](https://www.mediaatelier.com/CheatSheet): Know your short cuts.
 * ...
 
 ## Visual Studio Code
