@@ -43,7 +43,6 @@
 * [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
 * [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
 * [Shades of Purple](https://marketplace.visualstudio.com/items?itemName=ahmadawais.shades-of-purple)
-* [rust-analyzer](https://rust-analyzer.github.io/manual.html#vs-code)
 * [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 * [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
@@ -51,3 +50,21 @@
 * [MDX](https://marketplace.visualstudio.com/items?itemName=silvenon.mdx)
 * [MDX Preview](https://marketplace.visualstudio.com/items?itemName=xyc.vscode-mdx-preview)
 * ...
+
+---
+
+> **Rust**
+
+* [rust-analyzer](https://rust-analyzer.github.io/manual.html#vs-code)
+* [rls](https://github.com/rust-lang/rls)
+
+```bash
+# 1.
+rustup toolchain install nightly
+# 2.
+rustup default nightly
+# 3.
+rustup update
+# 4.
+rustup component add rls rust-analysis rust-src
+```
