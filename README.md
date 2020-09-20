@@ -4,10 +4,11 @@
   <p>My tools & config, and awesome lists</p>
 </div>
 
-## Commands
+## Config
 
-* [.gitconfg](commands/.gitconfig)
-* [.zshrc](commands/.zshrc)
+* [.gitconfg](./$HOME/.gitconfig)
+* [.zshrc](./$HOME/.zshrc)
+* [cargo镜像](./$HOME/.cargo/config)
 * ...
 
 ## Terminal
