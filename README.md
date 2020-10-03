@@ -49,6 +49,8 @@
 * [svgcleaner](https://github.com/RazrFalcon/svgcleaner): svgcleaner could help you to clean up your SVG files from the unnecessary data.
 * [watchexec](https://github.com/watchexec/watchexec): Executes commands in response to file modifications.
 * [procs](https://github.com/dalance/procs): A modern replacement for ps written in Rust.
+* [GitHub CLI](https://github.com/cli/cli): GitHub’s official command line tool.
+* [Alacritty](https://github.com/alacritty/alacritty): A cross-platform, GPU-accelerated terminal emulator
 * ...
 
 ## Roadmaps
@@ -211,6 +213,16 @@
 * [Pombo](https://pomb.us): Also known as pombo, pomber, pombus, pombex, or any /pomb[a-z]+/ match. I write code, write about writing code, sometimes talk about it, usually tweet about it.
 * [robertelder](https://blog.robertelder.org): Software Engineering Articless
 * ...
+
+## Data Structure And Algorithms
+
+* [JavaScript Algorithms and Data Structures](https://github.com/trekhleb/javascript-algorithms): 📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings.
+* [The Algorithms](https://github.com/TheAlgorithms): Open Source resource for learning Data Structures & Algorithms and their implementation in any Programming Language.
+* [Contest Algorithms in Rust](https://github.com/EbTech/rust-algorithms): Common data structures and algorithms in Rust.
+* [labuladong 的算法小抄](https://github.com/labuladong/fucking-algorithm): 刷算法全靠套路，认准 labuladong 就够了！English version supported! Crack LeetCode, not only how, but also why.
+* [小浩学算法](https://github.com/geekxh/hello-algorithm): 🌍 东半球最酷的学习项目 | 1、我写的三十万字算法图解 2、千本开源电子书 3、100 张思维导图 4、100 篇大厂面经 5、30 个学习专题 🚀 🚀 🚀 右上角点个 star，加入我们万人学习群！English Supported！
+* [🎆Interactive Online Platform that Visualizes Algorithms from Code](https://github.com/algorithm-visualizer): 🎆Interactive Online Platform that Visualizes Algorithms from Code.
+* [LeetCode in Go](https://github.com/halfrost/LeetCode-Go): ✅ Solutions to LeetCode by Go, 100% test coverage, runtime beats 100% / LeetCode 题解
 
 ---
 
