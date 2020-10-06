@@ -200,6 +200,11 @@
 * [GeeksforGeeks](https://www.geeksforgeeks.org): A Computer Science portal for geeks. It contains well written, well thought and well explained computer science and programming articles, quizzes and practice/competitive programming/company interview Questions.
 * ...
 
+## eBook
+
+* [pdfdrive](https://www.pdfdrive.com): PDF Drive is your search engine for PDF files. As of today we have 85,403,259 eBooks for you to download for free. No annoying ads, no download limits, enjoy it and don't forget to bookmark and share the love!
+<!-- * https://salttiger.com -->
+
 ## Blog
 
 * [rw;eruch](https://www.robinwieruch.de): Software Engineer for React.js, Node.js, GraphQL and JavaScript.
@@ -211,7 +216,8 @@
 * [«alligator» Front-End Web Development, Chewed Up](https://alligator.io): Angular 2+, Vue.js, React, Svelte, JavaScript, CSS, Node.js...
 * [Wes Bos](https://wesbos.com): I'm here to help you become a really good web developer.
 * [Pombo](https://pomb.us): Also known as pombo, pomber, pombus, pombex, or any /pomb[a-z]+/ match. I write code, write about writing code, sometimes talk about it, usually tweet about it.
-* [robertelder](https://blog.robertelder.org): Software Engineering Articless
+* [robertelder](https://blog.robertelder.org): Software Engineering Articless.
+* [Make A Language](https://arzg.github.io/lang): A series about making a programming language called Eldiro using the Rust programming language.
 * ...
 
 ## Data Structure And Algorithms
