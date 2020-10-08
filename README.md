@@ -198,6 +198,7 @@
 * [DEV](https://dev.to): A constructive and inclusive social network. Open source and radically transparent.
 * [reddit](https://www.reddit.com): Reddit is a network of communities based on people's interests. Find communities you're interested in, and become part of an online community!
 * [GeeksforGeeks](https://www.geeksforgeeks.org): A Computer Science portal for geeks. It contains well written, well thought and well explained computer science and programming articles, quizzes and practice/competitive programming/company interview Questions.
+* [learnKu](https://learnku.com): 专为终身学习者定制的编程知识社区
 * ...
 
 ## eBook
