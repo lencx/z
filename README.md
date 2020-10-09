@@ -154,8 +154,11 @@
 
 ## WebGL
 
-* [WebGL Fundamentals](https://webglfundamentals.org): WebGL from the ground up. No magic. These are a set of articles that teach WebGL from basic principles. They are NOT old rehashed out of date OpenGL articles like many others on the net. They are entirely new, discarding the old out of date ideas and bringing you to a full understanding of what WebGL really is and how it really works.
+* [Your browser supports WebGL?](https://get.webgl.org)
+  * [WebGL Overview](https://www.khronos.org/webgl): WebGL is a cross-platform, royalty-free web standard for a low-level 3D graphics API based on OpenGL ES, exposed to ECMAScript via the HTML5 Canvas element. Developers familiar with OpenGL ES 2.0 will recognize WebGL as a Shader-based API…
+* [WebGL Fundamentals](https://webglfundamentals.org): WebGL from the ground up. No magic. These are a set of articles that teach WebGL from basic principles.
 * [ICG-WebGL](https://github.com/akira-cn/ICG-WebGL): 交互式计算机图形学——基于WebGL的自顶向下方法（第七版）的例子与练习题
+* [WebGL: 2D and 3D graphics for the web](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API): WebGL (Web Graphics Library) is a JavaScript API for rendering high-performance interactive 3D and 2D graphics within any compatible web browser without the use of plug-ins.
 
 ## Online
 
