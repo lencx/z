@@ -145,11 +145,21 @@
 > application
 
 * [PicGo](https://github.com/Molunerfinn/PicGo): 🚀A simple & beautiful tool for pictures uploading built by vue-cli-electron-builder.
+* ...
 
 > dev
 
 * [«mobile» Eruda](https://github.com/liriliri/eruda): Console for mobile browsers
 * [«mobile» vConsole](https://github.com/Tencent/vConsole): A lightweight, extendable front-end developer tool for mobile web page.
+* ...
+
+## Programming Language & Compiler
+
+* [Compiler Design Tutorial](https://www.tutorialspoint.com/compiler_design/index.htm): Compiler Design Tutorial - A compiler translates the code written in one language to some other language without changing the meaning of the program.
+* [wenyan](https://github.com/wenyan-lang/wenyan): 文言文編程語言 A programming language for the ancient Chinese.
+* [Make A Language](https://arzg.github.io/lang): A series about making a programming language called Eldiro using the Rust programming language.
+* [Writing An Interpreter In Go](https://interpreterbook.com): This book takes you from 0 lines of code to a fully working interpreter for the Monkey programming language. Step by step. All code shown and included. Fully unit tested.
+* [Writing A Compiler In Go](https://compilerbook.com): This is the sequel to Writing An Interpreter In Go and this time we're writing a compiler and a virtual machine for Monkey.
 * ...
 
 ## WebGL
@@ -159,6 +169,7 @@
 * [WebGL Fundamentals](https://webglfundamentals.org): WebGL from the ground up. No magic. These are a set of articles that teach WebGL from basic principles.
 * [ICG-WebGL](https://github.com/akira-cn/ICG-WebGL): 交互式计算机图形学——基于WebGL的自顶向下方法（第七版）的例子与练习题
 * [WebGL: 2D and 3D graphics for the web](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API): WebGL (Web Graphics Library) is a JavaScript API for rendering high-performance interactive 3D and 2D graphics within any compatible web browser without the use of plug-ins.
+* ...
 
 ## Online
 
@@ -215,10 +226,12 @@
 * [learnKu](https://learnku.com): 专为终身学习者定制的编程知识社区
 * ...
 
-## eBook
+## eBook & Library
 
-* [pdfdrive](https://www.pdfdrive.com): PDF Drive is your search engine for PDF files. As of today we have 85,403,259 eBooks for you to download for free. No annoying ads, no download limits, enjoy it and don't forget to bookmark and share the love!
 <!-- * https://salttiger.com -->
+* [tutorialspoint](https://www.tutorialspoint.com): the best resource for Online Education.
+* [pdfdrive](https://www.pdfdrive.com): PDF Drive is your search engine for PDF files. As of today we have 85,403,259 eBooks for you to download for free. No annoying ads, no download limits, enjoy it and don't forget to bookmark and share the love!
+* ...
 
 ## Blog
 
@@ -232,7 +245,7 @@
 * [Wes Bos](https://wesbos.com): I'm here to help you become a really good web developer.
 * [Pombo](https://pomb.us): Also known as pombo, pomber, pombus, pombex, or any /pomb[a-z]+/ match. I write code, write about writing code, sometimes talk about it, usually tweet about it.
 * [robertelder](https://blog.robertelder.org): Software Engineering Articless.
-* [Make A Language](https://arzg.github.io/lang): A series about making a programming language called Eldiro using the Rust programming language.
+* [Lisperator.net](http://lisperator.net): Mishoo's ~~new~~ blog. Welcome! I'm Mihai Bazon and I'm running a blog since 2001.
 * ...
 
 ## Data Structure And Algorithms
@@ -244,6 +257,7 @@
 * [小浩学算法](https://github.com/geekxh/hello-algorithm): 🌍 东半球最酷的学习项目 | 1、我写的三十万字算法图解 2、千本开源电子书 3、100 张思维导图 4、100 篇大厂面经 5、30 个学习专题 🚀 🚀 🚀 右上角点个 star，加入我们万人学习群！English Supported！
 * [🎆Interactive Online Platform that Visualizes Algorithms from Code](https://github.com/algorithm-visualizer): 🎆Interactive Online Platform that Visualizes Algorithms from Code.
 * [LeetCode in Go](https://github.com/halfrost/LeetCode-Go): ✅ Solutions to LeetCode by Go, 100% test coverage, runtime beats 100% / LeetCode 题解
+* ...
 
 ---
 
