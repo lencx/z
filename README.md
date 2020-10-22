@@ -268,6 +268,11 @@
 * [LeetCode in Go](https://github.com/halfrost/LeetCode-Go): ✅ Solutions to LeetCode by Go, 100% test coverage, runtime beats 100% / LeetCode 题解
 * ...
 
+## Rust
+
+* [Rust Anthology Master List](https://github.com/brson/rust-anthology/blob/master/master-list.md): This is a collection of substantial blog posts about Rust.
+* [Thoughtram - Rust](https://blog.thoughtram.io/categories/rust): Rust For JavaScript Developers. Because learning Rust with a JavaScript background doesn't have to be hard.
+
 ---
 
 **Keep updating...**
