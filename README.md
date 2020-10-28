@@ -256,6 +256,7 @@
 * [Pombo](https://pomb.us): Also known as pombo, pomber, pombus, pombex, or any /pomb[a-z]+/ match. I write code, write about writing code, sometimes talk about it, usually tweet about it.
 * [robertelder](https://blog.robertelder.org): Software Engineering Articless.
 * [Lisperator.net](http://lisperator.net): Mishoo's ~~new~~ blog. Welcome! I'm Mihai Bazon and I'm running a blog since 2001.
+* [Dave Ceddia](https://daveceddia.com): Articles and courses to help you level uplevel up as a front end React developer.
 * ...
 
 ## Data Structure And Algorithms
