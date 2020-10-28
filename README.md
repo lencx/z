@@ -50,7 +50,8 @@
 * [watchexec](https://github.com/watchexec/watchexec): Executes commands in response to file modifications.
 * [procs](https://github.com/dalance/procs): A modern replacement for ps written in Rust.
 * [GitHub CLI](https://github.com/cli/cli): GitHub’s official command line tool.
-* [Alacritty](https://github.com/alacritty/alacritty): A cross-platform, GPU-accelerated terminal emulator
+* [Alacritty](https://github.com/alacritty/alacritty): A cross-platform, GPU-accelerated terminal emulator.
+* [nat](https://github.com/willdoescode/nat): ⚡️ nat - the 'ls' replacement you never knew you needed⚡️
 * ...
 
 ## Roadmaps
