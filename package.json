@@ -1,0 +1,19 @@
+{
+  "name": "mtc",
+  "version": "1.0.0",
+  "description": "mtc",
+  "author": "lencx <cxin1314@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/lencx/mtc#readme",
+  "scripts": {
+    "start": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lencx/mtc.git"
+  },
+  "dependencies": {
+    "vuepress": "^1.7.1"
+  }
+}
