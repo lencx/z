@@ -1,4 +1,10 @@
-# `$HOME/.cargo/config`
+# Rust
+
+## Mirror
+
+```toml
+# path: ~/.cargo/config
+
 [source.crates-io]
 registry = "https://github.com/rust-lang/crates.io-index"
 
@@ -20,3 +26,4 @@ registry = "https://mirrors.sjtug.sjtu.edu.cn/git/crates.io-index"
 # rustcc社区
 [source.rustcc]
 registry = "git://crates.rustcc.cn/crates.io-index"
+```

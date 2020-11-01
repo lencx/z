@@ -1,4 +1,8 @@
-# vscode Extensions
+# Visual Studio Code
+
+## Extensions
+
+::: details Lists
 
 * [Go](https://marketplace.visualstudio.com/items?itemName=golang.Go)
 * [Dart](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code)
@@ -68,3 +72,144 @@ rustup update
 # 4.
 rustup component add rls rust-analysis rust-src
 ```
+
+:::
+
+## [User Snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
+
+::: details Examples
+
+```json
+// rust.json
+{
+	"lencx": {
+		"prefix": "lencx",
+		"body": [
+			"// Copyright $CURRENT_YEAR lencx",
+			"// license that can be found in the LICENSE file or at",
+			"// https://opensource.org/licenses/MIT.",
+			"",
+			"$1"
+		]
+	}
+}
+```
+
+```json
+// javascript.json
+{
+	"author & create_at": {
+		"prefix": "ac",
+		"body": [
+			"/**",
+			" * @author: lencx",
+			" * @create_at: $CURRENT_MONTH_NAME_SHORT $CURRENT_DATE, $CURRENT_YEAR",
+			" */",
+			"",
+			"$1"
+		]
+	},
+	"line number printing": {
+		"prefix": "lg",
+		"body": [
+			"console.log('[$TM_LINE_NUMBER] $TM_FILENAME: ', $1);"
+		],
+		"description": "Log output to console"
+	}
+}
+```
+
+:::
+
+## Settings
+
+::: details settings.json
+
+```json
+{
+  "window.zoomLevel": 1,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Shades of Purple",
+  "editor.fontFamily": "Operator Mono, Dank Mono, Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "editor.lineHeight": 20,
+  "editor.fontLigatures": true,
+  // "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.renameOnType": true,
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 3,
+  "editor.cursorBlinking": "solid",
+  // "editor.renderWhitespace": "all",
+  "editor.snippetSuggestions": "top",
+  "editor.glyphMargin": true,
+  "editor.smoothScrolling": true,
+
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.fontAliasing": "auto",
+  "workbench.editor.enablePreview": false,
+  // "terminal.integrated.macOptionIsMeta": true,
+  // "workbench.statusBar.feedback.visible": false,
+  "workbench.colorCustomizations": {
+    "editorIndentGuide.activeBackground": "#297891",
+    "activityBarBadge.background": "#FF4081",
+    "list.activeSelectionForeground": "#FF4081",
+    "list.inactiveSelectionForeground": "#FF4081",
+    "list.highlightForeground": "#FF4081",
+    "scrollbarSlider.activeBackground": "#FF408150",
+    "editorSuggestWidget.highlightForeground": "#FF4081",
+    "textLink.foreground": "#FF4081",
+    "progressBar.background": "#FF4081",
+    "pickerGroup.foreground": "#FF4081",
+    "tab.activeBorder": "#FF4081",
+    "notificationLink.foreground": "#FF4081",
+    "editorWidget.resizeBorder": "#FF4081",
+    "editorWidget.border": "#FF4081",
+    "settings.modifiedItemIndicator": "#FF4081",
+    "settings.headerForeground": "#FF4081",
+    "panelTitle.activeBorder": "#FF4081",
+    "breadcrumb.activeSelectionForeground": "#FF4081",
+    "menu.selectionForeground": "#FF4081",
+    "menubar.selectionForeground": "#FF4081"
+  },
+  "materialTheme.accent": "Pink",
+  "git.confirmSync": false,
+  "todo-tree.tree.showScanModeButton": false,
+  // TODO TREE
+  "todo-tree.general.tags": ["TODO:", "FIX:", "BUG:"],
+  // "todo-tree.regex.regex": "((//|#|<!--|;|/\\*)\\s*($TAGS)|^\\s*- \\[ \\])",
+  "todo-tree.highlights.defaultHighlight": {
+    "gutterIcon": true
+  },
+  "todo-tree.highlights.customHighlight": {
+    "TODO:": {
+      "foreground": "#000",
+      "background": "#ffbd2a",
+      "iconColour": "#ffbd2a"
+    },
+    "FIX:": {
+      "foreground": "#fff",
+      "background": "#54b2ea",
+      "icon": "pin",
+      "iconColour": "#54b2ea"
+    },
+    "BUG:": {
+      "foreground": "#fff",
+      "background": "#eb4d9c",
+      "icon": "zap",
+      "iconColour": "#eb4d9c"
+    }
+  },
+  "tabnine.experimentalAutoImports": true,
+  "workbench.sideBar.location": "left",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
+```
+
+:::

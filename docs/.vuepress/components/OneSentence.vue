@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import oneSentenceData from './data.ts';
+import oneSentenceData from '../data/oneSentence.ts';
 
 function range(min, max) {
   return Math.floor(
