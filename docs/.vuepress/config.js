@@ -43,6 +43,7 @@ module.exports = {
           '/settingTools/git',
           '/settingTools/rust',
           '/settingTools/zsh',
+          '/settingTools/fe',
         ],
       },
       {
@@ -50,10 +51,10 @@ module.exports = {
         collapsable: true,
         children: [
           '/awesome/online',
-          '/awesome/roadmaps',
-          '/awesome/react',
-          '/awesome/rust',
           '/awesome/ebook',
+          '/awesome/app',
+          '/awesome/browser',
+          '/awesome/tech',
         ],
       },
       {

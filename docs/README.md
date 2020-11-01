@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: ~
-heroImage: /mtc.webp
+heroImage: /logo.webp
 actionText: 去探索 →
 # actionText: Get Started →
 actionLink: /welcome

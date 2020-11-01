@@ -1,8 +1,8 @@
 # Terminal
 
 * **Theme**
-  * [terminal theme](https://github.com/lencx/mtc/blob/master/terminal/lencx.terminal)
-  * [iTerm2 theme](https://github.com/lencx/mtc/blob/master/terminal/Profiles.json)
+  * [terminal theme](https://github.com/lencx/mtc/blob/main/terminal/lencx.terminal)
+  * [iTerm2 theme](https://github.com/lencx/mtc/blob/main/terminal/Profiles.json)
 
 * [«win» Windows Terminal](https://github.com/microsoft/terminal): The new Windows Terminal and the original Windows console host, all in the same place!
 * [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh): Oh My Zsh will not make you a 10x developer...but you may feel like one.
