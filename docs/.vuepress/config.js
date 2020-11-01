@@ -13,6 +13,7 @@ module.exports = {
     ['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#3eaf7c' }],
     ['meta', { name: 'msapplication-TileImage', content: '/icons/144.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
+    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover' }],
   ],
   plugins: ['@vuepress/pwa', {
     serviceWorker: true,
