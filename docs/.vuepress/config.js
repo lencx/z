@@ -15,19 +15,35 @@ module.exports = {
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover' }],
   ],
-  plugins: ['@vuepress/pwa', {
-    serviceWorker: true,
-    updatePopup: true,
-  }],
+  // markdown: {
+  //   lineNumbers: true,
+  // },
+  plugins: [
+    '@vuepress/back-to-top',
+    ['@vuepress/pwa', {
+      serviceWorker: true,
+      updatePopup: {
+        message: "发现新内容",
+        buttonText: "刷新"
+      },
+    }],
+    ['@vuepress/last-updated', {
+      dateOptions:{
+        hour12: false,
+      },
+    }],
+  ],
   themeConfig: {
     logo: '/logo.webp',
 		docsDir: 'docs',
     repo: 'lencx/mtc',
-		repoLabel: '点⭐️不迷路',
+    repoLabel: '点⭐️不迷路',
+    docsBranch: 'main',
 		editLinks: true,
-		editLinkText: '为该章节纠错',
+    editLinkText: '帮助改善此页面',
     lastUpdated: '上次更新',
-    sidebar: 'auto',
+    smoothScroll: true,
+    // sidebar: 'auto',
     // displayAllHeaders: true,
     'nav': [
 			{ text: '关于我', link: 'https://nofwl.com' },
