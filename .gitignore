@@ -4,3 +4,8 @@ node_modules/
 
 # node
 yarn.lock
+
+# build
+docs/.vuepress/dist
+
+/public

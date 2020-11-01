@@ -2,6 +2,7 @@ module.exports = {
   title: 'MTC',
   description: 'My tools & config, and awesome lists.',
   base: '/',
+  dest: 'public',
   head: [
     ['link', { rel: 'icon', href: '/logo.png' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
