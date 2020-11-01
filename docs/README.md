@@ -4,7 +4,7 @@ heroText: ~
 heroImage: /logo.webp
 actionText: 去探索 →
 # actionText: Get Started →
-actionLink: /welcome
+actionLink: /preface
 features:
 - title: ⚙️ 配置&工具
   details: 终端，编辑器(vsCode)，git配置，macOS应用等
