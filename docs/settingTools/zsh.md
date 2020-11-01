@@ -9,27 +9,6 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 ```
 
-## Commands
-
-```bash
-cat /etc/shells
-
-# List of acceptable shells for chpass(1).
-# Ftpd will not allow users to connect who are not using
-# one of these shells.
-
-/bin/bash
-/bin/csh
-/bin/dash
-/bin/ksh
-/bin/sh
-/bin/tcsh
-/bin/zsh
-
-# Changing shell for user.
-chsh -s /bin/zsh
-```
-
 ::: details .zshrc
 
 ```bash
@@ -199,3 +178,24 @@ export PATH=~/flutter/bin/cache/dart-sdk/bin:$PATH
 ```
 
 :::
+
+## Commands
+
+```bash
+cat /etc/shells
+
+# List of acceptable shells for chpass(1).
+# Ftpd will not allow users to connect who are not using
+# one of these shells.
+
+/bin/bash
+/bin/csh
+/bin/dash
+/bin/ksh
+/bin/sh
+/bin/tcsh
+/bin/zsh
+
+# Changing shell for user.
+chsh -s /bin/zsh
+```

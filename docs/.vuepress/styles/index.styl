@@ -9,3 +9,18 @@
     user-select: none;
   }
 }
+
+.home {
+  .feature {
+    flex-grow: 1;
+    flex-basis: 50% !important;
+    max-width: 50% !important;
+  }
+  @media (max-width: 719px) {
+    .feature {
+      flex-grow: 1;
+      flex-basis: 100% !important;
+      max-width: 100% !important;
+    }
+  }
+}

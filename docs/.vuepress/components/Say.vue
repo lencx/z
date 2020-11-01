@@ -1,7 +1,7 @@
 <template>
   <div class="say">
     <div class="text">{{text}}</div>
-    <div class="author">—— <em>{{name}}</em></div>
+    <div class="author"><i class="line">——</i> <em>{{name}}</em></div>
   </div>
 </template>
 
@@ -16,11 +16,18 @@ export default {
 
 <style lang="postcss" scoped>
 .say {
-  border: dashed 3px #84a59d;
+  box-shadow: inset 0 0 15px #84a59d;
   padding: 15px 20px;
   border-radius: 5px;
   font-size: 16px;
-  color: #666;
+  color: #4a4a4a;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 2px;
+}
+
+.line {
+  letter-spacing: 0;
 }
 .author {
   margin-top: 5px;
