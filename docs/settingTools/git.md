@@ -2,6 +2,8 @@
 
 ## Config
 
+::: details .gitconfig
+
 ```toml
 # Copyright 2020 lencx
 # license that can be found in the LICENSE file or at
@@ -34,9 +36,11 @@
 	clean = git-lfs clean -- %f
 ```
 
+:::
+
 ## Error Handling
 
-* ssh: connect to host github.com port 22: Connection timed out
+::: details ssh: connect to host github.com port 22: Connection timed out
 
 ```bash
 # https://stackoverflow.com/questions/15589682/ssh-connect-to-host-github-com-port-22-connection-timed-out
@@ -61,3 +65,7 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added '[ssh.github.com]:443,[xxx.xxx.xxx.xxx]:443' (RSA) to the list of known hosts.
 Hi lencx! You've successfully authenticated, but GitHub does not provide shell access.
 ```
+
+:::
+
+<!-- How to Rename Git Local and Remote Branches -->
