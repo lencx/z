@@ -56,6 +56,7 @@ module.exports = {
         children: [
           '/settingTools/fe',
           '/settingTools/git',
+          '/settingTools/mac',
           '/settingTools/rust',
           'settingTools/terminal',
           '/settingTools/vscode',
