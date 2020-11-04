@@ -34,9 +34,9 @@ sudo scutil --set <ComputerName|HostName> NEW_NAME
 
 :::
 
-## 快捷键(Keyboard Shortcuts)
+## 快捷键
 
-> Symbol
+::: details 组合键
 
 - Command: ⌘
 - Option: ⌥
@@ -46,8 +46,6 @@ sudo scutil --set <ComputerName|HostName> NEW_NAME
 - ESC: ⎋
 - Enter: ↩︎
 - Tab: ⇥
-
----
 
 | 组合键          | 描述                     |
 | --------------- | ------------------------ |
@@ -66,3 +64,5 @@ sudo scutil --set <ComputerName|HostName> NEW_NAME
 <!-- | `系统(System)`  |                    |
 | ⌘ + R           | 恢复功能(Recovery) |
 | ⌘ + ⌥ + P + R   | 重置 NVRAM         | -->
+
+:::

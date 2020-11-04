@@ -31,6 +31,7 @@
 * [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
 * [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
 * [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
+* [WakaTime](https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime)
 
 * [Image preview](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview)
 * [Svg Preview](https://marketplace.visualstudio.com/items?itemName=SimonSiefke.svg-preview)

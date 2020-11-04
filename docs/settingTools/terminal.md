@@ -4,6 +4,8 @@
   * [terminal theme](https://github.com/lencx/mtc/blob/main/static/terminal/lencx.terminal)
   * [iTerm2 theme](https://github.com/lencx/mtc/blob/main/static/terminal/Profiles.json)
 
+---
+
 * [«win» Windows Terminal](https://github.com/microsoft/terminal): The new Windows Terminal and the original Windows console host, all in the same place!
 * [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh): Oh My Zsh will not make you a 10x developer...but you may feel like one.
   * [antigen](https://github.com/zsh-users/antigen): The plugin manager for zsh.
@@ -40,3 +42,53 @@
 * [Alacritty](https://github.com/alacritty/alacritty): A cross-platform, GPU-accelerated terminal emulator.
 * [nat](https://github.com/willdoescode/nat): ⚡️ nat - the 'ls' replacement you never knew you needed⚡️
 * ...
+
+## Install
+
+* `pip`
+
+```bash
+# step1:
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+
+# step2:
+sudo python get-pip.py
+```
+
+* `wakatime`
+
+```bash
+# @see: https://wakatime.com/terminal
+# step1:
+sudo pip install wakatime
+
+# step2:
+cd ~/.oh-my-zsh/custom/plugins && git clone https://github.com/sobolevn/wakatime-zsh-plugin.git wakatime
+
+# step3:
+# add `wakatime` to the list of `plugins` in your `~/.zshrc` file
+
+# step4:
+# Make sure your `API key` is in your `~/.wakatime.cfg` file.
+```
+
+* `oh-my-zsh plugins`
+
+```bash
+# @see: https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
+# step1:
+# 1.
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# 2.
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+# 3.
+git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
+
+# step2: ~/.zshrc
+plugins=(
+  [plugins...]
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  history-substring-search
+)
+```
