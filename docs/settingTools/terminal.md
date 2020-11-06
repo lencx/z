@@ -20,6 +20,14 @@
 * [tmux](https://github.com/tmux/tmux): tmux is a terminal multiplexer.
 * [tig](https://github.com/jonas/tig): Text-mode interface for git.
 * [starship](https://github.com/starship/starship): ☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell!
+  
+  ```bash
+  curl -fsSL https://starship.rs/install.sh | bash
+
+  vi ~/.zshrc
+  eval "$(starship init zsh)"
+  ```
+
 * [cavif](https://github.com/kornelski/cavif): PNG/JPEG to AVIF converter.
 * [ripgrep](https://github.com/BurntSushi/ripgrep): ripgrep recursively searches directories for a regex pattern.
 * [fd](https://github.com/sharkdp/fd): A simple, fast and user-friendly alternative to 'find'
