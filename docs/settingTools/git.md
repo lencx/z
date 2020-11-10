@@ -97,6 +97,25 @@ Warning: Permanently added '[ssh.github.com]:443,[xxx.xxx.xxx.xxx]:443' (RSA) to
 Hi lencx! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
-:::
+::: details Pulling without specifying how to reconcile divergent branches is discouraged
+
+```bash
+git pull
+
+warning: Pulling without specifying how to reconcile divergent branches is
+discouraged. You can squelch this message by running one of the following
+commands sometime before your next pull:
+
+  git config pull.rebase false  # merge (the default strategy)
+  git config pull.rebase true   # rebase
+  git config pull.ff only       # fast-forward only
+
+You can replace "git config" with "git config --global" to set a default
+preference for all repositories. You can also pass --rebase, --no-rebase,
+or --ff-only on the command line to override the configured default per
+invocation.
+
+git config pull.ff only
+```
 
 <!-- How to Rename Git Local and Remote Branches -->
