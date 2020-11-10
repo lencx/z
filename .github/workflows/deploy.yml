@@ -19,6 +19,9 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: CNAME
+        run: echo 'mtc.nofwl.com' > ./public/CNAME
+
       # https://github.com/peaceiris/actions-gh-pages
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
