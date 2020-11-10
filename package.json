@@ -7,8 +7,7 @@
   "homepage": "https://github.com/lencx/mtc#readme",
   "scripts": {
     "start": "vuepress dev docs",
-    "build": "vuepress build docs",
-    "deploy": "sh ./scripts/deploy.sh"
+    "build": "vuepress build docs"
   },
   "repository": {
     "type": "git",
