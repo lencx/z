@@ -80,11 +80,13 @@ module.exports = {
         children: [],
       },
       {
-        title: '📝 笔记',
+        title: '📝 阅读 & 笔记',
         collapsable: true,
         children: [
           // '/notes/ai',
           '/notes/rust',
+          '/notes/hackers-and-painters',
+          '/notes/pale-blue-dot',
         ],
       },
     ]
