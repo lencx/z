@@ -1,5 +1,6 @@
 # eBook & Library
 
+* [List of Free Learning Resources In Many Languages](https://github.com/EbookFoundation/free-programming-books): 📚 Freely available programming books.
 * [tutorialspoint](https://www.tutorialspoint.com): the best resource for Online Education.
 * [pdfdrive](https://www.pdfdrive.com): PDF Drive is your search engine for PDF files. As of today we have 85,403,259 eBooks for you to download for free. No annoying ads, no download limits, enjoy it and don't forget to bookmark and share the love!
 * [Library Genesis](http://libgen.rs): Library Genesis is a scientific community targeting collection of books on natural science disciplines and engineering.
