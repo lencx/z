@@ -1,19 +1,22 @@
 <template>
+  <span
+    @mouseover="showTooltip"
+    @mouseleave="hideTooltip"
+    class="tooltip"
+  >
     <span
-      @mouseover="showTooltip"
-      @mouseleave="hideTooltip"
-    >
-      <span class="tooltip-label" v-html="label"></span>
-      <div class="tooltip-text">
-        <div data-popper-arrow class="tooltip-arrow" />
-        <div v-html="text" />
-      </div>
-    </span>
+      class="tooltip-label"
+      v-html="label"
+    />
+    <div class="tooltip-text">
+      <div data-popper-arrow class="tooltip-arrow" />
+      <div v-html="text" />
+    </div>
+  </span>
 </template>
 
 <script>
 import { createPopper } from '@popperjs/core';
-import debounce from 'lodash/debounce';
 
 export default {
   props: {
@@ -25,11 +28,6 @@ export default {
       type: String,
       default: null,
     },
-  },
-  data() {
-    return {
-      displayed: '',
-    }
   },
   mounted() {
     const labelEl = this.$el.querySelector('.tooltip-label');
@@ -62,11 +60,16 @@ export default {
 }
 </script>
 
-<style lang="postcss">
+<style scope>
+.tooltip {
+  display: inline-block;
+}
+.tooltip:hover .tooltip-label {
+  background: linear-gradient(#fff, #7ec699);
+}
 .tooltip-show {
   visibility: visible !important;
 }
-
 .tooltip-arrow,
 .tooltip-arrow::before {
   width: 10px;
@@ -81,8 +84,10 @@ export default {
 }
 .tooltip-label {
   font-style: italic;
-  border-bottom: 1px dotted #666;
+  border-radius: 3px;
   position: relative;
+  border-bottom: 1px dotted #666;
+  border-radius: 2px;
 }
 .tooltip-text {
   visibility: hidden;
