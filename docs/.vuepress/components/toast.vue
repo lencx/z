@@ -96,7 +96,7 @@ export default {
   border-radius: 4px;
   z-index: 100;
   max-width: 320px;
-  word-break: break-all;
+  word-break: break-word;
 }
 .tooltip-text code {
   font-size: 12px;

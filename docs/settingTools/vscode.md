@@ -61,7 +61,8 @@
 > **Rust**
 
 * [rust-analyzer](https://rust-analyzer.github.io/manual.html#vs-code)
-* [rls](https://github.com/rust-lang/rls)
+
+<!-- * [rls](https://github.com/rust-lang/rls)
 
 ```bash
 # 1.
@@ -72,7 +73,7 @@ rustup default nightly
 rustup update
 # 4.
 rustup component add rls rust-analysis rust-src
-```
+``` -->
 
 :::
 
@@ -128,33 +129,21 @@ rustup component add rls rust-analysis rust-src
 
 ```json
 {
-  "window.zoomLevel": 1,
-  "explorer.confirmDragAndDrop": false,
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Shades of Purple",
   "editor.fontFamily": "Operator Mono, Dank Mono, Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
   "editor.lineHeight": 20,
   "editor.fontLigatures": true,
-  // "editor.formatOnSave": true,
-  "editor.tabSize": 2,
-  "editor.renameOnType": true,
-  "editor.cursorStyle": "line",
-  "editor.cursorWidth": 3,
-  "editor.cursorBlinking": "solid",
-  // "editor.renderWhitespace": "all",
-  "editor.snippetSuggestions": "top",
-  "editor.glyphMargin": true,
   "editor.smoothScrolling": true,
+  // "editor.cursorStyle": "line",
+  // "editor.cursorBlinking": "solid",
+  "editor.cursorWidth": 3,
 
   "files.autoSave": "onFocusChange",
   "files.trimTrailingWhitespace": true,
   "files.trimFinalNewlines": true,
 
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.fontAliasing": "auto",
-  "workbench.editor.enablePreview": false,
-  // "terminal.integrated.macOptionIsMeta": true,
-  // "workbench.statusBar.feedback.visible": false,
+  // -------------- colorCustomizations -------------------
   "workbench.colorCustomizations": {
     "editorIndentGuide.activeBackground": "#297891",
     "activityBarBadge.background": "#FF4081",
@@ -177,10 +166,9 @@ rustup component add rls rust-analysis rust-src
     "menu.selectionForeground": "#FF4081",
     "menubar.selectionForeground": "#FF4081"
   },
-  "materialTheme.accent": "Pink",
-  "git.confirmSync": false,
+
+  //---------------- TODO TREE ------------------------
   "todo-tree.tree.showScanModeButton": false,
-  // TODO TREE
   "todo-tree.general.tags": ["TODO:", "FIX:", "BUG:"],
   // "todo-tree.regex.regex": "((//|#|<!--|;|/\\*)\\s*($TAGS)|^\\s*- \\[ \\])",
   "todo-tree.highlights.defaultHighlight": {
@@ -205,11 +193,15 @@ rustup component add rls rust-analysis rust-src
       "iconColour": "#eb4d9c"
     }
   },
-  "tabnine.experimentalAutoImports": true,
-  "workbench.sideBar.location": "left",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  }
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "Shades of Purple",
+  "workbench.iconTheme": "material-icon-theme",
+  "window.zoomLevel": 0
 }
 ```
 
