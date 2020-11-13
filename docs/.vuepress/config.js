@@ -32,6 +32,11 @@ module.exports = {
         hour12: false,
       },
     }],
+    ['medium-zoom', {
+      selector: '.theme-default-content img:not(.no-medium-zoom)',
+      // delay: 1000,
+      // options: { margin: 24, scrollOffset: 0 },
+    }],
   ],
   themeConfig: {
     logo: '/logo.webp',

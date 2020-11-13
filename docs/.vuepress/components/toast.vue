@@ -2,7 +2,7 @@
   <span
     @mouseover="showTooltip"
     @mouseleave="hideTooltip"
-    @touchstart="toggleTooltip"
+    @touchend="hideTooltip"
     @touchmove="hideTooltip"
     class="tooltip"
   >
@@ -31,9 +31,6 @@ export default {
       default: null,
     },
   },
-  data() {
-    return { isVisible: false };
-  },
   mounted() {
     const labelEl = this.$el.querySelector('.tooltip-label');
     const textEl = this.$el.querySelector('.tooltip-text');
@@ -55,10 +52,6 @@ export default {
     });
   },
   methods: {
-    toggleTooltip() {
-      this.isVisible = !this.isVisible;
-      this[this.isVisible ? 'showTooltip' : 'hideTooltip']()
-    },
     showTooltip() {
       this.$el.querySelector('.tooltip-text').classList.add('tooltip-show');
     },
