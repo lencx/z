@@ -1,6 +1,6 @@
 # Hackers & Painters
 
-<small>**黑客与画家(Paul Graham)** 译: 阮一峰</small>
+Author: <toast label="Paul Graham" text="Paul Graham is an English-born American computer scientist, essayist, entrepreneur, venture capitalist, and author. He is best known for his work on the programming language Lisp, his former startup Viaweb, cofounding the influential startup accelerator and seed capital firm Y Combinator, his blog, and Hacker News. He is the author of several computer programming books, including: On Lisp, ANSI Common Lisp, and Hackers & Painters. Technology journalist Steven Levy has described Graham as a “hacker philosopher”." /> <small style="margin-left: 10px">译: 阮一峰</small>
 
 ---
 
