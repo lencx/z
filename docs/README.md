@@ -6,7 +6,7 @@ actionText: 去探索 →
 # actionText: Get Started →
 actionLink: /preface
 features:
-- title: ⚙️ 配置&工具
+- title: ⚙️ 配置 & 工具
   details: 终端，编辑器(vsCode)，git配置，macOS应用等
 - title: 😎 Awesome
   details: 收集各种有趣主题，如博客，资源，在线工具，电子书等

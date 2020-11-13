@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "mtc",
   "author": "lencx <cxin1314@gmail.com>",
-  "license": "MIT",
+  "license": "CC0-1.0",
   "homepage": "https://github.com/lencx/mtc#readme",
   "scripts": {
     "start": "vuepress dev docs",
