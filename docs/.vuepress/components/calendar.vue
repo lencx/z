@@ -1,7 +1,7 @@
 <template>
   <div class="calendar">
     <div class="btns">
-      <div @click="getPrev">◀️</div>
+      <div @click="getPrev">◀</div>
       <div
         class="now_btn"
         :class="isNow ? 'active' : ''"
@@ -9,7 +9,7 @@
       >
         {{nYear}} • {{`${nMonth}`.padStart(2, '0')}}
       </div>
-      <div @click="getNext">▶️</div>
+      <div @click="getNext">▶</div>
     </div>
     <div class="head">
       <div class="week_item item" v-for="i in sWeek">
@@ -153,6 +153,7 @@ export default {
   border-radius: 2px;
   cursor: pointer;
   color: #3eaf7c;
+  vertical-align: middle;
 }
 .btns .now_btn {
   width: 126px;
@@ -181,10 +182,11 @@ export default {
   border-radius: 50%;
 }
 .week_item {
-  color: #3eaf7c;
+  /* color: #3eaf7c; */
   display: inline-block;
-  font-size: 20px;
-  /* background: transparent; */
+  font-size: 24px;
+  color: #3eaf7c;
+  background: transparent;
   /* border: dashed 1px #3eaf7c; */
   /* box-sizing: border-box; */
 }
