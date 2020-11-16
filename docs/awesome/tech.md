@@ -7,6 +7,7 @@
   * [Backend Developer](https://roadmap.sh/backend): Step by step guide to becoming a modern backend developer.
   * [DevOps Developer](https://roadmap.sh/devops): Step by step guide for DevOps or any other Operations Role.
 * [React Developer Roadmap](https://github.com/adam-golab/react-developer-roadmap): Roadmap to becoming a React developer.
+* [Web Development for Beginners](https://github.com/microsoft/Web-Dev-For-Beginners): 24 Lessons, 12 Weeks, Get Started as a Web Developer
 
 ## WebGL
 
@@ -27,6 +28,7 @@
 ## Community & News
 
 * [Hacker News](https://news.ycombinator.com)
+* [Hackster.io](https://www.hackster.io): From machine learning and edge computing to IoT security and automation, Hackster is the leading place where exploring tomorrow starts today.
 * [CSS Tricks](https://css-tricks.com): Daily articles about CSS, HTML, JavaScript, and all things related to web design and development.
 * [Medium](https://medium.com): Medium is not like any other platform on the internet. Our sole purpose is to help you find compelling ideas, knowledge, and perspectives. We don’t serve ads—we serve you, the curious reader who loves to learn new things. Medium is home to thousands of independent voices, and we combine humans and technology to find the best reading for you—and filter out the rest.
 * [sitepoint](https://www.sitepoint.com): Learn Web Design & Development with SitePoint tutorials, courses and books - HTML5, CSS3, JavaScript, PHP, mobile app development, Responsive Web Design.
