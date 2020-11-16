@@ -86,10 +86,10 @@ export default {
 }
 .tooltip-label {
   font-style: italic;
-  border-radius: 3px;
   position: relative;
   border-bottom: 1px dotted #666;
-  border-radius: 2px;
+  padding: 0 2px;
+  /* border-radius: 2px; */
 }
 .tooltip-text {
   visibility: hidden;

@@ -14,10 +14,11 @@ features:
   details: 待更新...
 - title: 📝 阅读 & 笔记
   details: 待更新...
-footer: CC0-1.0 License | Copyright © 2020 lencx
+- title: 🔢 数学 & 算法
+  details: 编程中的数学与常用算法等
+footer: CC0-1.0 License | Copyright © 2020 ❤️ lencx
 ---
 
-<br />
-<br />
-<br />
-<OneSentence :auto="true" />
+---
+
+<OneSentence style="margin-top: 60px" :auto="true" />

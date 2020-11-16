@@ -95,6 +95,15 @@ module.exports = {
           '/notes/pale-blue-dot',
         ],
       },
+      {
+        title: '🔢 数学 & 算法',
+        collapsable: true,
+        children: [
+          '/algorithms/iterative',
+          '/algorithms/math-induction',
+          '/algorithms/merge-sort',
+        ],
+      },
     ]
   }
 }
