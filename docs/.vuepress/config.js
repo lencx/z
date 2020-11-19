@@ -56,6 +56,17 @@ module.exports = {
     sidebar: [
       [ "/preface", "「 序 」" ],
       {
+        title: '😎 Awesome',
+        collapsable: true,
+        children: [
+          '/awesome/app',
+          '/awesome/browser',
+          '/awesome/ebook',
+          '/awesome/online',
+          '/awesome/tech',
+        ],
+      },
+      {
         title: '⚙️ 配置 & 工具',
         collapsable: true,
         children: [
@@ -67,17 +78,6 @@ module.exports = {
           'settingTools/terminal',
           '/settingTools/vscode',
           '/settingTools/zsh',
-        ],
-      },
-      {
-        title: '😎 Awesome',
-        collapsable: true,
-        children: [
-          '/awesome/app',
-          '/awesome/browser',
-          '/awesome/ebook',
-          '/awesome/online',
-          '/awesome/tech',
         ],
       },
       {

@@ -9,6 +9,11 @@
 * [React Developer Roadmap](https://github.com/adam-golab/react-developer-roadmap): Roadmap to becoming a React developer.
 * [Web Development for Beginners](https://github.com/microsoft/Web-Dev-For-Beginners): 24 Lessons, 12 Weeks, Get Started as a Web Developer
 
+## Front-end
+
+* [深入理解 TypeScript](https://jkchao.github.io/typescript-book-chinese): TypeScript Deep Dive 中文版
+* [React技术揭秘](https://react.iamkasong.com): 一本自顶向下的React源码分析书
+
 ## WebGL
 
 * [Your browser supports WebGL?](https://get.webgl.org)
