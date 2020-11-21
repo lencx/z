@@ -79,26 +79,10 @@ rustup component add rls rust-analysis rust-src
 
 ## [User Snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
 
-::: details Examples
+::: details (javascript|typescript)(react)?.json
 
 ```json
-// rust.json
-{
-	"lencx": {
-		"prefix": "lencx",
-		"body": [
-			"// Copyright $CURRENT_YEAR lencx",
-			"// license that can be found in the LICENSE file or at",
-			"// https://opensource.org/licenses/MIT.",
-			"",
-			"$1"
-		]
-	}
-}
-```
-
-```json
-// javascript.json
+// .js .jsx .ts .tsx
 {
 	"author & create_at": {
 		"prefix": "ac",
@@ -111,12 +95,41 @@ rustup component add rls rust-analysis rust-src
 			"$1"
 		]
 	},
-	"line number printing": {
-		"prefix": "lg",
+	"Print to console -> line_number & file_path": {
+		"prefix": "ll",
 		"body": [
-			"console.log('[$TM_LINE_NUMBER] $TM_FILENAME: ', $1);"
+			"console.log('«$TM_LINE_NUMBER» ${TM_FILEPATH/.*(.*([\\/].*){3})$/$1/} ~> ', $1);",
+			"$0"
 		],
-		"description": "Log output to console"
+		"description": "Log(line_num & path)"
+	},
+	"Print to console -> enum": {
+		"prefix": "le",
+		"body": [
+			"console.${1|info,warn,error,table,log|}($2)",
+			"$0"
+		],
+		"description": "Log(enum)"
+	}
+}
+```
+
+:::
+
+::: details rust.json
+
+```json
+// .rs
+{
+	"lencx": {
+		"prefix": "lencx",
+		"body": [
+			"// Copyright $CURRENT_YEAR lencx",
+			"// license that can be found in the LICENSE file or at",
+			"// https://opensource.org/licenses/MIT.",
+			"",
+			"$1"
+		]
 	}
 }
 ```
