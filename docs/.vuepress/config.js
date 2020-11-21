@@ -83,7 +83,9 @@ module.exports = {
       {
         title: '💡 学习 & 思考',
         collapsable: true,
-        children: [],
+        children: [
+          '/thinking/web-component',
+        ],
       },
       {
         title: '📝 阅读 & 笔记',
