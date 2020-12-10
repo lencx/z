@@ -91,8 +91,8 @@ module.exports = {
         title: '📜 技术文章',
         collapsable: true,
         children: [
-          '/web/web-component',
-          '/web/vue3-calendar',
+          '/article/web-component',
+          '/article/vue3-calendar',
         ],
       },
       {
