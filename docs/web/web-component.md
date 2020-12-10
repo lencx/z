@@ -96,7 +96,6 @@ export default function useDataOP(rawData = []) {
    * @param key - 默认为id，选填，可省略
    */
   const opRemove = (value, key = 'id') => {
-
     let result;
     if (typeof value === 'string' || typeof value === 'number') {
       result = opData.filter((i) => i[key] !== value);

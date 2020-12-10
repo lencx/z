@@ -67,7 +67,7 @@ module.exports = {
         ],
       },
       {
-        title: '⚙️ 配置 & 工具',
+        title: '⚙️ 配置工具',
         collapsable: true,
         children: [
           '/settingTools/tools',
@@ -81,14 +81,21 @@ module.exports = {
         ],
       },
       {
-        title: '💡 学习 & 思考',
+        title: '💡 学习思考',
         collapsable: true,
         children: [
-          '/thinking/web-component',
         ],
       },
       {
-        title: '📝 阅读 & 笔记',
+        title: '📜 技术文章',
+        collapsable: true,
+        children: [
+          '/web/web-component',
+          '/web/vue3-calendar',
+        ],
+      },
+      {
+        title: '📝 阅读笔记',
         collapsable: true,
         children: [
           // '/notes/ai',
@@ -98,12 +105,20 @@ module.exports = {
         ],
       },
       {
-        title: '🔢 数学 & 算法',
+        title: '🔢 数学算法',
         collapsable: true,
         children: [
           '/algorithms/iterative',
           '/algorithms/math-induction',
           '/algorithms/merge-sort',
+        ],
+      },
+      {
+        title: '🕸 WebAssembly',
+        collapsable: true,
+        children: [
+          '/wasm/wasm-awesome',
+          '/wasm/wasm-rust',
         ],
       },
     ]
