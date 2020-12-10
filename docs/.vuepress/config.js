@@ -84,6 +84,7 @@ module.exports = {
         title: '💡 学习思考',
         collapsable: true,
         children: [
+          '/thinking/fe-getting-started',
         ],
       },
       {
