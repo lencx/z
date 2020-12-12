@@ -49,6 +49,7 @@
 
 * [rw;eruch](https://www.robinwieruch.de): Software Engineer for React.js, Node.js, GraphQL and JavaScript.
 * [overreacted](https://overreacted.io): Personal blog by Dan Abramov. I explain with words and code.
+* [Kent C. Dodds](https://kentcdodds.com): Come check out how Kent C. Dodds can help you level up your career as a software engineer.
 * [2ality](https://2ality.com): JavaScript and more.
 * [CODING HORROR](https://blog.codinghorror.com): programming and human factors
 * [Marius Schulz](https://mariusschulz.com): Front End Engineer
