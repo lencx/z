@@ -78,6 +78,7 @@ module.exports = {
           'settingTools/terminal',
           '/settingTools/vscode',
           '/settingTools/zsh',
+          '/settingTools/github',
         ],
       },
       {
