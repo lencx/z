@@ -25,7 +25,13 @@ export default {
 .intro_card {
   margin: 10px;
   display: inline-block;
-  max-width: 340px;
+  width: 340px;
+}
+@media screen and (max-width: 720px) {
+  .intro_card {
+    width: 100%;
+    margin: 5px 0;
+  }
 }
 .intro_body {
   display: flex;

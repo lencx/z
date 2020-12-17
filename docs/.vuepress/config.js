@@ -72,7 +72,7 @@ module.exports = {
         title: '⚙️ 配置工具',
         collapsable: true,
         children: [
-          '/settingTools/tools',
+          // '/settingTools/tools',
           '/settingTools/fe',
           '/settingTools/git',
           '/settingTools/mac',
