@@ -1,10 +1,15 @@
 # 🤓 关于我
 
 ::: tip 我的项目
-个人博客: [nofwl](https://nofwl.com)\
-音乐生成器: [music](https://music.nofwl.com)\
-短链接生成器: [short-link](https://s.nofwl.com/-)\
-工具配置及资源收集: [MTC](https://mtc.nofwl.com)
+
+* 个人博客: [nofwl](https://nofwl.com)
+* 音乐生成器: [music](https://music.nofwl.com)
+* 颜色转换器: [tools/](https://nofwl.com/tools/converter)
+* 短链接生成器: [short-link](https://s.nofwl.com/-)
+* vue3代码示例: [vue3-examples](https://github.com/lencx/vue3-examples)
+  * 日历
+* 工具配置及资源收集: [MTC](https://mtc.nofwl.com)
+
 :::
 
 ::: tip 联系方式
