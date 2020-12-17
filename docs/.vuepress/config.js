@@ -51,7 +51,9 @@ module.exports = {
     // sidebar: 'auto',
     // displayAllHeaders: true,
     'nav': [
-			{ text: '关于我', link: 'https://nofwl.com' },
+      { text: 'Blog', link: 'https://nofwl.com' },
+			{ text: '关于我', link: '/about' },
+			{ text: '友情链接', link: '/friends' },
     ],
     sidebar: [
       [ "/preface", "「 序 」" ],
