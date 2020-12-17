@@ -51,10 +51,11 @@ export default {
 .avatar {
   width: 60px;
   height: 60px;
-  border-radius: 8px;
+  border-radius: 10px;
   margin-right: 20px;
-  box-shadow: 0 0 2px #eee;
+  box-shadow: 0 0 3px #999;
   pointer-events: none;
+  border: solid 2px #fff;
 }
 .name {
   font-size: 16px;

@@ -21,5 +21,5 @@
 博客昵称: **lencx的博客**\
 博客链接: **https://nofwl.com**\
 博客头像: **https://static.nofwl.com/lencx.png**\
-博客描述: **🤔 折腾ing，迷茫ing，思考ing，在路上...**
+博客描述: **🤔 ⦗折腾 ⇌ 迷茫 ⇌ 思考⦘ing，在路上...**
 :::
