@@ -73,7 +73,7 @@ rustup override set nightly
 
 ## [wasm-pack](https://github.com/rustwasm/wasm-pack)
 
-> 用于构建和使用您希望与JavaScript，浏览器或Node.js互操作的生锈生成的WebAssembly。
+> 用于构建和使用您希望与JavaScript，浏览器或Node.js互操作的Rust生成的WebAssembly。
 
 * 安装
 
@@ -297,7 +297,7 @@ export default App
 
 ## 完整代码示例
 
-https://github.com/lencx/learn-wasm
+源码: https://github.com/lencx/learn-wasm
 
 文章写到这里，整个wasm项目搭建已经完成，接下来就是大家发挥想象力的时候了。
 
