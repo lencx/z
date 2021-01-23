@@ -20,3 +20,5 @@ GitHub: [https://github.com/lencx](https://github.com/lencx)\
 &nbsp;&nbsp;&nbsp;&nbsp;“静”指内心的确定性\
 &nbsp;&nbsp;&nbsp;&nbsp;“外”顺其自然，“内”我自成长
 :::
+
+<img src="/fzj-qrcode.png" alt="浮之静" />

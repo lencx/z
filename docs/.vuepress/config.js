@@ -118,9 +118,17 @@ module.exports = {
         ],
       },
       {
+        title: '💔 错误处理',
+        collapsable: true,
+        children: [
+          '/error/rust',
+        ],
+      },
+      {
         title: '🕸 WebAssembly',
         collapsable: true,
         children: [
+          '/wasm/wasm-start',
           '/wasm/wasm-awesome',
           '/wasm/wasm-rust',
         ],

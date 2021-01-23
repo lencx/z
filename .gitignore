@@ -9,3 +9,5 @@ yarn.lock
 docs/.vuepress/dist
 
 /public
+
+/draft
