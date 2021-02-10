@@ -1,10 +1,15 @@
 .home-hero .image {
-  width: 210px;
-  height: 210px;
+  width: 218px;
+  height: 218px;
+  filter: drop-shadow(3px 3px 5px #333) invert(9%);
+  user-select: none;
 }
 
 .home-hero .description {
   font-size: 12px !important;
+  filter: drop-shadow(1px 1px 2px #666) invert(3%);
+  color: #666 !important;
+  user-select: none;
 }
 
 .nav-bar .logo {
