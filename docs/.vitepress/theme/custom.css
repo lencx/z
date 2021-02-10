@@ -1,0 +1,17 @@
+.home-hero .image {
+  width: 210px;
+  height: 210px;
+}
+
+.home-hero .description {
+  font-size: 12px !important;
+}
+
+.nav-bar .logo {
+  height: 30px;
+  margin-right: 2px;
+}
+
+.content img {
+  border-radius: 4px;
+}

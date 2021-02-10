@@ -1,10 +1,11 @@
-<div align="center">
-  <img width="100" height="100" src="static/logo.png" alt="mtc">
-  <br>
-  <p>My tools & config, and awesome lists</p>
-</div>
+::: tip 🆔 lencx
+**公众号**: 浮之静\
+**Blog**: https://nofwl.com\
+**Mail**: cxin1314@gmail.com\
+**GitHub**: https://github.com/lencx
 
-## 序
+<a href="https://github.com/lencx"><img alt="lencx stats" width="360" src="https://lencx-stats.vercel.app/api?username=lencx&show_icons=true&bg_color=320,323031,84a59d&icon_color=b0c4b1&title_color=eec170&text_color=a2a392&include_all_commits=true"></a>
+:::
 
 笔者是非科班，半路出家的“程序猿”，被培训机构坑过，也被一些公司坑过，走过很多弯路，迷茫过，放弃过，但是对于技术的方向，以及想要一直从事这行的决心从未动摇过。从事前端开发工作，有个响亮的title，叫`前端工程师`。但是因为我的技术和能力都比较差，工作的前两年，写简历，别人问起，只说自己是`前端开发`，从来不敢说`前端工程师`这几个字，因为我觉得离`工程师`这几个字差的太远了。
 
@@ -17,6 +18,4 @@
 👏 如果大家有好的资源或学习心得欢迎向本项目提PR。\
 ⭐️ 如果感觉本站真的帮助到了你，可以分享给身边的小伙伴。也可以`Star`或着`Fork` [MTC](https://github.com/lencx/mtc)。
 
----
-
-CC0-1.0 License | Copyright © 2020 lencx
+![浮之静](/fzj-qrcode.png)
