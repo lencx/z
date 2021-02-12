@@ -67,10 +67,11 @@ function getAwesomeSidebar() {
       title: '😎 Awesome',
       children: [
         { text: 'Tech', link: '/awesome/tech' },
+        { text: 'WebAssembly', link: '/awesome/wasm' },
+        { text: 'Application', link: '/awesome/app' },
         { text: 'Design', link: '/awesome/design' },
         { text: 'Online', link: '/awesome/online' },
         { text: 'Browser', link: '/awesome/browser' },
-        { text: 'App', link: '/awesome/app' },
         { text: 'eBook', link: '/awesome/ebook' },
       ],
     }

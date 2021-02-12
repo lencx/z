@@ -22,7 +22,6 @@
   * [Eruda](https://github.com/liriliri/eruda): Console for mobile browsers
   * [vConsole](https://github.com/Tencent/vConsole): A lightweight, extendable front-end developer tool for mobile web page.
 
-
 ## WebGL
 
 * [Your browser supports WebGL?](https://get.webgl.org)
@@ -30,12 +29,6 @@
 * [WebGL Fundamentals](https://webglfundamentals.org): WebGL from the ground up. No magic. These are a set of articles that teach WebGL from basic principles.
 * [ICG-WebGL](https://github.com/akira-cn/ICG-WebGL): 交互式计算机图形学——基于WebGL的自顶向下方法（第七版）的例子与练习题
 * [WebGL: 2D and 3D graphics for the web](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API): WebGL (Web Graphics Library) is a JavaScript API for rendering high-performance interactive 3D and 2D graphics within any compatible web browser without the use of plug-ins.
-
-## WebAssembly
-
-* [MDN WebAssembly](https://developer.mozilla.org/zh-CN/docs/WebAssembly)
-* [webassembly.org](https://webassembly.org): WebAssembly（缩写为Wasm）是基于堆栈的虚拟机的二进制指令格式。 Wasm被设计为编程语言的可移植编译目标，从而可以在Web上为客户端和服务器应用程序进行部署。
-* [Rust 🦀 and WebAssembly 🕸](https://rustwasm.github.io/docs/book): This small book describes how to use Rust and WebAssembly together.
 
 ## Programming Language & Compiler
 
