@@ -116,6 +116,10 @@ function getTechSidebar() {
         { text: 'VS Code', link: '/tech/tools/vscode' },
       ],
     },
+    // {
+    //   text: '🕸 WebAssembly',
+    //   children: [],
+    // },
     {
       text: '📜 技术文章',
       children: [

@@ -6,5 +6,8 @@
 
 ---
 
+* [WebAssembly入门](/tech/post/wasm-start)
 * [In-browser transcoding of video files with FFmpeg and WebAssembly](https://blog.scottlogic.com/2020/11/23/ffmpeg-webassembly.html)
 * [NoteCalc is a handy notepad with a smart builtin calculator.](https://bbodi.github.io/notecalc3)
+* [Standardizing WASI: A system interface to run WebAssembly outside the web](https://hacks.mozilla.org/2019/03/standardizing-wasi-a-webassembly-system-interface)
+* [Learning WebAssembly Series](https://blog.ttulka.com/learning-webassembly-series): A series of learning texts covering the first steps with WebAssembly for complete beginners.
