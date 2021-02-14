@@ -68,6 +68,7 @@
 * [robertelder](https://blog.robertelder.org): Software Engineering Articless.
 * [Lisperator.net](http://lisperator.net): Mishoo's ~~new~~ blog. Welcome! I'm Mihai Bazon and I'm running a blog since 2001.
 * [Dave Ceddia](https://daveceddia.com): Articles and courses to help you level uplevel up as a front end React developer.
+* [曜彤.手记](https://yhspy.com): 随记，关于互联网技术、产品与创业
 
 ## Data Structure And Algorithms
 
