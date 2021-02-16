@@ -8,7 +8,10 @@
 
 * [WebAssembly入门](/tech/post/wasm-start)
 * [In-browser transcoding of video files with FFmpeg and WebAssembly](https://blog.scottlogic.com/2020/11/23/ffmpeg-webassembly.html)
+* [FFMPEG.WASM](https://ffmpegwasm.github.io): ffmpeg.wasm is a pure WebAssembly / JavaScript port of FFmpeg. It enables video & audio record, convert and stream right inside browsers.
 * [NoteCalc is a handy notepad with a smart builtin calculator.](https://bbodi.github.io/notecalc3)
 * [Standardizing WASI: A system interface to run WebAssembly outside the web](https://hacks.mozilla.org/2019/03/standardizing-wasi-a-webassembly-system-interface)
 * [Learning WebAssembly Series](https://blog.ttulka.com/learning-webassembly-series): A series of learning texts covering the first steps with WebAssembly for complete beginners.
 * [wapm](https://wapm.io): `WAPM` is the WebAssembly Package Manager.
+* [wasi-fs-access](https://github.com/GoogleChromeLabs/wasi-fs-access): This is a demo shell powered by WebAssembly, WASI, Asyncify and File System Access API.
+* [A WebAssembly CHIP-8 Emulator](https://github.com/ColinEberhardt/wasm-rust-chip8): A WebAssembly CHIP-8 emulator written with Rust
