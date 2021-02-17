@@ -15,3 +15,5 @@
 * [wapm](https://wapm.io): `WAPM` is the WebAssembly Package Manager.
 * [wasi-fs-access](https://github.com/GoogleChromeLabs/wasi-fs-access): This is a demo shell powered by WebAssembly, WASI, Asyncify and File System Access API.
 * [A WebAssembly CHIP-8 Emulator](https://github.com/ColinEberhardt/wasm-rust-chip8): A WebAssembly CHIP-8 emulator written with Rust
+* [The WebAssembly App Gap](https://paulbutler.org/2020/the-webassembly-app-gap)
+* [Why using WebAssembly and Rust together improves Node.js performance](https://developer.ibm.com/articles/why-webassembly-and-rust-together-improve-nodejs-performance)
