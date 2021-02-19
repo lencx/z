@@ -36,8 +36,11 @@ git clone <repo_url>
 ### 添加文件
 
 ```bash
-# 将修改提交至暂存区
+# 将修改文件提交至暂存区
 git add <filename>
+
+# 将所有修改文件提交至暂存区
+git add .
 
 # 将暂存区提交到仓库区
 git commit -m "<message>"
@@ -76,6 +79,9 @@ git log --graph
 ```bash
 # 从暂存区删除，不改变工作区
 git rm --cached <filename>
+
+#
+git rm <filename>
 ```
 
 ### 分支管理

@@ -131,11 +131,12 @@ function getTechSidebar() {
       ],
     },
     {
-      text: '🚧 异常处理',
+      text: '🚧 常见问题',
       children: [
-        { text: 'Rust', link: '/tech/error/rust' },
-        { text: 'Git', link: '/tech/error/git' },
-        { text: 'GitHub', link: '/tech/error/github' },
+        { text: 'Front-end', link: '/tech/faq/fe' },
+        { text: 'Rust', link: '/tech/faq/rust' },
+        { text: 'Git', link: '/tech/faq/git' },
+        { text: 'GitHub', link: '/tech/faq/github' },
       ],
     },
     {
