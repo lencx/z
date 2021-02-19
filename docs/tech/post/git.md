@@ -77,11 +77,11 @@ git log --graph
 ### 文件删除
 
 ```bash
-# 从暂存区删除，不改变工作区
-git rm --cached <filename>
-
-#
+# 将文件从暂存区和工作区中删除
 git rm <filename>
+
+# 将文件从暂存区删除，保留在工作区
+git rm --cached <filename>
 ```
 
 ### 分支管理
