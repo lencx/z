@@ -33,6 +33,7 @@ npm init xc-app my-wasm-app --template wasm-react
 ```
 
 ![xc cmd 1](./img/xc-cmd-1.png)
+
 ![xc cmd 2](./img/xc-cmd-2.png)
 
 ## 常见问题
@@ -76,6 +77,31 @@ export default defineConfig({
 ```
 
 ![rsw run ok](./img/rsw-run-ok.png)
+
+* 前端代码使用
+
+```js
+// init是wasm实例的初始化方法，
+// 在调用其他方法之前，必须调用一次init方法
+// init会请求`.wasm`文件并且返回一个`Promise`
+import init, { greet } from 'wasm-test';
+
+// 调用init方法
+// 在react，vue中可以将其抽离为`hook`组件,
+// 在进入生命周期时调用
+init();
+
+// 或者在初始化之后直接调用方法
+init()
+  .then(wasm => wasm.greet('wasm'));
+
+// 在调用过init方法之后，可以单独调用greet方法
+greet('wasm');
+```
+
+![rsw wasm init](./img/rsw-error-init.png)
+
+![rsw wasm init code](./img/rsw-init-code.png)
 
 ## 相关链接
 
