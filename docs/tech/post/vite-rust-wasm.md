@@ -1,13 +1,18 @@
-# Vite与Rust邂逅 💖 WebAssembly
+# Vite与Rust邂逅
+
+> Vite的快与Rust的快 💖 WebAssembly
 
 ## 名词解释
 
 * `Vite`: 下一代前端工具
 * `Rust`: 一门赋予每个人构建可靠且高效软件能力的语言
-* `WebAssembly`: WebAssembly（缩写为Wasm）是基于堆栈的虚拟机的二进制指令格式。 Wasm被设计为编程语言的可移植编译目标，从而可以在Web上为客户端和服务器应用程序进行部署。
-* `vite-plugin-rsw`: Vite的一个插件，集成了`wasm-pack`的CLI，生成`wasm`的npm包，实现了文件变更，自动构建及热更新。
+* `WebAssembly`: WebAssembly（缩写为`Wasm`）是基于堆栈的虚拟机的二进制指令格式。 Wasm被设计为编程语言的可移植编译目标，从而可以在Web上为客户端和服务器应用程序进行部署。
+* `wasm-pack`: `Rust→Wasm` 工作流程工具！
+* `vite-plugin-rsw`: `Vite`插件，集成了`wasm-pack`的CLI，生成`wasm`的npm包，实现了文件变更，自动构建及热更新。
 
 ## 背景
+
+![vite xc rsw](./img/vite-xc-rsw.png)
 
 从发布`vite-plugin-rsw`插件到现在也过去了一段时间，期间有些朋友询问过前端项目该如何使用`wasm`的代码或调用`wasm`中的方法。当一个问题被多次回答，就想做一个可以快速开始的Wasm模板。
 
@@ -77,6 +82,7 @@ export default defineConfig({
 * «Vite»: https://vitejs.dev
 * «Rust»: https://www.rust-lang.org
 * «WebAssembly»: https://webassembly.org
+* «wasm-pack»: https://github.com/rustwasm/wasm-pack
 * «vite-plugin-rsw»: https://github.com/lencx/vite-plugin-rsw
 * «create-xc-app»: https://github.com/lencx/create-xc-app
 * «learn-wasm»: https://github.com/lencx/learn-wasm

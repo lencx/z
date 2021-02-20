@@ -127,7 +127,7 @@ function getTechSidebar() {
         { text: 'Vite+Vue3实现日历', link: '/tech/post/vue3-calendar' },
         { text: '前端入门建议', link: '/tech/post/fe-getting-started' },
         { text: 'WebAssembly入门', link: '/tech/post/wasm-start' },
-        { text: 'Vite与Rust邂逅 💖 WebAssembly', link: '/tech/post/vite-rust-wasm' },
+        { text: 'Vite与Rust邂逅', link: '/tech/post/vite-rust-wasm' },
         { text: 'Git速查表', link: '/tech/post/git' },
       ],
     },
