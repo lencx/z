@@ -20,6 +20,12 @@
   avatar="https://cdn.jsdelivr.net/gh/BestDingSheng/ImgHosting/Deson-PIC/20210208223244.jpeg"
   desc="2021 深度思考⇌脱离舒适区"
 />
+<intro
+  name="若川的博客"
+  link="https://lxchuan12.gitee.io"
+  avatar="https://avatar-static.segmentfault.com/221/196/2211965068-5cf3a535a13d9_huge256"
+  desc="撰写了学习源码整体架构系列8篇，公众号《若川视野》"
+/>
 
 ## ➕ 添加友链
 
