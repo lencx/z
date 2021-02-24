@@ -31,4 +31,4 @@ try {
 
 **总结：经过优化之后的代码，只有在未构建的情况下会执行构建，如果都构建过，之后的启动会跳过构建，使其接近`vite`项目原本启动速度。**
 
-![rsw run](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/dd747bc8e89c4112b7058f29db06823e~tplv-k3u1fbpfcp-watermark.image)
+![rsw run](./img/rsw-optimized.png)
