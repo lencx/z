@@ -128,6 +128,7 @@ function getTechSidebar() {
         { text: '前端入门建议', link: '/tech/post/fe-getting-started' },
         { text: 'WebAssembly入门', link: '/tech/post/wasm-start' },
         { text: 'Vite与Rust邂逅', link: '/tech/post/vite-rust-wasm' },
+        { text: 'Vite Rsw插件启动优化', link: '/tech/post/vite-rsw-optimized' },
         { text: 'Git速查表', link: '/tech/post/git' },
       ],
     },
