@@ -110,6 +110,7 @@ function getTechSidebar() {
       text: '⚙️ 配置工具',
       children: [
         { text: 'Terminal', link: '/tech/tools/terminal' },
+        { text: 'Homebrew', link: '/tech/tools/homebrew' },
         { text: 'Git', link: '/tech/tools/git' },
         { text: 'Mac', link: '/tech/tools/mac' },
         { text: 'Rust', link: '/tech/tools/rust' },
