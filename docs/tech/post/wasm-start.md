@@ -256,8 +256,6 @@ pub fn greet(name: &str) {
 > Step4: `src/App.tsx`
 
 ```jsx
-// src/App.tsx
-
 import React, { useEffect } from 'react';
 import init, { greet } from 'wasm-test';
 

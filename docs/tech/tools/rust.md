@@ -1,6 +1,6 @@
 # Rust
 
-## Mirror
+## Rust国内镜像
 
 ```toml
 # path: ~/.cargo/config
