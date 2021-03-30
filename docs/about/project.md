@@ -4,6 +4,7 @@
 | ----------------------------------------------------------------- | ---------------------------------------- |
 | [nofwl](https://nofwl.com)                                        | my blog                                  |
 | [mtc](https://mtc.nofwl.com)                                      | my tools & config, and awesome lists     |
+| [book](https://lencx.github.io/book)                              | book                                     |
 | [vsg](https://github.com/lencx/vsg)                               | vscode - github explore                  |
 | [short-link](https://s.nofwl.com/-)                               | link shortener                           |
 | [music](https://music.nofwl.com)                                  | music generator                          |
