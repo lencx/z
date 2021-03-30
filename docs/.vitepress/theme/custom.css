@@ -20,3 +20,9 @@
 .content img {
   border-radius: 4px;
 }
+
+@media only screen and (min-width: 720px) {
+  .sidebar .nav-links {
+    display: none;
+  }
+}
