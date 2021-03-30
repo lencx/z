@@ -26,6 +26,12 @@
   avatar="https://avatar-static.segmentfault.com/221/196/2211965068-5cf3a535a13d9_huge256"
   desc="撰写了学习源码整体架构系列8篇，公众号《若川视野》"
 />
+<Intro
+  name="洛竹早茶馆"
+  link="https://youngjuning.js.org"
+  avatar="https://i.loli.net/2021/03/27/QXSsDJTmYM9HWlP.jpg"
+  desc="洛竹在早茶馆将与你分享面试、源码分析、编程语言以及职场指南等干货！"
+/>
 
 ## ➕ 添加友链
 
