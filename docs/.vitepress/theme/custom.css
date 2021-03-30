@@ -26,3 +26,28 @@
     display: none;
   }
 }
+
+@media (min-width: 420px) {
+  .home .nav-link.action {
+    margin-top: 2rem;
+    display: inline-block;
+  }
+
+  .home .nav-link.action .item {
+    display: inline-block;
+    border-radius: 6px;
+    padding: 0 20px;
+    line-height: 44px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: var(--c-brand);
+    border: 2px solid var(--c-brand);
+    transition: background-color 0.1s ease;
+  }
+  .home .nav-link.action .item:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: var(--c-brand-light);
+  }
+}
