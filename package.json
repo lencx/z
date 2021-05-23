@@ -1,10 +1,10 @@
 {
-  "name": "mtc",
+  "name": "sea",
   "version": "2.0.0",
-  "description": "mtc",
+  "description": "学海无涯",
   "author": "lencx <cxin1314@gmail.com>",
   "license": "CC0-1.0",
-  "homepage": "https://github.com/lencx/mtc#readme",
+  "homepage": "https://github.com/lencx/sea#readme",
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lencx/mtc.git"
+    "url": "git+https://github.com/lencx/sea.git"
   },
   "devDependencies": {
     "vitepress": "^0.12.2"
