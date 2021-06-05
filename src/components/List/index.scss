@@ -1,22 +1,40 @@
 .fzj {
+  &-list-box {
+    padding: 12px;
+
+    .data-loading {
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+
+  &-list {
+    height: 100%;
+  }
+
   &-item {
     color: #343434;
     cursor: pointer;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     padding: 20px;
-    // border: solid 1px #ddd;
+    background-color: rgba(#fff, 0.5);
     border-radius: 10px;
-    box-shadow: 0 0 5px 4px #eee;
     font-size: 14px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     .category {
       display: inline-block;
-      background-color: var(--theme);
+      background: linear-gradient(to bottom right, #eee, #4285f4 50%);
+      line-height: 20px;
       color: #fff;
       font-size: 12px;
       font-weight: bold;
+      height: 20px;
       padding: 0 8px;
-      // width: 75px;
       margin-right: 10px;
       text-align: center;
       border-radius: 10px;
@@ -32,5 +50,31 @@
       max-width: 640px !important;
       text-align: center;
     }
+
+    .discussionsNo {
+      display: inline-block;
+      background-color: #b97f4d;
+      height: 20px;
+      padding: 0 10px;
+      line-height: 20px;
+      border-radius: 4px;
+      margin-left: 10px;
+      color: #fff;
+      vertical-align: bottom;
+    }
+  }
+}
+
+.loading-box {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  .error-icon {
+    width: 120px;
+    margin-top: -20vh;
   }
 }

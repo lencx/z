@@ -13,8 +13,17 @@ code {
     monospace;
 }
 
+blockquote {
+  border-left: solid 3px var(--blue);
+  margin: 0;
+  > p {
+    margin-left: 8px;
+  }
+}
+
 img {
   max-width: 100%;
+  width: 100%;
 }
 
 :root {
@@ -26,6 +35,23 @@ img {
   --border: solid 1px var(--border-color);
 }
 
+.view {
+  padding-top: 70px;
+}
+
 .home-view {
-  padding: 20px;
+  background-color: #eee;
+  min-height: 100vh;
+}
+
+ul {
+  padding-left: 24px !important;
+}
+
+a {
+  color: var(--blue);
+}
+
+* {
+  box-sizing: border-box;
 }

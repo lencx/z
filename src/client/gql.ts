@@ -1,25 +1,15 @@
 import { gql } from '@apollo/client';
 
 export const FZJ_LIST = gql`
-  query FZJ_LIST(
-    $first: Int
-    $last: Int
-    $prevCursor: String
-    $nextCursor: String
-  ) {
+  query FZJ_LIST($first: Int, $cursor: String) {
     repository(name: "fzj", owner: "lencx") {
-      discussions(
-        first: $first
-        last: $last
-        after: $nextCursor
-        before: $prevCursor
-      ) {
+      discussions(first: $first, after: $cursor) {
         totalCount
         pageInfo {
-          startCursor
+          # startCursor
+          # hasPreviousPage
           endCursor
           hasNextPage
-          hasPreviousPage
         }
         edges {
           cursor

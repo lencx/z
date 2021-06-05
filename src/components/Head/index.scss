@@ -1,0 +1,28 @@
+.fzj-head {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  box-shadow: 1px 1px 2px #ddd;
+
+  .logo {
+    background-image: url('./fzj.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 76px;
+    height: 30px;
+  }
+
+  .desc {
+    background-image: url('./fzj-desc.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 165px;
+    height: 12px;
+    margin-top: 3px;
+  }
+}

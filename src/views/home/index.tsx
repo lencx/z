@@ -4,7 +4,7 @@ import List from '@comps/List';
 
 export default function HomePage() {
   return (
-    <div className="home-view">
+    <div className="home-view view">
       <List />
     </div>
   );

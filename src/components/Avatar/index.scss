@@ -1,17 +1,24 @@
 .fzj-avatar {
   display: inline-block;
-  border: solid 1px #eee;
-  border-radius: 8px;
-  padding: 0 10px;
+  // background-color: #fff;
+  background: linear-gradient(to bottom right, #eee, #f87da9 50%);
+  border-radius: 10px;
+  padding-right: 8px;
+  height: 20px;
+  text-decoration: none;
 
   img {
-    width: 16px;
+    width: 20px;
     vertical-align: middle;
+    border-radius: 50%;
+    border: solid 1px #faa;
   }
 
   span {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     margin-left: 4px;
+    font-style: italic;
+    color: #fff;
   }
 }

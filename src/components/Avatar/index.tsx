@@ -5,14 +5,15 @@ import './index.scss';
 interface AvatarProps {
   avatar: string;
   name: string;
+  url: string;
 }
 
-const Avatar: FC<AvatarProps> = ({ avatar, name }) => {
+const Avatar: FC<AvatarProps> = ({ avatar, name, url }) => {
   return (
-    <div className="fzj-avatar">
+    <a className="fzj-avatar" href={url}>
       <img src={avatar} />
       <span>{name}</span>
-    </div>
+    </a>
   );
 };
 
