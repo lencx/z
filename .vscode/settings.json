@@ -1,0 +1,19 @@
+{
+  "files.exclude": {
+    ".git/": true,
+    "node_modules/": false,
+    "public/": false
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/public": true
+  },
+  "editor.rulers": [80],
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  // https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "typescript.tsdk": "./node_modules/typescript/lib"
+}
