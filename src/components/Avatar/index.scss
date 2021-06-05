@@ -1,0 +1,17 @@
+.fzj-avatar {
+  display: inline-block;
+  border: solid 1px #eee;
+  border-radius: 8px;
+  padding: 0 10px;
+
+  img {
+    width: 16px;
+    vertical-align: middle;
+  }
+
+  span {
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 4px;
+  }
+}

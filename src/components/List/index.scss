@@ -4,25 +4,27 @@
     cursor: pointer;
     margin-bottom: 10px;
     padding: 20px;
-    border: solid 1px #ddd;
+    // border: solid 1px #ddd;
     border-radius: 10px;
-    box-shadow: 3px 3px 5px #eee;
+    box-shadow: 0 0 5px 4px #eee;
     font-size: 14px;
 
     .category {
       display: inline-block;
-      border: solid 1px #d2d2d2;
+      background-color: var(--theme);
+      color: #fff;
       font-size: 12px;
       font-weight: bold;
-      padding: 2px 4px;
-      width: 75px;
+      padding: 0 8px;
+      // width: 75px;
       margin-right: 10px;
       text-align: center;
       border-radius: 10px;
     }
 
     .title {
-      font-size: 16px;
+      font-size: 24px;
+      margin-bottom: 10px;
       font-weight: bold;
     }
 

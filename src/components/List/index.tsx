@@ -3,6 +3,7 @@ import { useQuery } from '@apollo/client';
 
 import { FZJ_LIST } from '@client/gql';
 import { paginationLimit, emojiMap } from '@utils/constant';
+import Avatar from '@comps/Avatar';
 
 import './index.scss';
 
@@ -51,13 +52,19 @@ export default function List() {
   return (
     <div className="fzj-list">
       {list.map(({ node, cursor }: any) => {
-        const { category } = node;
+        const { category, author } = node;
+        // console.log('«55» /components/List/index.tsx ~> ', author);
+
         return (
           <div className="fzj-item" key={cursor}>
-            <span className="category">
-              {emojiMap[category.emoji]} {category.name}
-            </span>
-            <span className="title">{node.title}</span>
+            <div className="title">{node.title}</div>
+
+            <div className="info">
+              <span className="category">
+                {emojiMap[category.emoji]} {category.name}
+              </span>
+              <Avatar avatar={author.avatarUrl} name={author.login} />
+            </div>
 
             <div dangerouslySetInnerHTML={{ __html: node.bodyHTML }} />
           </div>
