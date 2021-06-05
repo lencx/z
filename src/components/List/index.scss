@@ -1,0 +1,34 @@
+.fzj {
+  &-item {
+    color: #343434;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 20px;
+    border: solid 1px #ddd;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #eee;
+    font-size: 14px;
+
+    .category {
+      display: inline-block;
+      border: solid 1px #d2d2d2;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 2px 4px;
+      width: 75px;
+      margin-right: 10px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    img {
+      max-width: 640px !important;
+      text-align: center;
+    }
+  }
+}

@@ -18,7 +18,8 @@
       "@/*": ["src/*"],
       "@comps/*": ["src/components/*"],
       "@hooks/*": ["src/hooks/*"],
-      "@utils/*": ["src/utils/*"]
+      "@utils/*": ["src/utils/*"],
+      "@client/*": ["src/client/*"]
     },
     "noEmit": true,
     "jsx": "react"

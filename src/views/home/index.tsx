@@ -1,7 +1,11 @@
 import React from 'react';
 
+import List from '@comps/List';
+
 export default function HomePage() {
   return (
-    <div>Home</div>
-  )
+    <div className="home-view">
+      <List />
+    </div>
+  );
 }
