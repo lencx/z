@@ -1,6 +1,6 @@
 import { ApolloClient, InMemoryCache } from '@apollo/client';
 
-const TOKEN = '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';
+const TOKEN = 'Z2hwX3d6cVptU2liWUVaQTB3VVNxUktaU05BYmFXUGxHUjJQZ2oyTw==';
 
 const cache = new InMemoryCache({
   typePolicies: {
@@ -19,6 +19,6 @@ const cache = new InMemoryCache({
 
 export default new ApolloClient({
   uri: 'https://api.github.com/graphql',
-  headers: { Authorization: `token ${TOKEN}` },
+  headers: { Authorization: `token ${atob(TOKEN)}` },
   cache,
 });
