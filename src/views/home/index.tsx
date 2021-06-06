@@ -54,8 +54,8 @@ export default function HomeView() {
     window.open(url);
   };
 
-  const handleDetail = (num: string) => {
-    history.push(`/detail/${num}`);
+  const handleIssues = (num: string) => {
+    history.push(`/issues/${num}`);
   };
 
   if (error) return <Error />;
@@ -65,14 +65,12 @@ export default function HomeView() {
       <div className="fzj-list-box">
         <div className="fzj-list">
           {listData.map(({ node, cursor }: any) => {
-            console.log('«70» /views/home/index.tsx ~> ', node);
-
             const { category, author, number: disNumber } = node;
             return (
               <div
                 key={cursor}
                 className="fzj-item"
-                onClick={() => handleDetail(disNumber)}
+                onClick={() => handleIssues(disNumber)}
               >
                 <div className="title">{node.title}</div>
                 <div className="info">

@@ -9,7 +9,7 @@ import Error from '@comps/Error';
 
 import './index.scss';
 
-export default function HomeView() {
+export default function IssuesView() {
   const { number } = useParams<any>();
 
   const { loading, error, data } = useQuery(FZJ_ITEM, {
@@ -22,7 +22,7 @@ export default function HomeView() {
   const { title, bodyHTML, comments } = data.repository.discussion;
 
   return (
-    <div className="detail-view view">
+    <div className="issues-view view">
       <div className="post">
         <h1 className="title">{title}</h1>
         <div dangerouslySetInnerHTML={{ __html: bodyHTML }} />

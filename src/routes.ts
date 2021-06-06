@@ -8,8 +8,8 @@ const routes: RouteOption[] = [
     exact: true,
   },
   {
-    path: '/detail/:number',
-    component: lazy(() => import('./views/detail')),
+    path: '/issues/:number',
+    component: lazy(() => import('./views/issues')),
     exact: true,
   },
 ];
