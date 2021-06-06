@@ -1,0 +1,42 @@
+.detail-view {
+  background-color: #fff;
+
+  .post {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 12px 20px;
+    min-height: calc(100vh - 150px);
+
+    h1.title {
+      text-align: center;
+      font-size: 28px;
+    }
+  }
+}
+
+.comment {
+  &-item {
+    padding: 3px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+  }
+
+  &-author {
+    line-height: 0;
+    border-radius: 4px !important;
+    background: #2a2a2a;
+
+    img {
+      border-radius: 4px !important;
+      border-color: transparent !important;
+    }
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  &-body {
+    padding-left: 20px;
+  }
+}

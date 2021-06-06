@@ -1,3 +1,9 @@
+.home-view {
+  min-height: 100vh;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 .fzj {
   &-list-box {
     padding: 12px;
@@ -21,6 +27,13 @@
     background-color: rgba(#fff, 0.5);
     border-radius: 10px;
     font-size: 14px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transition: all 0.3s ease;
+      box-shadow: var(--shadow-overlay);
+      background-color: #fff;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -33,12 +46,10 @@
       color: #fff;
       font-size: 12px;
       font-weight: bold;
-      height: 20px;
       padding: 0 8px;
       margin-right: 10px;
       text-align: center;
       border-radius: 10px;
-      vertical-align: bottom;
     }
 
     .title {
@@ -55,13 +66,11 @@
     .discussionsNo {
       display: inline-block;
       background-color: #b97f4d;
-      height: 20px;
       padding: 0 10px;
       line-height: 20px;
       border-radius: 4px;
       margin-left: 10px;
       color: #fff;
-      vertical-align: bottom;
     }
   }
 }

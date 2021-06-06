@@ -32,3 +32,28 @@ export const FZJ_LIST = gql`
     }
   }
 `;
+
+export const FZJ_ITEM = gql`
+  query FZJ_ITEM($number: Int!) {
+    repository(name: "fzj", owner: "lencx") {
+      discussion(number: $number) {
+        id
+        title
+        bodyHTML
+        comments(first: 10) {
+          edges {
+            node {
+              id
+              bodyHTML
+              author {
+                login
+                avatarUrl
+                url
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`;
