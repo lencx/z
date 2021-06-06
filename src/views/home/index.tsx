@@ -6,6 +6,7 @@ import { FZJ_LIST } from '@client/gql';
 import Avatar from '@comps/Avatar';
 import Loading from '@comps/Loading';
 import Error from '@comps/Error';
+import Label from '@comps/Label';
 import { scrollLoad } from '@utils/tools';
 import {
   paginationLimit,
@@ -65,14 +66,13 @@ export default function HomeView() {
       <div className="fzj-list-box">
         <div className="fzj-list">
           {listData.map(({ node, cursor }: any) => {
-            const { category, author, number: disNumber } = node;
+            const { category, author, number: disNumber, labels } = node;
+
             return (
-              <div
-                key={cursor}
-                className="fzj-item"
-                onClick={() => handleIssues(disNumber)}
-              >
-                <div className="title">{node.title}</div>
+              <div key={cursor} className="fzj-item">
+                <div className="title" onClick={() => handleIssues(disNumber)}>
+                  <span>{node.title}</span>
+                </div>
                 <div className="info">
                   <span
                     className="category"
@@ -91,6 +91,17 @@ export default function HomeView() {
                   >
                     #{disNumber}
                   </span>
+                  <div className="labels">
+                    {labels.edges.map(({ node: labelNode }: any) => {
+                      return (
+                        <Label
+                          key={labelNode.id}
+                          name={labelNode.name}
+                          color={labelNode.color}
+                        />
+                      );
+                    })}
+                  </div>
                 </div>
                 <div dangerouslySetInnerHTML={{ __html: node.bodyHTML }} />
               </div>

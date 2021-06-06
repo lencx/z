@@ -26,6 +26,15 @@ export const FZJ_LIST = gql`
               name
               emoji
             }
+            labels(first: 10) {
+              edges {
+                node {
+                  id
+                  name
+                  color
+                }
+              }
+            }
           }
         }
       }

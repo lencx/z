@@ -21,7 +21,6 @@
 
   &-item {
     color: #343434;
-    cursor: pointer;
     margin-bottom: 12px;
     padding: 20px;
     background-color: rgba(#fff, 0.5);
@@ -56,6 +55,11 @@
       font-size: 24px;
       margin-bottom: 10px;
       font-weight: bold;
+      position: relative;
+      cursor: pointer;
+      span {
+        background: linear-gradient(to bottom, #fff 50%, #ffeaaa 50%);
+      }
     }
 
     img {
@@ -71,6 +75,10 @@
       border-radius: 4px;
       margin-left: 10px;
       color: #fff;
+    }
+
+    .labels {
+      margin-top: 5px;
     }
   }
 }
