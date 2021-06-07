@@ -1,4 +1,4 @@
-import React, { useCallback, useState, useEffect } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import { useLazyQuery } from '@apollo/client';
 import { useHistory } from 'react-router-dom';
 import debounce from 'lodash/debounce';
@@ -22,19 +22,22 @@ import './index.scss';
 export default function HomeView() {
   const history = useHistory();
   const [listData, setListData] = useFzjList();
-  const [pagination, setPagination] = useState<any>({});
   const [getData, { loading, error, data }] = useLazyQuery<any>(FZJ_LIST, {
     variables: { first: paginationLimit, cursor: null },
   });
 
   const _scrollLoad = useCallback(
-    debounce(() => {
-      scrollLoad(() => {
-        pagination.hasNextPage &&
-          getData({ variables: { cursor: pagination.cursor } });
-      });
-    }, 500),
-    [pagination.cursor]
+    debounce(
+      () => {
+        scrollLoad(() => {
+          listData.pageInfo.hasNextPage &&
+            getData({ variables: { cursor: listData.pageInfo.cursor } });
+        });
+      },
+      500,
+      { leading: true }
+    ),
+    [listData.pageInfo]
   );
 
   useEffect(() => {
@@ -42,17 +45,19 @@ export default function HomeView() {
     return () => {
       window.removeEventListener('scroll', _scrollLoad, false);
     };
-  }, [pagination.cursor]);
+  }, [listData.pageInfo]);
 
   useEffect(() => {
-    !listData.length && getData();
+    !listData.list.length && getData();
   }, []);
 
   useEffect(() => {
     if (data) {
       const { endCursor, hasNextPage } = data.repository.discussions.pageInfo;
-      setPagination({ cursor: endCursor, hasNextPage });
-      setListData([...listData, ...(data.repository.discussions.edges || [])]);
+      setListData({
+        pageInfo: { cursor: endCursor, hasNextPage },
+        list: [...listData.list, ...(data.repository.discussions.edges || [])],
+      });
     }
   }, [data]);
 
@@ -70,7 +75,7 @@ export default function HomeView() {
     <div className="home-view view">
       <div className="fzj-list-box">
         <div className="fzj-list">
-          {listData.map(({ node, cursor }: any) => {
+          {listData.list.map(({ node, cursor }: any) => {
             const { category, author, number: issues, labels } = node;
 
             return (

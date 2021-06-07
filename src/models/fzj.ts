@@ -3,7 +3,10 @@ import { atom, selector, useRecoilState, useRecoilValue } from 'recoil';
 // ------------- List -------------
 export const fzjList = atom({
   key: 'FZJ_LIST',
-  default: [],
+  default: {
+    pageInfo: {},
+    list: [],
+  },
 });
 
 export const useFzjList = () => {
