@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useCallback, useState, useEffect } from 'react';
 import { useLazyQuery } from '@apollo/client';
 import { useHistory } from 'react-router-dom';
 import debounce from 'lodash/debounce';
@@ -27,25 +27,26 @@ export default function HomeView() {
     variables: { first: paginationLimit, cursor: null },
   });
 
-  const _scrollLoad = () => {
-    scrollLoad(
-      debounce(() => {
+  const _scrollLoad = useCallback(
+    debounce(() => {
+      scrollLoad(() => {
         pagination.hasNextPage &&
           getData({ variables: { cursor: pagination.cursor } });
-      }, 500)
-    );
-  };
-
-  useEffect(() => {
-    !listData.length && getData();
-  }, []);
+      });
+    }, 500),
+    [pagination.cursor]
+  );
 
   useEffect(() => {
     window.addEventListener('scroll', _scrollLoad, false);
     return () => {
       window.removeEventListener('scroll', _scrollLoad, false);
     };
-  }, [pagination]);
+  }, [pagination.cursor]);
+
+  useEffect(() => {
+    !listData.length && getData();
+  }, []);
 
   useEffect(() => {
     if (data) {
@@ -55,13 +56,11 @@ export default function HomeView() {
     }
   }, [data]);
 
-  const handleGo = (e: any, url: string) => {
-    e.stopPropagation();
+  const handleGo = (url: string) => {
     window.open(url);
   };
 
-  const handleIssues = (e: any, num: number) => {
-    e.stopPropagation();
+  const handleIssues = (num: number) => {
     history.push(`/issues/${num}`);
   };
 
@@ -78,12 +77,12 @@ export default function HomeView() {
               <div
                 key={cursor}
                 className="fzj-item"
-                onClick={(e) => handleIssues(e, issues)}
+                onClick={() => handleIssues(issues)}
               >
                 <div className="title">
                   <em
                     className="issues"
-                    onClick={(e) => handleGo(e, discussionsNo(issues))}
+                    onClick={() => handleGo(discussionsNo(issues))}
                   >
                     #{issues}
                   </em>
@@ -92,14 +91,14 @@ export default function HomeView() {
                 <div className="info">
                   <span
                     className="category"
-                    onClick={(e) => handleGo(e, categoriesUrl(category.name))}
+                    onClick={() => handleGo(categoriesUrl(category.name))}
                   >
                     {emojiMap[category.emoji]} {category.name}
                   </span>
                   <Avatar
                     avatar={author.avatarUrl}
                     name={author.login}
-                    onClick={(e) => handleGo(e, author.url)}
+                    onClick={() => handleGo(author.url)}
                   />
                   <div className="labels">
                     {labels.edges.map(({ node: labelNode }: any) => {
@@ -117,8 +116,6 @@ export default function HomeView() {
               </div>
             );
           })}
-          {/* <button onClick={handleNext}>next</button> */}
-
           {loading && listData.length > 0 && (
             <p className="data-loading">Loading...</p>
           )}

@@ -15,7 +15,6 @@ const Comment: FC<CommentProps> = ({ data }) => {
         className="comment-author"
         avatar={author.avatarUrl}
         name={author.login}
-        url={author.url}
       />
       <div
         className="comment-body"

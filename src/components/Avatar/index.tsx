@@ -7,12 +7,12 @@ interface AvatarProps {
   avatar: string;
   name: string;
   className?: string;
-  onClick: (e?: any) => void;
+  onClick?: () => void;
 }
 
 const Avatar: FC<AvatarProps> = ({ className, avatar, name, onClick }) => {
-  const handleClick = (e: any) => {
-    onClick && onClick(e);
+  const handleClick = () => {
+    onClick && onClick();
   };
 
   return (

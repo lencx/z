@@ -12,7 +12,7 @@ export const emojiMap: { [key in string]: string } = {
   ':hammer_and_wrench:': '🛠️',
 };
 
-export const paginationLimit = 5;
+export const paginationLimit = 8;
 
 export const categoriesUrl = (categories: string) =>
   `https://github.com/lencx/fzj/discussions/categories/${slugify(categories)}`;
