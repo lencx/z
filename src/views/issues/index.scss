@@ -24,15 +24,14 @@
   &-author {
     line-height: 0;
     border-radius: 4px !important;
-    background: #2a2a2a;
 
     img {
-      border-radius: 4px !important;
-      border-color: transparent !important;
+      border-radius: 0 !important;
     }
 
     span {
       font-weight: bold;
+      color: #d2d2d2;
     }
   }
 

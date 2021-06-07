@@ -38,6 +38,10 @@ pre {
   border-radius: 4px;
   font-family: 'Courier New', Courier, monospace;
   border: solid 2px #999;
+
+  code {
+    background-color: transparent;
+  }
 }
 
 img {

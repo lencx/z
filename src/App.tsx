@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
+import { RecoilRoot } from 'recoil';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -10,10 +11,12 @@ import routes from './routes';
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Header />
-      <Router routes={routes} />
-      <Footer />
-    </BrowserRouter>
+    <RecoilRoot>
+      <HashRouter>
+        <Header />
+        <Router routes={routes} />
+        <Footer />
+      </HashRouter>
+    </RecoilRoot>
   );
 }

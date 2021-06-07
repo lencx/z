@@ -6,16 +6,20 @@ import './index.scss';
 interface AvatarProps {
   avatar: string;
   name: string;
-  url: string;
   className?: string;
+  onClick: (e?: any) => void;
 }
 
-const Avatar: FC<AvatarProps> = ({ className, avatar, name, url }) => {
+const Avatar: FC<AvatarProps> = ({ className, avatar, name, onClick }) => {
+  const handleClick = (e: any) => {
+    onClick && onClick(e);
+  };
+
   return (
-    <a className={clsx('fzj-avatar', className)} href={url}>
+    <div className={clsx('fzj-avatar', className)} onClick={handleClick}>
       <img src={avatar} />
       <span>{name}</span>
-    </a>
+    </div>
   );
 };
 

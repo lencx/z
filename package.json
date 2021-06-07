@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/lencx/fzj#readme",
   "devDependencies": {
+    "@types/lodash": "^4.14.170",
     "@types/react": "^17.0.8",
     "@types/react-dom": "^17.0.5",
     "@types/react-router-dom": "^5.1.7",
@@ -45,6 +46,7 @@
     "@sindresorhus/slugify": "^2.1.0",
     "clsx": "^1.1.1",
     "graphql": "^15.5.0",
+    "lodash": "^4.17.21",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",

@@ -1,25 +1,40 @@
-import React from 'react';
-import { useQuery } from '@apollo/client';
+import React, { useEffect } from 'react';
+import { useLazyQuery } from '@apollo/client';
 import { useParams } from 'react-router-dom';
 
 import { FZJ_ITEM } from '@client/gql';
 import Comment from '@comps/Comment';
 import Loading from '@comps/Loading';
 import Error from '@comps/Error';
+import { useFzjItem, useGetFzjItem } from '@/models/fzj';
 
 import './index.scss';
 
 export default function IssuesView() {
-  const { number } = useParams<any>();
+  const { issues } = useParams<any>();
+  const [item, setItem] = useFzjItem();
+  const itemMap = useGetFzjItem();
 
-  const { loading, error, data } = useQuery(FZJ_ITEM, {
-    variables: { number: parseInt(number) },
+  const [getData, { loading, error, data }] = useLazyQuery(FZJ_ITEM, {
+    variables: { number: parseInt(issues) },
   });
+
+  useEffect(() => {
+    if (!itemMap.has(issues)) getData();
+  }, []);
+
+  useEffect(() => {
+    if (data) {
+      setItem(item.set(issues, data));
+    }
+  }, [data]);
 
   if (loading) return <Loading />;
   if (error) return <Error />;
 
-  const { title, bodyHTML, comments } = data.repository.discussion;
+  const _data = data || itemMap.get(issues);
+  if (!_data) return null;
+  const { title, bodyHTML, comments } = _data.repository.discussion;
 
   return (
     <div className="issues-view view">

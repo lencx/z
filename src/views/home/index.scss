@@ -22,11 +22,12 @@
   &-item {
     color: #343434;
     margin-bottom: 12px;
-    padding: 20px;
+    padding: 10px;
     background-color: rgba(#fff, 0.5);
     border-radius: 10px;
     font-size: 14px;
     transition: all 0.3s ease;
+    cursor: pointer;
 
     &:hover {
       transition: all 0.3s ease;
@@ -40,25 +41,27 @@
 
     .category {
       display: inline-block;
-      background: linear-gradient(to bottom right, #eee, #4285f4 50%);
+      // background: linear-gradient(to bottom right, #eee, #4285f4 50%);
+      // background: linear-gradient(to bottom right, #eee, #607fb3 50%);
+      // color: #fff;
+      background: #e2e4e6;
       line-height: 20px;
-      color: #fff;
       font-size: 12px;
       font-weight: bold;
       padding: 0 8px;
-      margin-right: 10px;
       text-align: center;
-      border-radius: 10px;
+      border-radius: 4px;
+      margin-right: 10px;
+      cursor: pointer;
     }
 
     .title {
-      font-size: 24px;
+      font-size: 16px;
       margin-bottom: 10px;
       font-weight: bold;
       position: relative;
-      cursor: pointer;
       span {
-        background: linear-gradient(to bottom, #fff 50%, #ffeaaa 50%);
+        background: linear-gradient(to bottom, transparent 50%, #e2e0da 50%);
       }
     }
 
@@ -67,18 +70,19 @@
       text-align: center;
     }
 
-    .discussionsNo {
+    .issues {
       display: inline-block;
-      background-color: #b97f4d;
-      padding: 0 10px;
+      background-color: #b9968e;
+      padding: 3px 10px;
       line-height: 20px;
       border-radius: 4px;
-      margin-left: 10px;
       color: #fff;
+      vertical-align: text-bottom;
+      margin-right: 10px;
     }
 
     .labels {
-      margin-top: 5px;
+      margin-top: 8px;
     }
   }
 }

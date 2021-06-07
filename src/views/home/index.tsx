@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { useQuery } from '@apollo/client';
+import { useLazyQuery } from '@apollo/client';
 import { useHistory } from 'react-router-dom';
+import debounce from 'lodash/debounce';
 
 import { FZJ_LIST } from '@client/gql';
 import Avatar from '@comps/Avatar';
@@ -8,6 +9,7 @@ import Loading from '@comps/Loading';
 import Error from '@comps/Error';
 import Label from '@comps/Label';
 import { scrollLoad } from '@utils/tools';
+import { useFzjList } from '@/models/fzj';
 import {
   paginationLimit,
   emojiMap,
@@ -17,45 +19,49 @@ import {
 
 import './index.scss';
 
-type PaginationOptions = {
-  first: number;
-  cursor: string | null;
-};
-
 export default function HomeView() {
   const history = useHistory();
-  const [listData, setListData] = useState<any[]>([]);
-  const [pagination, setPagination] = useState<PaginationOptions>({
-    first: paginationLimit,
-    cursor: null,
+  const [listData, setListData] = useFzjList();
+  const [pagination, setPagination] = useState<any>({});
+  const [getData, { loading, error, data }] = useLazyQuery<any>(FZJ_LIST, {
+    variables: { first: paginationLimit, cursor: null },
   });
-  const { loading, error, data } = useQuery(FZJ_LIST, {
-    variables: pagination,
-  });
+
+  const _scrollLoad = () => {
+    scrollLoad(
+      debounce(() => {
+        pagination.hasNextPage &&
+          getData({ variables: { cursor: pagination.cursor } });
+      }, 500)
+    );
+  };
 
   useEffect(() => {
-    if (loading || error) return;
-    const { endCursor, hasNextPage } = data.repository.discussions.pageInfo;
-    setListData([...listData, ...(data.repository.discussions.edges || [])]);
-    const _scrollLoad = () =>
-      hasNextPage &&
-      scrollLoad(() => {
-        setPagination({
-          first: paginationLimit,
-          cursor: endCursor,
-        });
-      });
-    window.addEventListener('scroll', _scrollLoad);
+    !listData.length && getData();
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener('scroll', _scrollLoad, false);
     return () => {
-      window.removeEventListener('scroll', _scrollLoad);
+      window.removeEventListener('scroll', _scrollLoad, false);
     };
+  }, [pagination]);
+
+  useEffect(() => {
+    if (data) {
+      const { endCursor, hasNextPage } = data.repository.discussions.pageInfo;
+      setPagination({ cursor: endCursor, hasNextPage });
+      setListData([...listData, ...(data.repository.discussions.edges || [])]);
+    }
   }, [data]);
 
-  const handleGo = (url: string) => {
+  const handleGo = (e: any, url: string) => {
+    e.stopPropagation();
     window.open(url);
   };
 
-  const handleIssues = (num: string) => {
+  const handleIssues = (e: any, num: number) => {
+    e.stopPropagation();
     history.push(`/issues/${num}`);
   };
 
@@ -66,31 +72,35 @@ export default function HomeView() {
       <div className="fzj-list-box">
         <div className="fzj-list">
           {listData.map(({ node, cursor }: any) => {
-            const { category, author, number: disNumber, labels } = node;
+            const { category, author, number: issues, labels } = node;
 
             return (
-              <div key={cursor} className="fzj-item">
-                <div className="title" onClick={() => handleIssues(disNumber)}>
+              <div
+                key={cursor}
+                className="fzj-item"
+                onClick={(e) => handleIssues(e, issues)}
+              >
+                <div className="title">
+                  <em
+                    className="issues"
+                    onClick={(e) => handleGo(e, discussionsNo(issues))}
+                  >
+                    #{issues}
+                  </em>
                   <span>{node.title}</span>
                 </div>
                 <div className="info">
                   <span
                     className="category"
-                    onClick={() => handleGo(categoriesUrl(category.name))}
+                    onClick={(e) => handleGo(e, categoriesUrl(category.name))}
                   >
                     {emojiMap[category.emoji]} {category.name}
                   </span>
                   <Avatar
                     avatar={author.avatarUrl}
                     name={author.login}
-                    url={author.url}
+                    onClick={(e) => handleGo(e, author.url)}
                   />
-                  <span
-                    className="discussionsNo"
-                    onClick={() => handleGo(discussionsNo(disNumber))}
-                  >
-                    #{disNumber}
-                  </span>
                   <div className="labels">
                     {labels.edges.map(({ node: labelNode }: any) => {
                       return (
@@ -103,10 +113,11 @@ export default function HomeView() {
                     })}
                   </div>
                 </div>
-                <div dangerouslySetInnerHTML={{ __html: node.bodyHTML }} />
+                {/* <div dangerouslySetInnerHTML={{ __html: node.bodyHTML }} /> */}
               </div>
             );
           })}
+          {/* <button onClick={handleNext}>next</button> */}
 
           {loading && listData.length > 0 && (
             <p className="data-loading">Loading...</p>

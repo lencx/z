@@ -19,7 +19,8 @@
       "@comps/*": ["src/components/*"],
       "@hooks/*": ["src/hooks/*"],
       "@utils/*": ["src/utils/*"],
-      "@client/*": ["src/client/*"]
+      "@client/*": ["src/client/*"],
+      "@models/*": ["src/models/*"]
     },
     "noEmit": true,
     "jsx": "react"

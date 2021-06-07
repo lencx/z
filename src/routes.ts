@@ -8,7 +8,7 @@ const routes: RouteOption[] = [
     exact: true,
   },
   {
-    path: '/issues/:number',
+    path: '/issues/:issues',
     component: lazy(() => import('./views/issues')),
     exact: true,
   },
