@@ -71,11 +71,13 @@ export default function HomeView() {
 
   if (error) return <Error />;
 
+  const _list = listData.list;
+
   return (
     <div className="home-view view">
       <div className="fzj-list-box">
         <div className="fzj-list">
-          {listData.list.map(({ node, cursor }: any) => {
+          {_list.map(({ node, cursor }: any) => {
             const { category, author, number: issues, labels } = node;
 
             return (
@@ -121,12 +123,12 @@ export default function HomeView() {
               </div>
             );
           })}
-          {loading && listData.length > 0 && (
+          {loading && _list.length > 0 && (
             <p className="data-loading">Loading...</p>
           )}
         </div>
       </div>
-      <Loading visible={loading && listData.length === 0} />
+      <Loading visible={loading && _list.length === 0} />
     </div>
   );
 }
