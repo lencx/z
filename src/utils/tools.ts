@@ -19,3 +19,7 @@ export function scrollLoad(callback: () => void) {
     callback();
   }
 }
+
+export function handleGo(url: string) {
+  window.open(url);
+}

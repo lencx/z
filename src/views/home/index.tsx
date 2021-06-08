@@ -6,8 +6,8 @@ import Avatar from '@comps/Avatar';
 import Loading from '@comps/Loading';
 import Error from '@comps/Error';
 import Label from '@comps/Label';
-import { scrollLoad } from '@utils/tools';
 import { useFzjList } from '@/models/fzj';
+import { scrollLoad, handleGo } from '@utils/tools';
 import { emojiMap, categoriesUrl, discussionsNo } from '@utils/constant';
 
 import './index.scss';
@@ -53,11 +53,8 @@ export default function HomeView() {
     }
   }, [data]);
 
-  const handleGo = (url: string) => {
-    window.open(url);
-  };
-
-  const handleIssues = (num: number) => {
+  const handleIssues = (e: any, num: number) => {
+    e.stopPropagation();
     history.push(`/issues/${num}`);
   };
 
@@ -76,7 +73,7 @@ export default function HomeView() {
               <div
                 key={cursor}
                 className="fzj-item"
-                onClick={() => handleIssues(issues)}
+                onClick={(e) => handleIssues(e, issues)}
               >
                 <div className="title">
                   <em
