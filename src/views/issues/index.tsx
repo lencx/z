@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
-import { useLazyQuery } from '@apollo/client';
 import { useParams } from 'react-router-dom';
 
-import { FZJ_ITEM } from '@client/gql';
 import Comment from '@comps/Comment';
 import Loading from '@comps/Loading';
 import Error from '@comps/Error';
@@ -12,22 +10,12 @@ import './index.scss';
 
 export default function IssuesView() {
   const { issues } = useParams<any>();
-  const [item, setItem] = useFzjItem();
+  const [getData, { loading, error, data }] = useFzjItem(issues);
   const itemMap = useGetFzjItem();
-
-  const [getData, { loading, error, data }] = useLazyQuery(FZJ_ITEM, {
-    variables: { number: parseInt(issues) },
-  });
 
   useEffect(() => {
     if (!itemMap.has(issues)) getData();
   }, []);
-
-  useEffect(() => {
-    if (data) {
-      setItem(item.set(issues, data));
-    }
-  }, [data]);
 
   if (loading) return <Loading />;
   if (error) return <Error />;

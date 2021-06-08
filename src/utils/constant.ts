@@ -1,15 +1,18 @@
 import slugify from '@sindresorhus/slugify';
 
 export const emojiMap: { [key in string]: string } = {
-  ':unicorn:': '🦄',
-  ':question:': '❓',
+  ':black_large_square:': '⬛',
   ':bulb:': '💡',
-  ':crab:': '🦀',
-  ':vs:': '🆚',
   ':computer:': '💻',
-  ':speech_balloon:': '💬',
+  ':crystal_ball:': '🔮',
+  ':crab:': '🦀',
   ':desktop_computer:': '🖥️',
   ':hammer_and_wrench:': '🛠️',
+  ':memo:': '📝',
+  ':question:': '❓',
+  ':speech_balloon:': '💬',
+  ':unicorn:': '🦄',
+  ':vs:': '🆚',
 };
 
 export const paginationLimit = 8;

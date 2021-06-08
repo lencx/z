@@ -1,30 +1,22 @@
 import React, { useCallback, useEffect } from 'react';
-import { useLazyQuery } from '@apollo/client';
 import { useHistory } from 'react-router-dom';
 import debounce from 'lodash/debounce';
 
-import { FZJ_LIST } from '@client/gql';
 import Avatar from '@comps/Avatar';
 import Loading from '@comps/Loading';
 import Error from '@comps/Error';
 import Label from '@comps/Label';
 import { scrollLoad } from '@utils/tools';
 import { useFzjList } from '@/models/fzj';
-import {
-  paginationLimit,
-  emojiMap,
-  categoriesUrl,
-  discussionsNo,
-} from '@utils/constant';
+import { emojiMap, categoriesUrl, discussionsNo } from '@utils/constant';
 
 import './index.scss';
 
 export default function HomeView() {
   const history = useHistory();
-  const [listData, setListData] = useFzjList();
-  const [getData, { loading, error, data }] = useLazyQuery<any>(FZJ_LIST, {
-    variables: { first: paginationLimit, cursor: null },
-  });
+  const [a, b] = useFzjList();
+  const [listData, setListData] = a;
+  const [getData, { loading, error, data }] = b;
 
   const _scrollLoad = useCallback(
     debounce(

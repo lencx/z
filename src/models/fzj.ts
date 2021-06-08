@@ -1,4 +1,9 @@
+import { useEffect } from 'react';
 import { atom, selector, useRecoilState, useRecoilValue } from 'recoil';
+import { useLazyQuery } from '@apollo/client';
+
+import { FZJ_LIST, FZJ_ITEM } from '@client/gql';
+import { paginationLimit } from '@utils/constant';
 
 // ------------- List -------------
 export const fzjList = atom({
@@ -10,7 +15,11 @@ export const fzjList = atom({
 });
 
 export const useFzjList = () => {
-  return useRecoilState<any>(fzjList);
+  const a = useRecoilState<any>(fzjList);
+  const b = useLazyQuery<any>(FZJ_LIST, {
+    variables: { first: paginationLimit, cursor: null },
+  });
+  return [a, b] as any;
 };
 
 // ------------- Item -------------
@@ -27,8 +36,17 @@ const fzjItemValue = selector({
   },
 });
 
-export const useFzjItem = () => {
-  return useRecoilState<any>(fzjItem);
+export const useFzjItem = (issues: string) => {
+  const [state, setState] = useRecoilState<any>(fzjItem);
+  const query = useLazyQuery(FZJ_ITEM, {
+    variables: { number: parseInt(issues) },
+  });
+  useEffect(() => {
+    if (query[1].data) {
+      setState(state.set(issues, query[1].data));
+    }
+  }, [query[1].data]);
+  return query;
 };
 
 export const useGetFzjItem = () => {

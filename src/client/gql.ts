@@ -16,7 +16,7 @@ export const FZJ_LIST = gql`
           node {
             title
             number
-            bodyHTML
+            # bodyHTML
             author {
               login
               avatarUrl
