@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 import clsx from 'clsx';
 
-import './index.scss';
 import { handleGo } from '@/utils/tools';
+import './index.scss';
 
 interface LabelProps {
   color: string;

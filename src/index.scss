@@ -32,11 +32,11 @@ blockquote {
 
 pre {
   overflow-x: auto;
-  background-color: #e3e3d3;
+  // background-color: #e3e3d3 !important;
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 2px;
   font-family: 'Courier New', Courier, monospace;
-  border: solid 2px #999;
+  border: solid 2px #eee;
 
   code {
     background-color: transparent;

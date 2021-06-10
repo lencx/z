@@ -26,8 +26,10 @@ export default function IssuesView() {
 
   return (
     <div className="issues-view view">
-      <div className="post">
-        <h1 className="title">{title}</h1>
+      <div className="post markdown-body">
+        <h1 className="title">
+          <span>{title}</span>
+        </h1>
         <div dangerouslySetInnerHTML={{ __html: bodyHTML }} />
 
         {comments.edges.map(({ node }: any) => {
