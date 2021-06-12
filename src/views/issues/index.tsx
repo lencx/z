@@ -25,7 +25,7 @@ export default function IssuesView() {
   const { title, bodyHTML, comments } = _data.repository.discussion;
 
   return (
-    <div className="issues-view view">
+    <div className="issues-view">
       <div className="post markdown-body">
         <h1 className="title">
           <span>{title}</span>

@@ -9,13 +9,17 @@ import Router from './router/Router';
 
 import routes from './routes';
 
+const menuList = routes.filter((i) => !!i.name);
+
 export default function App() {
   return (
     <RecoilRoot>
       <HashRouter>
-        <Header />
-        <Router routes={routes} />
-        <Footer />
+        <div className="view">
+          <Header menuList={menuList} />
+          <Router routes={routes} />
+          <Footer />
+        </div>
       </HashRouter>
     </RecoilRoot>
   );

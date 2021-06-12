@@ -1,5 +1,6 @@
 html,
-body {
+body,
+#root {
   margin: 0;
   font-family: DOS, Monaco, Menlo, Consolas, 'Courier New', monospace;
   // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -69,6 +70,25 @@ img {
 
 .view {
   padding-top: 70px;
+  min-height: 100vh;
+  max-width: 960px;
+  margin: 0 auto;
+
+  > [class*='-view'] {
+    min-height: calc(100vh - 130px);
+
+    &::before,
+    &::after {
+      display: block;
+      content: '';
+      clear: both;
+    }
+  }
+
+  .fzj-emoji {
+    display: inline-block;
+    margin-right: 5px;
+  }
 }
 
 ul {

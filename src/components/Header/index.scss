@@ -9,6 +9,8 @@
   padding: 0 12px;
   box-shadow: 1px 1px 2px #ddd;
   z-index: 99;
+  top: 0;
+  left: 0;
 
   .logo-box {
     cursor: pointer;
@@ -18,8 +20,8 @@
     background-image: url('./fzj.svg');
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 76px;
-    height: 30px;
+    width: 61px;
+    height: 24px;
   }
 
   .desc {

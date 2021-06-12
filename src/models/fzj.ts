@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { atom, selector, useRecoilState, useRecoilValue } from 'recoil';
 import { useLazyQuery } from '@apollo/client';
 
-import { FZJ_LIST, FZJ_ITEM } from '@client/gql';
+import { FZJ_LIST, FZJ_ITEM, FZJ_TAGS } from '@client/gql';
 import { paginationLimit } from '@utils/constant';
 
 // ------------- List -------------
@@ -51,4 +51,40 @@ export const useFzjItem = (issues: string) => {
 
 export const useGetFzjItem = () => {
   return useRecoilValue(fzjItemValue);
+};
+
+// ------------- TGAS -------------
+export const fzjTags = atom({
+  key: 'FZJ_TAGS',
+  default: {},
+});
+
+const fzjTagsValue = selector({
+  key: 'FZJ_TAGS_VALUE',
+  get: ({ get }) => {
+    const data = get(fzjTags);
+    return data;
+  },
+});
+
+export const useFzjTags = () => {
+  const [state, setState] = useRecoilState<any>(fzjTags);
+  const record = useRecoilValue(fzjTagsValue);
+  const [getData, { data, ...rest }] = useLazyQuery(FZJ_TAGS);
+
+  useEffect(() => {
+    if (!Object.keys(record).length) {
+      getData();
+    } else {
+      setState(record);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (data) {
+      setState(data);
+    }
+  }, [data]);
+
+  return { data: state, ...rest };
 };

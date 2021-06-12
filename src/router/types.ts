@@ -16,4 +16,6 @@ export interface RouteOption {
   redirect?: string;
   // if router is private, this is going to be true
   private?: boolean;
+  // menu name
+  name?: string;
 }

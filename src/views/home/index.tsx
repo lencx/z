@@ -63,7 +63,7 @@ export default function HomeView() {
   const _list = listData.list;
 
   return (
-    <div className="home-view view">
+    <div className="home-view">
       <div className="fzj-list-box">
         <div className="fzj-list">
           {_list.map(({ node, cursor }: any) => {
@@ -89,7 +89,12 @@ export default function HomeView() {
                     className="category"
                     onClick={() => handleGo(categoriesUrl(category.name))}
                   >
-                    {emojiMap[category.emoji]} {category.name}
+                    {/* {emojiMap[category.emoji]} */}
+                    <span
+                      className="fzj-emoji"
+                      dangerouslySetInnerHTML={{ __html: category.emojiHTML }}
+                    />
+                    {category.name}
                   </span>
                   <Avatar
                     avatar={author.avatarUrl}

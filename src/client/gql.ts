@@ -24,7 +24,7 @@ export const FZJ_LIST = gql`
             }
             category {
               name
-              emoji
+              emojiHTML
             }
             labels(first: 10) {
               edges {
@@ -60,6 +60,31 @@ export const FZJ_ITEM = gql`
                 url
               }
             }
+          }
+        }
+      }
+    }
+  }
+`;
+
+export const FZJ_TAGS = gql`
+  query FZJ_TAGS {
+    repository(name: "fzj", owner: "lencx") {
+      discussionCategories(first: 20) {
+        edges {
+          node {
+            id
+            name
+            emojiHTML
+          }
+        }
+      }
+      labels(first: 20) {
+        edges {
+          node {
+            id
+            name
+            color
           }
         }
       }
