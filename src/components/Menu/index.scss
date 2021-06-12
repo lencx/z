@@ -1,19 +1,11 @@
 .menu-btn {
   position: fixed;
-  top: 15px;
+  top: 14px;
   right: 10px;
   z-index: 100;
-  width: 30px;
+  width: 28px;
+  height: 28px;
   cursor: pointer;
-}
-
-/* Position and sizing of burger button */
-.bm-burger-button {
-  position: fixed;
-  width: 36px;
-  height: 30px;
-  left: 36px;
-  top: 36px;
 }
 
 /* Color/shape of burger icon bars */

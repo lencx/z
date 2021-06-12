@@ -9,7 +9,7 @@ import Router from './router/Router';
 
 import routes from './routes';
 
-const menuList = routes.filter((i) => !!i.name);
+const menuList: any[] = routes.filter((i) => !!i.name);
 
 export default function App() {
   return (

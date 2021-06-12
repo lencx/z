@@ -5,10 +5,11 @@ import debounce from 'lodash/debounce';
 import Avatar from '@comps/Avatar';
 import Loading from '@comps/Loading';
 import Error from '@comps/Error';
+import Category from '@comps/Category';
 import Label from '@comps/Label';
 import { useFzjList } from '@/models/fzj';
 import { scrollLoad, handleGo } from '@utils/tools';
-import { emojiMap, categoriesUrl, discussionsNo } from '@utils/constant';
+import { categoriesUrl, discussionsNo } from '@utils/constant';
 
 import './index.scss';
 
@@ -85,17 +86,7 @@ export default function HomeView() {
                   <span>{node.title}</span>
                 </div>
                 <div className="info">
-                  <span
-                    className="category"
-                    onClick={() => handleGo(categoriesUrl(category.name))}
-                  >
-                    {/* {emojiMap[category.emoji]} */}
-                    <span
-                      className="fzj-emoji"
-                      dangerouslySetInnerHTML={{ __html: category.emojiHTML }}
-                    />
-                    {category.name}
-                  </span>
+                  <Category name={category.name} emoji={category.emojiHTML} />
                   <Avatar
                     avatar={author.avatarUrl}
                     name={author.login}

@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { useHistory } from 'react-router-dom';
 
-// import GitHub from '@comps/GitHub';
+import GitHub from '@comps/GitHub';
 import { MenuProvider, MenuButton, Navigation } from '@comps/Menu';
 
 import './index.scss';
@@ -23,6 +23,7 @@ const Header: FC<HeaderProps> = ({ menuList }) => {
           <div className="logo" />
           {/* <div className="desc" /> */}
         </div>
+        <GitHub />
       </div>
       <div className="menu">
         <MenuButton />
@@ -30,6 +31,10 @@ const Header: FC<HeaderProps> = ({ menuList }) => {
       </div>
     </MenuProvider>
   );
+};
+
+Header.defaultProps = {
+  menuList: [],
 };
 
 export default Header;

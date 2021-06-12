@@ -3,9 +3,10 @@
 
   img {
     width: 24px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: solid 2px rgba(#000, 0.5);
-    background-color: rgba(#000, 0.8);
+    border-radius: 4px;
+    // overflow: hidden;
+    padding: 4px;
+    border: none;
+    background-color: rgba(#000, 0.5);
   }
 }
