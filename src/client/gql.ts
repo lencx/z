@@ -49,6 +49,15 @@ export const FZJ_ITEM = gql`
         id
         title
         bodyHTML
+        reactions(first: 100) {
+          totalCount
+          edges {
+            node {
+              id
+              content
+            }
+          }
+        }
         comments(first: 10) {
           edges {
             node {

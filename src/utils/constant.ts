@@ -1,18 +1,14 @@
 import slugify from '@sindresorhus/slugify';
 
-export const emojiMap: { [key in string]: string } = {
-  ':black_large_square:': '⬛',
-  ':bulb:': '💡',
-  ':computer:': '💻',
-  ':crystal_ball:': '🔮',
-  ':crab:': '🦀',
-  ':desktop_computer:': '🖥️',
-  ':hammer_and_wrench:': '🛠️',
-  ':memo:': '📝',
-  ':question:': '❓',
-  ':speech_balloon:': '💬',
-  ':unicorn:': '🦄',
-  ':vs:': '🆚',
+export const emojiMap: { [key in string]: [string, string] } = {
+  THUMBS_UP: ['👍', ':+1:'],
+  THUMBS_DOWN: ['👎', ':-1:'],
+  LAUGH: ['😄', ':laugh:'],
+  HOORAY: ['🎉', ':hooray:'],
+  CONFUSED: ['😕', ':confused:'],
+  HEART: ['❤️', ':heart:'],
+  ROCKET: ['🚀', ':rocket:'],
+  EYES: ['👀', ':eyes:'],
 };
 
 export const paginationLimit = 8;
