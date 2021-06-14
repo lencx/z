@@ -5,6 +5,8 @@ import Comment from '@comps/Comment';
 import Loading from '@comps/Loading';
 import Error from '@comps/Error';
 import { useFzjItem, useGetFzjItem } from '@/models/fzj';
+import { handleGo } from '@utils/tools';
+import { discussionsNo } from '@utils/constant';
 
 import './index.scss';
 
@@ -27,8 +29,11 @@ export default function IssuesView() {
   return (
     <div className="issues-view">
       <div className="post markdown-body">
-        <h1 className="title">
-          <span>{title}</span>
+        <h1 className="title" onClick={() => handleGo(discussionsNo(issues))}>
+          <span>
+            <span className="issues">#{issues}</span>
+            <span>{title}</span>
+          </span>
         </h1>
         <div dangerouslySetInnerHTML={{ __html: bodyHTML }} />
 

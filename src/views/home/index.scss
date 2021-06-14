@@ -22,15 +22,16 @@
     color: #343434;
     margin-bottom: 12px;
     padding: 10px;
-    background-color: rgba(#fff, 0.5);
+    background-color: #fff;
     border-radius: 10px;
     font-size: 14px;
     transition: all 0.3s ease;
     cursor: pointer;
+    border: solid 1px #efefef;
 
     &:hover {
       transition: all 0.3s ease;
-      box-shadow: var(--shadow-overlay);
+      box-shadow: var(--shadow-floating);
       background-color: #fff;
     }
 

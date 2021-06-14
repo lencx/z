@@ -1,5 +1,5 @@
 import React from 'react';
-import githubIcon from './github.png';
+import githubIcon from './github.svg';
 
 import './index.scss';
 

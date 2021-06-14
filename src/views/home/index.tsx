@@ -9,7 +9,7 @@ import Category from '@comps/Category';
 import Label from '@comps/Label';
 import { useFzjList } from '@/models/fzj';
 import { scrollLoad, handleGo } from '@utils/tools';
-import { categoriesUrl, discussionsNo } from '@utils/constant';
+import { discussionsNo } from '@utils/constant';
 
 import './index.scss';
 

@@ -10,9 +10,10 @@ body,
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
   scroll-behavior: smooth;
-  background-color: #eee;
+  background-color: #f5f8fa;
   font-size: 14px;
   line-height: 1.4;
+  touch-action: pan-x pan-y;
 }
 
 code {
@@ -37,7 +38,7 @@ pre {
   padding: 10px;
   border-radius: 2px;
   font-family: 'Courier New', Courier, monospace;
-  border: solid 2px #eee;
+  border: solid 2px #e0e4e8;
 
   code {
     background-color: transparent;
@@ -54,7 +55,7 @@ img {
   --black: #282c34;
   --pink: #f87da9;
   --blue: #4285f4;
-  --border-color: #bbb;
+  --border-color: #e0e4e8;
   --border: solid 1px var(--border-color);
 
   /* *** shadow *** */
@@ -69,13 +70,14 @@ img {
 }
 
 .view {
-  padding-top: 70px;
+  padding-top: 58px;
   min-height: 100vh;
   max-width: 960px;
   margin: 0 auto;
 
   > [class*='-view'] {
-    min-height: calc(100vh - 130px);
+    min-height: calc(100vh - 118px);
+    padding-top: 10px;
 
     h2 {
       margin-top: 0;

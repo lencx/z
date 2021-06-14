@@ -1,5 +1,6 @@
 .issues-view {
   background-color: #fff;
+  // border: solid 1px #e0e4e8;
   // border-radius: 2px;
   // margin: 0 8px;
 
@@ -13,10 +14,22 @@
     h1.title {
       text-align: center;
       padding: 20px 0 10px;
+      cursor: pointer;
 
-      span {
+      > span {
         background: linear-gradient(to bottom, transparent 70%, #c4cfc0 30%);
+        padding-right: 5px;
+      }
+
+      .issues {
+        font-size: 14px;
+        margin-right: 8px;
+        color: #fff;
+        font-weight: bold;
+        font-style: italic;
+        background-color: #c4cfc0;
         padding: 0 5px;
+        border-top-left-radius: 10px;
       }
     }
 
