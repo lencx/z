@@ -49,6 +49,9 @@ export const FZJ_ITEM = gql`
         id
         title
         bodyHTML
+        category {
+          name
+        }
         reactions(first: 100) {
           totalCount
           edges {
@@ -58,7 +61,7 @@ export const FZJ_ITEM = gql`
             }
           }
         }
-        comments(first: 10) {
+        comments(first: 100) {
           edges {
             node {
               id

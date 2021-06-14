@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import clsx from 'clsx';
 
 import Comment from '@comps/Comment';
 import Loading from '@comps/Loading';
@@ -25,10 +26,11 @@ export default function IssuesView() {
 
   const _data = data || itemMap.get(issues);
   if (!_data) return null;
-  const { title, bodyHTML, comments, reactions } = _data.repository.discussion;
+  const { title, bodyHTML, comments, reactions, category } =
+    _data.repository.discussion;
 
   return (
-    <div className="issues-view">
+    <div className={clsx('issues-view', category.name.toLocaleLowerCase())}>
       <div className="post markdown-body">
         <h1 className="title" onClick={() => handleGo(discussionsNo(issues))}>
           <span>
