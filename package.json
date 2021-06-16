@@ -9,7 +9,8 @@
     "build": "tsc && vite build",
     "type-check": "tsc",
     "lint": "eslint . --ext ts,tsx,js,jsx",
-    "lint:fix": "yarn lint --fix"
+    "lint:fix": "yarn lint --fix",
+    "rss": "rgd --owner=lencx --repo=fzj --limit=10 --outdir=dist"
   },
   "repository": {
     "type": "git",
