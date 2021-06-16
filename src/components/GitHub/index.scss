@@ -1,8 +1,10 @@
 .github-lencx-fzj {
   cursor: pointer;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
 
   img {
-    width: 24px;
     overflow: hidden;
   }
 }

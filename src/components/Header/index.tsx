@@ -4,6 +4,7 @@ import { useHistory } from 'react-router-dom';
 import GitHub from '@comps/GitHub';
 import { MenuProvider, MenuButton, Navigation } from '@comps/Menu';
 
+import rssIcon from './rss.svg';
 import './index.scss';
 
 interface HeaderProps {
@@ -23,7 +24,15 @@ const Header: FC<HeaderProps> = ({ menuList }) => {
           <div className="logo" />
           {/* <div className="desc" /> */}
         </div>
-        <GitHub />
+        <div className="fzj-btns">
+          <img
+            className="fzj-rss"
+            src={rssIcon}
+            onClick={() => (location.href = '/feed.xml')}
+            alt="RSS"
+          />
+          <GitHub />
+        </div>
       </div>
       <div className="menu">
         <MenuButton />
