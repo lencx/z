@@ -35,6 +35,7 @@
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.0",
+    "rgd": "^0.1.1",
     "sass": "^1.34.0",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",

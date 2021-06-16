@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    schedule:
+  	  - cron: '0 21 * * *'
 
 jobs:
   deploy:
@@ -16,6 +18,7 @@ jobs:
           node-version: '14'
       - run: yarn
       - run: yarn build
+      - run: rgd --owner=lencx --repo=fzj --token=${{ secrets.GH_TOKEN }} --limit=10 --outdir=dist --site-title=浮之静 --site-link=https://z.nofwl.com --site-desc="浮之静 技术社区"
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
