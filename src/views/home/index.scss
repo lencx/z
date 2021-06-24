@@ -44,6 +44,10 @@
       margin-bottom: 10px;
       font-weight: bold;
       position: relative;
+
+      font-family: 'lab';
+      font-variation-settings: 'size' 200, 'quad' 300, 'bevl' 200, 'oval' 1000;
+      // hyphens: none;
       span {
         background: linear-gradient(to bottom, transparent 50%, #e2e0da 50%);
       }

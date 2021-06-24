@@ -23,9 +23,12 @@
       text-align: center;
       padding: 20px 0 10px;
       cursor: pointer;
+      font-family: 'lab';
+      font-variation-settings: 'size' 120, 'quad' 800, 'bevl' 1000, 'oval' 900;
+      hyphens: none;
 
       > span {
-        background: linear-gradient(to bottom, transparent 70%, #c4cfc0 30%);
+        background: linear-gradient(to bottom, transparent 60%, #c4cfc0 40%);
         padding-right: 5px;
       }
 
@@ -36,8 +39,8 @@
         font-weight: bold;
         font-style: italic;
         background-color: #c4cfc0;
-        padding: 0 5px;
-        border-top-left-radius: 10px;
+        padding: 6px 10px 0;
+        border-top-left-radius: 16px;
       }
     }
 
