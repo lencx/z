@@ -1,6 +1,12 @@
 .tags-view {
   padding: 0 12px 20px;
 
+  h2 {
+    font-size: 32px;
+    font-family: 'lab';
+    font-variation-settings: 'size' 900, 'quad' 900, 'bevl' 400, 'oval' 1000;
+  }
+
   .fzj-category {
     margin-bottom: 10px;
   }

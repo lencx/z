@@ -64,9 +64,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
   padding: 10px;
   font-size: 1.5rem;
   cursor: pointer;
-  color: #ddd;
+  color: #fff;
   outline: none;
   text-align: center;
+
+  font-family: 'lab';
+  font-variation-settings: 'size' 300, 'quad' 200, 'bevl' 100, 'oval' 300;
 }
 
 /* Styling of overlay */
