@@ -2,7 +2,7 @@ import { gql } from '@apollo/client';
 
 export const FZJ_LIST = gql`
   query FZJ_LIST($first: Int, $cursor: String) {
-    repository(name: "fzj", owner: "lencx") {
+    repository(name: "z", owner: "lencx") {
       discussions(first: $first, after: $cursor) {
         totalCount
         pageInfo {
@@ -44,7 +44,7 @@ export const FZJ_LIST = gql`
 
 export const FZJ_ITEM = gql`
   query FZJ_ITEM($number: Int!) {
-    repository(name: "fzj", owner: "lencx") {
+    repository(name: "z", owner: "lencx") {
       discussion(number: $number) {
         id
         title
@@ -81,7 +81,7 @@ export const FZJ_ITEM = gql`
 
 export const FZJ_TAGS = gql`
   query FZJ_TAGS {
-    repository(name: "fzj", owner: "lencx") {
+    repository(name: "z", owner: "lencx") {
       discussionCategories(first: 20) {
         edges {
           node {

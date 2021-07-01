@@ -5,10 +5,7 @@ import './index.scss';
 
 export default function GitHub() {
   return (
-    <a
-      className="github-lencx-fzj"
-      href="https://github.com/lencx/fzj/discussions"
-    >
+    <a className="github-lencx-z" href="https://github.com/lencx/z/discussions">
       <img src={githubIcon} />
     </a>
   );

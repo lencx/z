@@ -76,13 +76,13 @@ export default function HomeView() {
                 className="fzj-item"
                 onClick={(e) => handleIssues(e, issues)}
               >
+                <em
+                  className="issues"
+                  onClick={(e) => handleGo(discussionsNo(issues), e)}
+                >
+                  #{issues}
+                </em>
                 <div className="title">
-                  <em
-                    className="issues"
-                    onClick={() => handleGo(discussionsNo(issues))}
-                  >
-                    #{issues}
-                  </em>
                   <span>{node.title}</span>
                 </div>
                 <div className="info">

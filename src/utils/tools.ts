@@ -22,7 +22,8 @@ export function scrollLoad(callback: () => void) {
   }
 }
 
-export function handleGo(url: string) {
+export function handleGo(url: string, e?: any) {
+  if (e) e.stopPropagation();
   window.open(url);
 }
 

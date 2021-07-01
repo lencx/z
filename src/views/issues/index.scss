@@ -24,19 +24,12 @@
       padding: 20px 0 10px;
       cursor: pointer;
       font-family: 'lab';
-      font-variation-settings: 'size' 120, 'quad' 800, 'bevl' 1000, 'oval' 900;
       hyphens: none;
 
-      @media screen and (max-width: 480px) {
-        font-size: 18px;
-        line-height: 28px;
-        font-variation-settings: 'size' 400, 'quad' 1000, 'bevl' 1000,
-          'oval' 1000;
-      }
-
       > span {
-        background: linear-gradient(to bottom, transparent 60%, #c4cfc0 40%);
         padding-right: 5px;
+        background: linear-gradient(to bottom, transparent 60%, #c4cfc0 40%);
+        font-variation-settings: 'size' 120, 'quad' 200, 'bevl' 100, 'oval' 400;
       }
 
       .issues {
@@ -48,6 +41,18 @@
         background-color: #c4cfc0;
         padding: 6px 10px 0;
         border-top-left-radius: 16px;
+        text-shadow: 0 0 2px #000;
+      }
+
+      @media screen and (max-width: 680px) {
+        font-size: 18px;
+        line-height: 28px;
+        font-variation-settings: 'size' 400, 'quad' 1000, 'bevl' 1000,
+          'oval' 1000;
+
+        .issues {
+          font-size: 12px;
+        }
       }
     }
 

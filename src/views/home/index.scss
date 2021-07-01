@@ -19,9 +19,10 @@
   }
 
   &-item {
+    position: relative;
     color: #343434;
     margin-bottom: 12px;
-    padding: 10px;
+    padding: 24px 20px;
     background-color: #fff;
     border-radius: 10px;
     font-size: 14px;
@@ -41,13 +42,13 @@
 
     .title {
       font-size: 16px;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       font-weight: bold;
       position: relative;
       font-family: 'lab';
-      font-variation-settings: 'size' 200, 'quad' 300, 'bevl' 200, 'oval' 1000;
       // hyphens: none;
       span {
+        font-variation-settings: 'size' 300, 'quad' 50, 'bevl' 10, 'oval' 300;
         background: linear-gradient(to bottom, transparent 50%, #e2e0da 50%);
       }
     }
@@ -58,18 +59,24 @@
     }
 
     .issues {
+      font-size: 14px;
+      position: absolute;
+      top: 0;
+      right: 0;
       display: inline-block;
-      background-color: #b9968e;
       padding: 3px 10px 0;
       line-height: 20px;
-      border-radius: 4px;
       color: #fff;
+      font-family: 'lab';
       vertical-align: text-bottom;
-      margin-right: 10px;
+      background: rgba(#000, 0.3);
+      text-shadow: 0 0 3px #000;
+      border-top-right-radius: 9px;
+      border-bottom-left-radius: 15px;
     }
 
     .labels {
-      margin-top: 8px;
+      margin-top: 12px;
     }
   }
 }

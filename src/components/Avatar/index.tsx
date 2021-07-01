@@ -11,7 +11,8 @@ interface AvatarProps {
 }
 
 const Avatar: FC<AvatarProps> = ({ className, avatar, name, onClick }) => {
-  const handleClick = () => {
+  const handleClick = (e: any) => {
+    e.stopPropagation();
     onClick && onClick();
   };
 

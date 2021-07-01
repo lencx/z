@@ -14,7 +14,7 @@ export const emojiMap: { [key in string]: [string, string] } = {
 export const paginationLimit = 8;
 
 export const categoriesUrl = (categories: string) =>
-  `https://github.com/lencx/fzj/discussions/categories/${slugify(categories)}`;
+  `https://github.com/lencx/z/discussions/categories/${slugify(categories)}`;
 
 export const discussionsNo = (num: number) =>
-  `https://github.com/lencx/fzj/discussions/${num}`;
+  `https://github.com/lencx/z/discussions/${num}`;

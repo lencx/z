@@ -11,7 +11,7 @@ interface LabelProps {
 }
 
 const Label: FC<LabelProps> = ({ className, name, color }) => {
-  const url = `https://github.com/lencx/fzj/discussions?discussions_q=label%3A${name}`;
+  const url = `https://github.com/lencx/z/discussions?discussions_q=label%3A${name}`;
 
   const handleClick = (e: any) => {
     e.stopPropagation();

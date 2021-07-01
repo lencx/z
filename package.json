@@ -1,5 +1,5 @@
 {
-  "name": "fzj",
+  "name": "z",
   "version": "1.0.0",
   "description": "浮之静",
   "author": "lencx <cxin1314@gmail.com>",
@@ -10,16 +10,16 @@
     "type-check": "tsc",
     "lint": "eslint . --ext ts,tsx,js,jsx",
     "lint:fix": "yarn lint --fix",
-    "rss": "rgd --owner=lencx --repo=fzj --limit=10 --outdir=dist"
+    "rss": "rgd --owner=lencx --repo=z --limit=10 --outdir=dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lencx/fzj.git"
+    "url": "git+https://github.com/lencx/z.git"
   },
   "bugs": {
-    "url": "https://github.com/lencx/fzj/discussions"
+    "url": "https://github.com/lencx/z/discussions"
   },
-  "homepage": "https://github.com/lencx/fzj#readme",
+  "homepage": "https://github.com/lencx/z#readme",
   "devDependencies": {
     "@types/lodash": "^4.14.170",
     "@types/react": "^17.0.8",
