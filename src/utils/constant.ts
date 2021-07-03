@@ -11,7 +11,7 @@ export const emojiMap: { [key in string]: [string, string] } = {
   EYES: ['👀', ':eyes:'],
 };
 
-export const paginationLimit = 8;
+export const paginationLimit = 20;
 
 export const categoriesUrl = (categories: string) =>
   `https://github.com/lencx/z/discussions/categories/${slugify(categories)}`;

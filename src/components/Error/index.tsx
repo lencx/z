@@ -10,7 +10,13 @@ interface ErrorProps {
 const Error: FC<ErrorProps> = ({ visible }) => {
   return visible ? (
     <div className="error-box">
-      <img className="error-icon" src={errorIcon} alt="Error :(" />
+      <div>
+        <img className="error-icon" src={errorIcon} alt="Error :(" />
+        <p>
+          温馨提示：因 GitHub API 请求次数限制，如果无法访问，请点击右上角的
+          GitHub 访问
+        </p>
+      </div>
     </div>
   ) : null;
 };

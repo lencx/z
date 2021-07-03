@@ -59,7 +59,7 @@ export default function HomeView() {
     history.push(`/issues/${num}`);
   };
 
-  if (error) return <Error />;
+  if (!error) return <Error />;
 
   const _list = listData.list;
 
@@ -71,48 +71,49 @@ export default function HomeView() {
             const { category, author, number: issues, labels } = node;
 
             return (
-              <div
-                key={cursor}
-                className="fzj-item"
-                onClick={(e) => handleIssues(e, issues)}
-              >
-                <em
-                  className="issues"
-                  onClick={(e) => handleGo(discussionsNo(issues), e)}
+              <div key={cursor} className="fzj-item">
+                <div
+                  className="fzj-card"
+                  onClick={(e) => handleIssues(e, issues)}
                 >
-                  #{issues}
-                </em>
-                <div className="title">
-                  <span>{node.title}</span>
-                </div>
-                <div className="info">
-                  <Category name={category.name} emoji={category.emojiHTML} />
-                  <Avatar
-                    avatar={author.avatarUrl}
-                    name={author.login}
-                    onClick={() => handleGo(author.url)}
-                  />
-                  <div className="labels">
-                    {labels.edges.map(({ node: labelNode }: any) => {
-                      return (
-                        <Label
-                          key={labelNode.id}
-                          name={labelNode.name}
-                          color={labelNode.color}
-                        />
-                      );
-                    })}
+                  <em
+                    className="issues"
+                    onClick={(e) => handleGo(discussionsNo(issues), e)}
+                  >
+                    #{issues}
+                  </em>
+                  <div className="title">
+                    <span>{node.title}</span>
                   </div>
+                  <div className="info">
+                    <Category name={category.name} emoji={category.emojiHTML} />
+                    <Avatar
+                      avatar={author.avatarUrl}
+                      name={author.login}
+                      onClick={() => handleGo(author.url)}
+                    />
+                    <div className="labels">
+                      {labels.edges.map(({ node: labelNode }: any) => {
+                        return (
+                          <Label
+                            key={labelNode.id}
+                            name={labelNode.name}
+                            color={labelNode.color}
+                          />
+                        );
+                      })}
+                    </div>
+                  </div>
+                  {/* <div dangerouslySetInnerHTML={{ __html: node.bodyHTML }} /> */}
                 </div>
-                {/* <div dangerouslySetInnerHTML={{ __html: node.bodyHTML }} /> */}
               </div>
             );
           })}
-          {loading && _list.length > 0 && (
-            <p className="data-loading">Loading...</p>
-          )}
         </div>
       </div>
+      {loading && _list.length > 0 && (
+        <div className="data-loading">Loading...</div>
+      )}
       <Loading visible={loading && _list.length === 0} />
     </div>
   );

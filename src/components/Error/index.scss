@@ -7,9 +7,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 
   .error-icon {
     width: 120px;
     margin-top: -20vh;
+  }
+
+  p {
+    max-width: 300px;
+    color: #888;
   }
 }
