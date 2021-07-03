@@ -59,7 +59,7 @@ export default function HomeView() {
     history.push(`/issues/${num}`);
   };
 
-  if (!error) return <Error />;
+  if (error) return <Error />;
 
   const _list = listData.list;
 
