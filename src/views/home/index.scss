@@ -56,14 +56,14 @@
     }
 
     .title {
-      font-size: 16px;
+      font-size: 18px;
       margin-bottom: 8px;
       font-weight: bold;
       position: relative;
-      font-family: 'lab';
+      // font-family: 'lab';
       // hyphens: none;
       span {
-        font-variation-settings: 'size' 300, 'quad' 50, 'bevl' 10, 'oval' 300;
+        // font-variation-settings: 'size' 300, 'quad' 50, 'bevl' 10, 'oval' 300;
         background: linear-gradient(to bottom, transparent 50%, #e2e0da 50%);
       }
     }
@@ -81,11 +81,10 @@
       display: inline-block;
       padding: 3px 10px 0;
       line-height: 20px;
-      color: #fff;
+      color: #ffe;
       font-family: 'lab';
       vertical-align: text-bottom;
-      background: rgba(#000, 0.3);
-      text-shadow: 0 0 3px #000;
+      background: #688;
       border-top-right-radius: 9px;
       border-bottom-left-radius: 15px;
     }

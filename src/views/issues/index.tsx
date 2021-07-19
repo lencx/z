@@ -22,7 +22,7 @@ export default function IssuesView() {
   }, []);
 
   if (loading) return <Loading />;
-  if (error) return <Error />;
+  if (error) return <Error type="issues" issues={issues} />;
 
   const _data = data || itemMap.get(issues);
   if (!_data) return null;

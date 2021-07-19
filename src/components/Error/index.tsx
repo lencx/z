@@ -5,16 +5,31 @@ import './index.scss';
 
 interface ErrorProps {
   visible?: boolean;
+  type: 'home' | 'issues';
+  issues?: string;
 }
 
-const Error: FC<ErrorProps> = ({ visible }) => {
+const BASE_URL = 'https://github.com/lencx/z/discussions';
+
+// const urlMap = ({ type, issues }: any) =>
+//   ;
+
+const Error: FC<ErrorProps> = ({ visible, issues, type }) => {
+  const data = {
+    home: ['lencx/z', `${BASE_URL}`],
+    issues: [`lencx/z #${issues}`, `${BASE_URL}/${issues}`],
+  }[type];
+
   return visible ? (
     <div className="error-box">
       <div>
         <img className="error-icon" src={errorIcon} alt="Error :(" />
         <p>
-          温馨提示：因 GitHub API 请求次数限制，如果无法访问，请点击右上角的
-          GitHub 访问
+          <b>温馨提示</b>
+        </p>
+        <p>因 GitHub API 请求次数限制，暂时无法访问，点击此处可以查看原链接</p>
+        <p>
+          <a href={data[1]}>{data[0]}</a>
         </p>
       </div>
     </div>
@@ -23,6 +38,7 @@ const Error: FC<ErrorProps> = ({ visible }) => {
 
 Error.defaultProps = {
   visible: true,
+  type: 'home',
 };
 
 export default Error;
