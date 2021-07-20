@@ -11,7 +11,7 @@ import './index.scss';
 export default function TagsView() {
   const { data, loading, error } = useFzjTags();
 
-  if (error) return <Error />;
+  if (error) return <Error type="home" />;
   if (loading || !data.repository) return <Loading />;
 
   const { discussionCategories, labels } = data.repository;
