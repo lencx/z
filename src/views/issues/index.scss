@@ -7,7 +7,6 @@
   &.notes {
     p img {
       display: block;
-      margin: 0 auto;
       max-width: 420px !important;
     }
   }
@@ -116,5 +115,14 @@
 
   &-body {
     padding: 16px 16px 0;
+
+    h2 {
+      padding-top: 0 !important;
+      margin-top: 5px !important;
+    }
+
+    img {
+      max-width: 420px !important;
+    }
   }
 }
