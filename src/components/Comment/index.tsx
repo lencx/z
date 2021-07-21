@@ -9,8 +9,31 @@ interface CommentProps {
   data: any;
 }
 
+const Replies: FC<CommentProps> = ({ data }) => {
+  return (
+    <div className="comment-replies">
+      {data.edges.map(({ node }: any, idx: number) => {
+        return (
+          <div key={+idx}>
+            <Avatar
+              className="comment-replies-author"
+              avatar={node.author.avatarUrl}
+              name={node.author.login}
+              onClick={() => handleGo(node.author.url)}
+            />
+            <div
+              className="comment-replies-body"
+              dangerouslySetInnerHTML={{ __html: node.bodyHTML }}
+            />
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
 const Comment: FC<CommentProps> = ({ data }) => {
-  const { author } = data;
+  const { author, replies } = data;
 
   return (
     <div className="comment-item" key={data.id}>
@@ -20,10 +43,10 @@ const Comment: FC<CommentProps> = ({ data }) => {
         name={author.login}
         onClick={() => handleGo(author.url)}
       />
-      <div
-        className="comment-body"
-        dangerouslySetInnerHTML={{ __html: data.bodyHTML }}
-      />
+      <div className="comment-body">
+        <div dangerouslySetInnerHTML={{ __html: data.bodyHTML }} />
+        <Replies data={replies} />
+      </div>
     </div>
   );
 };

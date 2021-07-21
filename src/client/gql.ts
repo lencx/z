@@ -71,6 +71,19 @@ export const FZJ_ITEM = gql`
                 avatarUrl
                 url
               }
+              replies(first: 100) {
+                edges {
+                  node {
+                    id
+                    author {
+                      login
+                      avatarUrl
+                      url
+                    }
+                    bodyHTML
+                  }
+                }
+              }
             }
           }
         }

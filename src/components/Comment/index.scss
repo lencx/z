@@ -25,4 +25,30 @@
   &-body {
     padding-left: 20px;
   }
+
+  &-replies {
+    &-author {
+      img {
+        border-radius: 50%;
+        border-color: transparent !important;
+      }
+    }
+
+    &-body {
+      position: relative;
+      padding-left: 24px;
+      clear: both;
+      padding-bottom: 1px;
+
+      &::before {
+        position: absolute;
+        display: inline-block;
+        content: '';
+        width: 1px;
+        height: 100%;
+        background-color: #d8d8d8;
+        left: 10px;
+      }
+    }
+  }
 }
