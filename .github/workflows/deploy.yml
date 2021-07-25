@@ -19,7 +19,7 @@ jobs:
       - run: yarn
       - run: yarn build
       - run: yarn rss --token=${{ secrets.GH_TOKEN }} --site-title=浮之静 --site-link=https://z.nofwl.com --site-desc="浮之静 技术社区"
-      - run: yarn woap
+      - run: yarn woap --token=${{ secrets.GH_TOKEN }}
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
