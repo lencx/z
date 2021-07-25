@@ -11,7 +11,7 @@
     "lint": "eslint . --ext ts,tsx,js,jsx",
     "lint:fix": "yarn lint --fix",
     "rss": "rgd --owner=lencx --repo=z --limit=20 --outdir=dist",
-    "woap": "woap --owner=lencx --repo=z"
+    "woap": "woap --owner=lencx --repo=z  --root=dist/posts --labels='微信杂谈'"
   },
   "repository": {
     "type": "git",
@@ -43,8 +43,7 @@
     "stylelint-config-standard": "^22.0.0",
     "typescript": "^4.3.2",
     "vite": "^2.3.6",
-    "vite-tsconfig-paths": "^3.3.12",
-    "woap": "^0.1.2"
+    "vite-tsconfig-paths": "^3.3.12"
   },
   "dependencies": {
     "@apollo/client": "^3.3.19",
