@@ -52,6 +52,14 @@ export const FZJ_ITEM = gql`
         category {
           name
         }
+        labels(first: 10) {
+          edges {
+            node {
+              id
+              name
+            }
+          }
+        }
         reactions(first: 100) {
           totalCount
           edges {

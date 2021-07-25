@@ -27,7 +27,7 @@ export default function IssuesView() {
 
   const _data = data || itemMap.get(issues);
   if (!_data) return null;
-  const { title, bodyHTML, comments, reactions, category } =
+  const { title, bodyHTML, comments, reactions, category, labels } =
     _data.repository.discussion;
 
   const handleWoap = () => {
@@ -39,10 +39,21 @@ export default function IssuesView() {
     );
   };
 
+  const isWoap = labels?.edges?.some(({ node }: any) =>
+    ['wechat-link', 'wechat-post', '微信杂谈'].includes(node.name)
+  );
+
   return (
     <div className={clsx('issues-view', category.name.toLocaleLowerCase())}>
       <div className="post markdown-body">
-        <img className="woap" src={woapIcon} alt="woap" onClick={handleWoap} />
+        {isWoap && (
+          <img
+            className="woap"
+            src={woapIcon}
+            alt="woap"
+            onClick={handleWoap}
+          />
+        )}
         <h1 className="title" onClick={() => handleGo(discussionsNo(issues))}>
           <span>
             <span className="issues">#{issues}</span>
