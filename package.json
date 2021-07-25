@@ -11,7 +11,7 @@
     "lint": "eslint . --ext ts,tsx,js,jsx",
     "lint:fix": "yarn lint --fix",
     "rss": "rgd --owner=lencx --repo=z --limit=20 --outdir=dist",
-    "woap": "woap --owner=lencx --repo=z  --root=dist/posts --labels='微信杂谈'"
+    "woap": "woap --owner=lencx --repo=z  --root=dist/posts --labels='微信杂谈' --suffix=html --img-path='https://raw.githubusercontent.com/lencx/z/gh-pages/posts'"
   },
   "repository": {
     "type": "git",
@@ -44,7 +44,7 @@
     "typescript": "^4.3.2",
     "vite": "^2.3.6",
     "vite-tsconfig-paths": "^3.3.12",
-    "woap": "^0.1.2"
+    "woap": "^0.1.4"
   },
   "dependencies": {
     "@apollo/client": "^3.3.19",
