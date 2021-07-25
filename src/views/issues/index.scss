@@ -17,6 +17,14 @@
     padding: 0 12px 20px;
     min-height: calc(100vh - 150px);
     font-size: 14px;
+    position: relative;
+
+    .woap {
+      position: absolute;
+      right: 10px;
+      width: 30px;
+      cursor: pointer;
+    }
 
     h1.title {
       text-align: center;

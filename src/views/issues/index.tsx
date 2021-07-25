@@ -10,6 +10,7 @@ import { useFzjItem, useGetFzjItem } from '@/models/fzj';
 import { handleGo, reactionsCount } from '@utils/tools';
 import { discussionsNo } from '@utils/constant';
 
+import woapIcon from './icon/woap.svg';
 import './index.scss';
 
 export default function IssuesView() {
@@ -29,9 +30,19 @@ export default function IssuesView() {
   const { title, bodyHTML, comments, reactions, category } =
     _data.repository.discussion;
 
+  const handleWoap = () => {
+    window.open(
+      `${window.location.origin}/posts/issues-${issues
+        .toString()
+        .padStart(4, '0')}`,
+      '__blank'
+    );
+  };
+
   return (
     <div className={clsx('issues-view', category.name.toLocaleLowerCase())}>
       <div className="post markdown-body">
+        <img className="woap" src={woapIcon} alt="woap" onClick={handleWoap} />
         <h1 className="title" onClick={() => handleGo(discussionsNo(issues))}>
           <span>
             <span className="issues">#{issues}</span>
