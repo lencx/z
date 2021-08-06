@@ -36,7 +36,7 @@
       > span {
         padding-right: 5px;
         background: linear-gradient(to bottom, transparent 60%, #c4cfc0 40%);
-        font-variation-settings: 'size' 120, 'quad' 200, 'bevl' 100, 'oval' 400;
+        font-variation-settings: 'size' 50, 'quad' 70, 'bevl' 40, 'oval' 80;
       }
 
       .issues {
@@ -48,7 +48,7 @@
         background-color: #c4cfc0;
         padding: 6px 10px 0;
         border-top-left-radius: 16px;
-        text-shadow: 0 0 2px #000;
+        text-shadow: 0 0 1px #000;
       }
 
       @media screen and (max-width: 680px) {

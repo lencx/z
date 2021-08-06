@@ -44,7 +44,10 @@ const Comment: FC<CommentProps> = ({ data }) => {
         onClick={() => handleGo(author.url)}
       />
       <div className="comment-body">
-        <div dangerouslySetInnerHTML={{ __html: data.bodyHTML }} />
+        <div
+          className="comment-main"
+          dangerouslySetInnerHTML={{ __html: data.bodyHTML }}
+        />
         <Replies data={replies} />
       </div>
     </div>
