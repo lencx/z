@@ -43,7 +43,7 @@
     font-size: 14px;
     transition: all 0.3s ease;
     cursor: pointer;
-    border: solid 1px #efefef;
+    // border: solid 1px #efefef;
 
     &:hover {
       transition: all 0.3s ease;
@@ -80,11 +80,13 @@
       top: 0;
       right: 0;
       display: inline-block;
-      padding: 3px 10px 0;
+      padding: 5px 10px 0;
       line-height: 20px;
       font-family: 'lab';
       vertical-align: text-bottom;
-      background: #e8e8e8;
+      color: #666;
+      // background: #e8e8e8;
+      // border-radius: 2px;
       // color: #ffe;
       // border-top-right-radius: 9px;
       // border-bottom-left-radius: 15px;

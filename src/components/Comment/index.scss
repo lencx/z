@@ -28,7 +28,7 @@
   }
 
   &-main {
-    background-color: #fff;
+    background-color: #fcfcfc;
     padding: 8px;
     margin: 2px;
     border-radius: 5px;
@@ -46,9 +46,12 @@
 
     &-body {
       position: relative;
-      padding-left: 24px;
+      margin-left: 24px;
       clear: both;
       padding-bottom: 1px;
+      background-color: #fcfcfc;
+      padding: 5px;
+      border-radius: 5px;
 
       &::before {
         position: absolute;
@@ -58,7 +61,7 @@
         height: 100%;
         // background-color: #fff;
         border-left: dashed 2px #ccc;
-        left: 9px;
+        left: -15px;
       }
     }
   }

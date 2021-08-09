@@ -2,8 +2,9 @@
   display: inline-block;
   // background: linear-gradient(to bottom right, #eee, #4285f4 50%);
   // background: linear-gradient(to bottom right, #eee, #607fb3 50%);
-  // color: #fff;
-  background: #e2e4e6;
+  color: #f8f8f8;
+  background: #2a2a2a;
+  // background: #e2e4e6;
   line-height: 20px;
   font-size: 12px;
   font-weight: bold;
@@ -12,4 +13,5 @@
   border-radius: 4px;
   margin-right: 10px;
   cursor: pointer;
+  text-shadow: 0 0 1px #f8f8f8;
 }

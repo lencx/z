@@ -15,10 +15,16 @@ body,
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
   scroll-behavior: smooth;
-  background-color: #f5f8fa;
   font-size: 14px;
   line-height: 1.4;
   touch-action: pan-x pan-y;
+}
+
+body {
+  background-image: url('./bg.png');
+  background-repeat: repeat;
+  background-size: 100px;
+  background-color: #f5f8fa;
 }
 
 code {

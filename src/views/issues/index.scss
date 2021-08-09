@@ -26,6 +26,15 @@
       cursor: pointer;
     }
 
+    img {
+      &.emoji {
+        max-width: unset;
+        width: unset;
+        transform: scale(0.8);
+        vertical-align: sub;
+      }
+    }
+
     h1.title {
       text-align: center;
       padding: 20px 0 10px;
