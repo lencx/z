@@ -1,6 +1,7 @@
 import React, { FC, createContext, useState, useContext } from 'react';
-import { useHistory } from 'react-router';
+import { useHistory, useLocation } from 'react-router';
 import { slide as Menu } from 'react-burger-menu';
+import { Helmet } from 'react-helmet-async';
 
 import menuIcon from './menu.svg';
 import './index.scss';
@@ -42,6 +43,7 @@ interface NavigationProps {
 // create a navigation component that wraps the burger menu
 export const Navigation: FC<NavigationProps> = ({ options }) => {
   const history = useHistory();
+  const location = useLocation();
   const ctx = useContext(MenuContext);
 
   const handleLink = (url: string) => {
@@ -49,20 +51,28 @@ export const Navigation: FC<NavigationProps> = ({ options }) => {
     ctx.toggleMenu();
   };
 
+  const currItem = options.find((i) => i.path === location.pathname);
+  const isHome = currItem?.path === '/';
+
   return (
-    <Menu
-      right
-      customBurgerIcon={false}
-      isOpen={ctx.isMenuOpen}
-      onStateChange={(state) => ctx.stateChangeHandler(state)}
-    >
-      {options.map((i) => {
-        return (
-          <span key={i.path} onClick={() => handleLink(i.path)}>
-            {i.name}
-          </span>
-        );
-      })}
-    </Menu>
+    <>
+      <Helmet>
+        <title>浮之静{currItem && !isHome ? ` | ${currItem?.name}` : ''}</title>
+      </Helmet>
+      <Menu
+        right
+        customBurgerIcon={false}
+        isOpen={ctx.isMenuOpen}
+        onStateChange={(state) => ctx.stateChangeHandler(state)}
+      >
+        {options.map((i) => {
+          return (
+            <span key={i.path} onClick={() => handleLink(i.path)}>
+              {i.name}
+            </span>
+          );
+        })}
+      </Menu>
+    </>
   );
 };

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import clsx from 'clsx';
 
 import Comment from '@comps/Comment';
@@ -45,6 +46,9 @@ export default function IssuesView() {
 
   return (
     <div className={clsx('issues-view', category.name.toLocaleLowerCase())}>
+      <Helmet>
+        <title>浮之静｜{title}</title>
+      </Helmet>
       <div className="post markdown-body">
         {isWoap && (
           <img
