@@ -1,9 +1,15 @@
 .comment {
   &-item {
-    padding: 3px;
-    border-radius: 8px;
-    background-color: #f0f0f0;
+    padding: 3px 3px 0;
+    // border-radius: 8px;
+    // background-color: #f0f0f0;
     margin-bottom: 10px;
+    border-bottom: solid 2px rgba(#000, 0.3);
+
+    &:last-child {
+      margin-bottom: 0;
+      border-bottom: none;
+    }
   }
 
   &-author {
@@ -12,7 +18,7 @@
     background: #535d6f;
 
     img {
-      border-radius: 4px !important;
+      border-radius: 0 !important;
       border-color: transparent !important;
     }
 
@@ -23,24 +29,31 @@
   }
 
   &-body {
-    padding: 0 !important;
     // padding-left: 20px;
+    padding: 8px 8px 0;
+
+    h2 {
+      padding-top: 0 !important;
+      margin-top: 5px !important;
+    }
   }
 
   &-main {
     background-color: #fcfcfc;
-    padding: 8px;
-    margin: 2px;
+    padding: 1px 8px;
+    // margin: 2px;
     border-radius: 5px;
   }
 
   &-replies {
-    padding: 2px;
+    padding: 2px 2px 12px;
 
     &-author {
+      // border: solid 2px #000;
       img {
         border-radius: 50%;
-        border-color: transparent !important;
+        // border-color: transparent !important;
+        z-index: 1;
       }
     }
 
@@ -48,7 +61,6 @@
       position: relative;
       margin-left: 24px;
       clear: both;
-      padding-bottom: 1px;
       background-color: #fcfcfc;
       padding: 5px;
       border-radius: 5px;
@@ -60,9 +72,14 @@
         width: 1px;
         height: 100%;
         // background-color: #fff;
-        border-left: dashed 2px #ccc;
+        border-left: dashed 2px rgba(#000, 0.1);
         left: -15px;
+        z-index: -1;
       }
     }
+  }
+
+  img {
+    max-width: 420px !important;
   }
 }

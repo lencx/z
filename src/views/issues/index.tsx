@@ -50,32 +50,35 @@ export default function IssuesView() {
         <title>浮之静｜{title}</title>
       </Helmet>
       <div className="post markdown-body">
-        {isWoap && (
-          <img
-            className="woap"
-            src={woapIcon}
-            alt="woap"
-            onClick={handleWoap}
-          />
-        )}
-        <h1 className="title" onClick={() => handleGo(discussionsNo(issues))}>
-          <span>
-            <span className="issues">#{issues}</span>
-            <span>{title}</span>
-          </span>
-        </h1>
+        <div className="fzj-post">
+          {isWoap && (
+            <img
+              className="woap"
+              src={woapIcon}
+              alt="woap"
+              onClick={handleWoap}
+            />
+          )}
+          <h1 className="title" onClick={() => handleGo(discussionsNo(issues))}>
+            <span>
+              <span className="issues">#{issues}</span>
+              <span>{title}</span>
+            </span>
+          </h1>
 
-        <div className="status">
-          {reactionsCount(reactions.edges).map((i) => {
-            return <Reaction key={i[0]} emoji={i[0]} count={i[1]} />;
+          <div className="status">
+            {reactionsCount(reactions.edges).map((i) => {
+              return <Reaction key={i[0]} emoji={i[0]} count={i[1]} />;
+            })}
+          </div>
+
+          <div dangerouslySetInnerHTML={{ __html: bodyHTML }} />
+        </div>
+        <div className="fzj-comment">
+          {comments.edges.map(({ node }: any) => {
+            return <Comment key={node.id} data={node} />;
           })}
         </div>
-
-        <div dangerouslySetInnerHTML={{ __html: bodyHTML }} />
-
-        {comments.edges.map(({ node }: any) => {
-          return <Comment key={node.id} data={node} />;
-        })}
       </div>
     </div>
   );

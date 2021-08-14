@@ -4,6 +4,7 @@ import { RecoilRoot } from 'recoil';
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import BackTop from '@/components/BackTop';
 
 import Router from './router/Router';
 
@@ -19,6 +20,7 @@ export default function App() {
           <Header menuList={menuList} />
           <Router routes={routes} />
           <Footer />
+          <BackTop />
         </div>
       </HashRouter>
     </RecoilRoot>
