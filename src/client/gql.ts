@@ -26,7 +26,7 @@ export const FZJ_LIST = gql`
               name
               emojiHTML
             }
-            labels(first: 10) {
+            labels(first: 100) {
               edges {
                 node {
                   id
@@ -52,7 +52,7 @@ export const FZJ_ITEM = gql`
         category {
           name
         }
-        labels(first: 10) {
+        labels(first: 100) {
           edges {
             node {
               id
@@ -112,7 +112,7 @@ export const FZJ_TAGS = gql`
           }
         }
       }
-      labels(first: 20) {
+      labels(first: 100) {
         edges {
           node {
             id

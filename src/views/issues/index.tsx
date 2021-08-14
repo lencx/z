@@ -74,11 +74,13 @@ export default function IssuesView() {
 
           <div dangerouslySetInnerHTML={{ __html: bodyHTML }} />
         </div>
-        <div className="fzj-comment">
-          {comments.edges.map(({ node }: any) => {
-            return <Comment key={node.id} data={node} />;
-          })}
-        </div>
+        {comments.edges.length > 0 && (
+          <div className="fzj-comment">
+            {comments.edges.map(({ node }: any) => {
+              return <Comment key={node.id} data={node} />;
+            })}
+          </div>
+        )}
       </div>
     </div>
   );

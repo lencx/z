@@ -88,12 +88,6 @@ img {
 
   > [class*='-view'] {
     min-height: calc(100vh - 118px);
-    padding-top: 20px;
-
-    h2 {
-      margin-top: 0;
-      padding-top: 16px;
-    }
 
     &::before,
     &::after {
