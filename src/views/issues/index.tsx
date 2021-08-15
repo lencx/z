@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import clsx from 'clsx';
@@ -7,7 +7,7 @@ import Comment from '@comps/Comment';
 import Loading from '@comps/Loading';
 import Error from '@comps/Error';
 import Reaction from '@comps/Reaction';
-import { useFzjItem, useGetFzjItem } from '@/models/fzj';
+import { useFzjItem } from '@/models/fzj';
 import { handleGo, reactionsCount } from '@utils/tools';
 import { discussionsNo } from '@utils/constant';
 
@@ -16,20 +16,13 @@ import './index.scss';
 
 export default function IssuesView() {
   const { issues } = useParams<any>();
-  const [getData, { loading, error, data }] = useFzjItem(issues);
-  const itemMap = useGetFzjItem();
-
-  useEffect(() => {
-    if (!itemMap.has(issues)) getData();
-  }, []);
+  const { data, loading, error } = useFzjItem(issues);
 
   if (loading) return <Loading />;
   if (error) return <Error type="issues" issues={issues} />;
 
-  const _data = data || itemMap.get(issues);
-  if (!_data) return null;
-  const { title, bodyHTML, comments, reactions, category, labels } =
-    _data.repository.discussion;
+  if (!data) return null;
+  const { title, bodyHTML, comments, reactions, category, labels } = data;
 
   const handleWoap = () => {
     window.open(

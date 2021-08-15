@@ -13,6 +13,9 @@ export const emojiMap: { [key in string]: [string, string] } = {
 
 export const paginationLimit = 20;
 
+export const BASE_JSON_URI =
+  'https://raw.githubusercontent.com/lencx/z/gh-pages';
+
 export const categoriesUrl = (categories: string) =>
   `https://github.com/lencx/z/discussions/categories/${slugify(categories)}`;
 
