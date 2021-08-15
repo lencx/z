@@ -10,7 +10,7 @@
     "type-check": "tsc",
     "lint": "eslint . --ext ts,tsx,js,jsx",
     "lint:fix": "yarn lint --fix",
-    "rss": "rgd --owner=lencx --repo=z --limit=20 --outdir=dist",
+    "rgd": "rgd --owner=lencx --repo=z --limit=20 --outdir=dist --mode=json,rss",
     "woap": "woap --owner=lencx --repo=z --root='dist/posts' --labels='微信杂谈' --suffix=html"
   },
   "repository": {
@@ -37,7 +37,7 @@
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.0",
-    "rgd": "^0.1.1",
+    "rgd": "^1.0.0",
     "sass": "^1.34.0",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",

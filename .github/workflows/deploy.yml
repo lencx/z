@@ -18,7 +18,7 @@ jobs:
           node-version: '14'
       - run: yarn
       - run: yarn build
-      - run: yarn rss --token=${{ secrets.GH_TOKEN }} --site-title=浮之静 --site-link=https://lencx.tech --site-desc="浮之静 技术社区"
+      - run: yarn rgd --token=${{ secrets.GH_TOKEN }} --site-title=浮之静 --site-link=https://lencx.tech --site-desc="浮之静 技术社区"
       - run: yarn woap --token=${{ secrets.GH_TOKEN }}
 
       - name: Deploy
