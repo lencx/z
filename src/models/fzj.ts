@@ -101,7 +101,7 @@ export const useGetFzjItem = () => {
 export const useFzjItem = (issues: string) => {
   const [state, setState] = useRecoilState<any>(fzjItem);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState();
+  const [error, setError] = useState<any>(null);
   const [getData, opts]: any = useLazyQuery(FZJ_ITEM, {
     variables: { number: parseInt(issues) },
   });
