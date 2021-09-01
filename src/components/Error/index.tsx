@@ -4,15 +4,12 @@ import errorIcon from './error.svg';
 import './index.scss';
 
 interface ErrorProps {
-  visible?: boolean;
   type: 'home' | 'issues';
+  visible?: boolean;
   issues?: string;
 }
 
 const BASE_URL = 'https://github.com/lencx/z/discussions';
-
-// const urlMap = ({ type, issues }: any) =>
-//   ;
 
 const Error: FC<ErrorProps> = ({ visible, issues, type }) => {
   const data = {
