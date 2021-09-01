@@ -4,7 +4,7 @@ import errorIcon from './error.svg';
 import './index.scss';
 
 interface ErrorProps {
-  type: 'home' | 'issues';
+  type: 'blog' | 'issues';
   visible?: boolean;
   issues?: string;
 }
@@ -13,7 +13,7 @@ const BASE_URL = 'https://github.com/lencx/z/discussions';
 
 const Error: FC<ErrorProps> = ({ visible, issues, type }) => {
   const data = {
-    home: ['lencx/z', `${BASE_URL}`],
+    blog: ['lencx/z', `${BASE_URL}`],
     issues: [`lencx/z #${issues}`, `${BASE_URL}/${issues}`],
   }[type];
 
