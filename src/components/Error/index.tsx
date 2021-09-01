@@ -35,7 +35,7 @@ const Error: FC<ErrorProps> = ({ visible, issues, type }) => {
 
 Error.defaultProps = {
   visible: true,
-  type: 'home',
+  type: 'blog',
 };
 
 export default Error;
