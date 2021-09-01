@@ -41,7 +41,7 @@
     "sass": "^1.34.0",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
-    "typescript": "^4.3.2",
+    "typescript": "^4.4.2",
     "vite": "^2.5.3",
     "vite-tsconfig-paths": "^3.3.12",
     "woap": "^1.1.0"

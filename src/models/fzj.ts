@@ -17,7 +17,7 @@ export const fzjList = atom({
 });
 
 export const useFzjList = () => {
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<any>(null);
   const a = useRecoilState<any>(fzjList);
   const b = useLazyQuery<any>(FZJ_LIST, {
     variables: { first: paginationLimit, cursor: null },
