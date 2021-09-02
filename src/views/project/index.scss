@@ -1,0 +1,33 @@
+.project-view {
+  h2 {
+    padding: 0 15px;
+    margin-bottom: 0;
+    font-size: 28px;
+    font-family: 'lab';
+    font-variation-settings: 'size' 30, 'quad' 40, 'bevl' 40, 'oval' 10;
+  }
+
+  h3 {
+    padding: 0 15px;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-family: 'lab';
+    font-variation-settings: 'size' 30, 'quad' 40, 'bevl' 40, 'oval' 10;
+  }
+
+  .gh-card-box {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .gh-stats-card,
+    .gh-wakatime-card {
+      padding: 2px;
+    }
+
+    .gh-repo-card {
+      padding: 2px 5px;
+      flex-grow: 2;
+    }
+  }
+}

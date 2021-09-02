@@ -1,17 +1,19 @@
 import React from 'react';
 
-import { RepoCard } from '@comps/GhCard';
+import { StatsCard, WakatimeCard, RepoCard } from '@comps/GhCard';
 
 import './index.scss';
 
 export default function HomeView() {
   return (
-    <div className="home-view">
-      {/* <div className="gh-card-box">
+    <div className="project-view">
+      <h2>Open Source</h2>
+      <h3>Stats</h3>
+      <div className="gh-card-box">
         <StatsCard />
         <WakatimeCard />
-      </div> */}
-      <h2>Projects</h2>
+      </div>
+      <h3>Projects</h3>
       <div className="gh-card-box">
         <RepoCard repo="z" />
         <RepoCard repo="vite-plugin-rsw" />

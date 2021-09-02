@@ -4,12 +4,6 @@ import { RouteOption } from './router/types';
 const routes: RouteOption[] = [
   {
     path: '/',
-    name: 'Home',
-    component: lazy(() => import('./views/home')),
-    exact: true,
-  },
-  {
-    path: '/blog',
     name: 'Blog',
     component: lazy(() => import('./views/blog')),
     exact: true,
@@ -23,6 +17,12 @@ const routes: RouteOption[] = [
     path: '/tags',
     name: 'Tags',
     component: lazy(() => import('./views/tags')),
+    exact: true,
+  },
+  {
+    path: '/project',
+    name: 'Projects',
+    component: lazy(() => import('./views/project')),
     exact: true,
   },
   {
