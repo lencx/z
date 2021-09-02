@@ -47,7 +47,7 @@
     "woap": "^1.1.0"
   },
   "dependencies": {
-    "@apollo/client": "^3.3.19",
+    "@apollo/client": "^3.4.10",
     "@sindresorhus/slugify": "^2.1.0",
     "clsx": "^1.1.1",
     "github-markdown-css": "^4.0.0",
@@ -56,9 +56,9 @@
     "react": "^17.0.2",
     "react-burger-menu": "^3.0.4",
     "react-dom": "^17.0.2",
-    "react-helmet-async": "^1.0.9",
+    "react-helmet-async": "^1.1.2",
     "react-router-dom": "^5.2.0",
-    "recoil": "^0.4.0"
+    "recoil": "^0.4.1"
   },
   "husky": {
     "hooks": {
