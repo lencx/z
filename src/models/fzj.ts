@@ -118,21 +118,23 @@ export const useFzjItem = (issues: string) => {
     (async () => {
       if (opts.data) {
         setState(state.set(issues, opts?.data?.repository?.discussion));
+        setError(null);
+        setLoading(false);
       } else {
         try {
           const data = await fetch(
             `${BASE_JSON_URI}/issues/${issues}.json`
           ).then((res) => res.json());
           setState(state.set(issues, data));
+          setLoading(false);
         } catch (e) {
           setError(e);
         }
       }
-      setLoading(false);
     })();
   }, [opts.data]);
 
-  return { data: itemMap.get(issues), loading, error };
+  return { data: state.get(issues), loading, error };
 };
 
 // ------------- TGAS -------------
