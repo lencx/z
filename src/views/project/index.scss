@@ -30,4 +30,69 @@
       flex-grow: 2;
     }
   }
+
+  .repos {
+    width: 100%;
+    font-size: 12px;
+    padding: 12px;
+    font-family: -apple-system, Segoe UI, Helvetica, Arial, sans-serif,
+      Apple Color Emoji, Segoe UI Emoji;
+
+    table {
+      width: 100%;
+      text-align: center;
+      border-collapse: collapse;
+    }
+
+    thead {
+      background-color: #393a3a;
+
+      th {
+        padding: 10px;
+        border: solid 1px #d2d2d2;
+        padding: 10px;
+        color: #fff;
+      }
+
+      th:first-child {
+        border-left: solid 1px #393a3a;
+      }
+
+      th:last-child {
+        border-right: solid 1px #393a3a;
+      }
+    }
+
+    tbody {
+      img {
+        height: unset;
+        width: unset;
+      }
+
+      tr {
+        background-color: #f0f0f0;
+      }
+
+      tr:nth-child(2n) {
+        background-color: #fafafa;
+      }
+
+      td {
+        border: solid 1px #d2d2d2;
+        padding: 10px;
+
+        a {
+          font-weight: bold;
+        }
+
+        > div {
+          display: flex;
+          height: 100%;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
 }
