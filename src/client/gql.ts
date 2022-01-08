@@ -17,6 +17,8 @@ export const FZJ_LIST = gql`
             title
             number
             # bodyHTML
+            createdAt
+            updatedAt
             author {
               login
               avatarUrl
@@ -49,6 +51,8 @@ export const FZJ_ITEM = gql`
         id
         title
         bodyHTML
+        createdAt
+        updatedAt
         category {
           name
         }

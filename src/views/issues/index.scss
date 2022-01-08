@@ -3,8 +3,8 @@
 
   &.notes {
     p img {
-      display: block;
-      max-width: 420px !important;
+      display: inline-block;
+      width: unset !important;
     }
   }
 
@@ -113,6 +113,11 @@
 
     h6 {
       font-size: 0.9rem;
+    }
+
+    .date {
+      margin-bottom: 10px;
+      text-align: center;
     }
 
     .status {

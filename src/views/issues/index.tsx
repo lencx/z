@@ -5,6 +5,7 @@ import clsx from 'clsx';
 
 import Comment from '@comps/Comment';
 import Loading from '@comps/Loading';
+import PostDate from '@comps/PostDate';
 import Error from '@comps/Error';
 import Reaction from '@comps/Reaction';
 import { useFzjItem } from '@/models/fzj';
@@ -22,7 +23,16 @@ export default function IssuesView() {
   if (error) return <Error type="issues" issues={issues} />;
 
   if (!data) return null;
-  const { title, bodyHTML, comments, reactions, category, labels } = data;
+  const {
+    title,
+    bodyHTML,
+    comments,
+    reactions,
+    category,
+    labels,
+    createdAt,
+    updatedAt,
+  } = data;
 
   const handleWoap = () => {
     window.open(
@@ -58,6 +68,11 @@ export default function IssuesView() {
               <span>{title}</span>
             </span>
           </h1>
+
+          <div className="date">
+            <PostDate date={createdAt} />
+            <PostDate type="update" date={updatedAt} />
+          </div>
 
           <div className="status">
             {reactionsCount(reactions.edges).map((i) => {

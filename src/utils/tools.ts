@@ -1,3 +1,5 @@
+import dayjs from 'dayjs';
+
 import { emojiMap } from './constant';
 
 export function scrollLoad(callback: () => void) {
@@ -47,3 +49,6 @@ export const getScrollPosition = (el: any = window) => ({
   x: el.pageXOffset !== undefined ? el.pageXOffset : el.scrollLeft,
   y: el.pageYOffset !== undefined ? el.pageYOffset : el.scrollTop,
 });
+
+export const fmtDate = (date: Date) =>
+  dayjs(date).format('YYYY.MM.DD HH:mm:ss');
