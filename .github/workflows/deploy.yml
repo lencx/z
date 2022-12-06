@@ -18,12 +18,12 @@ jobs:
           node-version: '14'
       - run: yarn
       - run: yarn build
-      - run: yarn rgd --token=${{ secrets.GH_TOKEN }} --site-title=浮之静 --site-link=https://lencx.tech --site-desc="浮之静 技术社区"
-      - run: yarn woap --token=${{ secrets.GH_TOKEN }}
+      - run: yarn rgd --token=${{ secrets.GITHUB_TOKEN }}
+      - run: yarn woap --token=${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           force_orphan: true

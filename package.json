@@ -10,7 +10,7 @@
     "type-check": "tsc",
     "lint": "eslint . --ext ts,tsx,js,jsx",
     "lint:fix": "yarn lint --fix",
-    "rgd": "rgd --owner=lencx --repo=z --limit=20 --outdir=dist --mode=json,rss",
+    "rgd": "rgd --owner=lencx --repo=z --limit=20 --outdir=dist --mode=json,rss  --site-title=浮之静 --site-link=https://lencx.tech --site-desc=\"浮之静 技术社区\"",
     "woap": "woap --owner=lencx --repo=z --root='dist/posts' --labels='微信杂谈' --suffix=html --ignore=\".(gif|mp4|png|jpe?g)$\""
   },
   "repository": {
