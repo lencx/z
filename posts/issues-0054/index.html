@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<style>
+.markdown-body .anchor:focus {
+  outline: none;
+}
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+.markdown-body h1:hover .anchor .octicon-link:before,
+.markdown-body h2:hover .anchor .octicon-link:before,
+.markdown-body h3:hover .anchor .octicon-link:before,
+.markdown-body h4:hover .anchor .octicon-link:before,
+.markdown-body h5:hover .anchor .octicon-link:before,
+.markdown-body h6:hover .anchor .octicon-link:before {
+  width: 16px;
+  height: 16px;
+  content: ' ';
+  display: inline-block;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'%3E%3C/path%3E%3C/svg%3E");
+}
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+.markdown-body .full-commit .btn-outline:not(:disabled):hover {
+  color: #005cc5;
+  border-color: #005cc5;
+}
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  cursor: pointer;
+  background: #ffea7f;
+}
+.markdown-body .woap-links .item {
+  display: flex;
+  word-wrap: break-word !important;
+}
+.markdown-body .woap-links .item span {
+  width: 10%;
+  font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, "PingFang SC", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.markdown-body .woap-links .item p {
+  width: 90%;
+  word-break: break-all;
+  margin: 0;
+}
+</style>
+<script>
+function copyElementToClipboard(element) {
+  window.getSelection().removeAllRanges();
+  let range = document.createRange();
+  range.selectNode(typeof element === 'string' ? document.getElementById(element) : element);
+  window.getSelection().addRange(range);
+  document.execCommand('copy');
+  window.getSelection().removeAllRanges();
+}
+window.addEventListener('load', function() {
+  const woapBtn = document.getElementById('woap-btn');
+  const woapHTML = document.getElementById('woap-body');
+  woapBtn.addEventListener('click', function() {
+    copyElementToClipboard(woapHTML);
+    alert('复制到公众号')
+  }, false);
+})
+</script>
+</head>
+<body>
+<h2 class="woap-title" style="padding: 20px 10px; max-width: 678px; margin: 0 auto; font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; color: #4a4a4a; border-bottom: solid 1px #eee; text-align: center;">微信杂谈 - 造轮子</h2>
+<div class="markdown-body" id="woap-body" style="padding: 20px 10px; max-width: 678px; margin: 0 auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; line-height: 1.5; color: #24292e; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; font-size: 16px; line-height: 1.5; word-wrap: break-word;">
+<div style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 0;"><p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;"><code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">📅 2021.07.19</code></p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">少年:<br style="color: #4a4a4a; box-sizing: border-box;">
+前端东西太多了</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">少年:<br style="color: #4a4a4a; box-sizing: border-box;">
+学不完的呀</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">你好，浦原:<br style="color: #4a4a4a; box-sizing: border-box;">
+是啊！</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">少年:<br style="color: #4a4a4a; box-sizing: border-box;">
+集体转后端？</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Shine.:<br style="color: #4a4a4a; box-sizing: border-box;">
+[苦涩]后端更难</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">安木~🍄:<br style="color: #4a4a4a; box-sizing: border-box;">
+后端也多[捂脸]</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">少年:<br style="color: #4a4a4a; box-sizing: border-box;">
+后端知识比较固定吧</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+后端天花板高，感觉可以比前端走的更远</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">少年:<br style="color: #4a4a4a; box-sizing: border-box;">
+是呀</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">少年:<br style="color: #4a4a4a; box-sizing: border-box;">
+前端这些造轮子的</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+前端轮子太多了</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+感觉没必要什么都学，了解就够了</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">安木~🍄:<br style="color: #4a4a4a; box-sizing: border-box;">
+怎样才能达到造轮子的水平[捂脸]</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+随时都可以，轮子有大有小</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">周哈哈.:<br style="color: #4a4a4a; box-sizing: border-box;">
+天呐 你居然想造轮子</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">少年:<br style="color: #4a4a4a; box-sizing: border-box;">
+去一家公司面试就问React、vue 从生命周期问道源码 在问到实战 在问到html +5 css +3  再问问你懂不懂构建  再问你懂不懂优化  再问你懂不懂后端</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">安木~🍄:<br style="color: #4a4a4a; box-sizing: border-box;">
+比如小到那种？</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">安木~🍄:<br style="color: #4a4a4a; box-sizing: border-box;">
+对呀  只有慢慢的去接触新东西  才能成长</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+凡是可以用代码解决的东西都可以用程序去解决</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">周哈哈.:<br style="color: #4a4a4a; box-sizing: border-box;">
+不错</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+然后就会发现可以做很多东西</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">安木~🍄:<br style="color: #4a4a4a; box-sizing: border-box;">
+鑫哥 我没太明白这个意思</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">安木~🍄:<br style="color: #4a4a4a; box-sizing: border-box;">
+代码能解决的东西  都可以用程序去解决？[捂脸][捂脸]</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+额、就是用程序去解放自己</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+实现自动化</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+然后往这个方向思考，去写程序</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">安木~🍄:<br style="color: #4a4a4a; box-sizing: border-box;">
+你是说  只要是互联网上的软件方面的东西  都可以用代码去实现嘛</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">安木~🍄:<br style="color: #4a4a4a; box-sizing: border-box;">
+哦哦 这样呀</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">安木~🍄:<br style="color: #4a4a4a; box-sizing: border-box;">
+相当于是怎么用代码来给自己提供便利对吧</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+代码指编程，不限于语言</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+差不多就是这个意思</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+前端工具链不就是为了解放生产力吗</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">安木~🍄:<br style="color: #4a4a4a; box-sizing: border-box;">
+听你这么说</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">安木~🍄:<br style="color: #4a4a4a; box-sizing: border-box;">
+好像还真是</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">安木~🍄:<br style="color: #4a4a4a; box-sizing: border-box;">
+[捂脸][捂脸][捂脸]</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+一个道理，写不了工具链，可以写小工具，小工具多了，就可以做聚合</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+思维的转变很重要，不是会不会的问题，而是有些人觉得，非要搞一个很牛逼的东西才算造轮子，其实并非是这样的，可以解放你部分时间的东西都是值得的</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">安木~🍄:<br style="color: #4a4a4a; box-sizing: border-box;">
+嗦嘎</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">kk德米安:<br style="color: #4a4a4a; box-sizing: border-box;">
+[强]</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">安木~🍄:<br style="color: #4a4a4a; box-sizing: border-box;">
+你会不会就是说 知识受限  然后局限了你的思维  没发去产出小轮子呢</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+知识受限还不是主要因素，因为如果只是知识受限，可以通过读书查资料去弥补，更多的是去发现问题，这个不是靠读书就可以解决的</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Shine.:<br style="color: #4a4a4a; box-sizing: border-box;">
+我还是感觉js</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Shine.:<br style="color: #4a4a4a; box-sizing: border-box;">
+重要</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+要培养发现问题，提出问题的能力，能提出一个好的问题也是能力的一部分，我个人觉得</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">安木~🍄:<br style="color: #4a4a4a; box-sizing: border-box;">
+要怎么去培养这种发现问题的能力呢[捂脸][捂脸]</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">安木~🍄:<br style="color: #4a4a4a; box-sizing: border-box;">
+我感觉 我可能就是缺乏你说的这种思考</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">安木~🍄:<br style="color: #4a4a4a; box-sizing: border-box;">
+我的开发都只限于公司业务需求</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">安木~🍄:<br style="color: #4a4a4a; box-sizing: border-box;">
+貌似也没有主动精进过说  会思考怎么去提升生产力  或者  发现有什么好的方式可以提升生产力[捂脸]</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+说难也不难，就是不要只是站在开发的角度去思考问题，因为程序和市场是脱节的，所以开阔视野很重要</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">安木~🍄:<br style="color: #4a4a4a; box-sizing: border-box;">
+说的有道理</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">安木~🍄:<br style="color: #4a4a4a; box-sizing: border-box;">
+眼光不要局限对吧</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+举个简单例子：站在开发角度，我完成这次需求就ok了；站在产品角度，用户体验很重要；站在老板角度，节约成本很重要。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">安木~🍄:<br style="color: #4a4a4a; box-sizing: border-box;">
+不能为了业务开发而来发了[捂脸]</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+所以我们要做的，就是尽可能的最大化自己的价值，而不是把自己局限于某一个环节</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">安木~🍄:<br style="color: #4a4a4a; box-sizing: border-box;">
+这么说 貌似明白一点了</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+不然的话就成了一颗螺丝钉</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">安木~🍄:<br style="color: #4a4a4a; box-sizing: border-box;">
+相当于以前做的就只是完成需求</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">安木~🍄:<br style="color: #4a4a4a; box-sizing: border-box;">
+对的 我现在感觉我就是颗螺丝钉</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+程序来源于需求，需求来源于生活之中的痛点，所以我们写代码也一样，要透过需求看本质，即代码是为了解决痛点而存在的，而不是靠想象，我想做什么就做什么，技术不能够落地的因素是多方面的，如果不能够实际去解决一些问题，即使落地了也没啥意义。</p><hr style="color: #4a4a4a; box-sizing: initial; overflow: hidden; background: transparent; border-bottom: 1px solid #dfe2e5; border-bottom-color: #eee; height: .25em; padding: 0; margin: 24px 0; background-color: #e1e4e8; border: 0;">
+<h4 style="color: #4a4a4a; box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; font-size: 1em;">参考资料</h4><section class="woap-links" style="color: #4a4a4a; box-sizing: border-box;"></section></div>
+</div>
+<div id="woap-btn" style="position: fixed;top: 10px;right: 10px;width: 43px;height: 41px;box-sizing: border-box;cursor: pointer;background: #fff;border-radius: 50%;padding: 8px;box-shadow: 0 0 2px #d8d8d8;">
+<svg style="width: 100%;height: 100%" height="41" viewBox="0 0 43 41" width="43" xmlns="http://www.w3.org/2000/svg"><g fill="#07c160"><path d="m39.7 15.3c-3.7-4.9-10.2-6.2-16.1-4.1.2.1.4.1.6.2 8.7 2.9 13.3 12.3 10.4 21-.8 2.3-2 4.3-3.5 6 1.9-.5 3.8-1.3 5.4-2.5 6.6-5.1 7.9-14.5 3.2-20.6z"/><path d="m18 10.4c.4-.3.7-.5 1.1-.8h.1c.4-.2.8-.4 1.1-.7 0 0 .1 0 .1-.1.8-.4 1.6-.7 2.4-1 .1 0 .1 0 .2-.1.4-.1.8-.3 1.2-.4h.1c.4-.1.8-.2 1.2-.2h.2c.6-.1 1-.1 1.4-.1h.3c.4 0 .9-.1 1.3-.1.5 0 1 0 1.5.1h.2c.5 0 .9.1 1.4.2h.2c.5.1.9.2 1.3.3.1 0 .1 0 .2.1.5.1 1 .2 1.4.4-.2-.4-.4-.7-.4-.7-2.9-4.6-7.7-7.3-12.9-7.3-3.1 0-7.9 1.1-11.5 5.4-2.4 2.9-3.2 6.3-2.7 9.7.3 2.3 1.6 5.4 3.5 7.3.7-4.9 3.3-9.2 7.1-12z"/><path d="m21.6 30.9c-1.3 0-2.6-.2-3.8-.4-.1 0-.3 0-.5 0-.4 0-.7.1-1 .3l-4 2.6c-.1.1-.2.1-.4.1-.3 0-.6-.3-.7-.6 0-.2 0-.3.1-.5 0-.1.4-2 .7-3.2 0-.1.1-.3 0-.4 0-.4-.2-.8-.6-1-4.3-2.9-7.2-7.5-7.8-12.2-1.1 1.7-1.6 3-2.2 5-2.1 7.3 2.5 16 9.9 18.4 8.6 2.8 16.7-.3 19.5-7.6.3-.9.7-2.4.8-3.6-2.9 2.1-6 3.1-10 3.1z"/></g></svg>
+</div>
+</body>
+</html>

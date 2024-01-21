@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<style>
+.markdown-body .anchor:focus {
+  outline: none;
+}
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+.markdown-body h1:hover .anchor .octicon-link:before,
+.markdown-body h2:hover .anchor .octicon-link:before,
+.markdown-body h3:hover .anchor .octicon-link:before,
+.markdown-body h4:hover .anchor .octicon-link:before,
+.markdown-body h5:hover .anchor .octicon-link:before,
+.markdown-body h6:hover .anchor .octicon-link:before {
+  width: 16px;
+  height: 16px;
+  content: ' ';
+  display: inline-block;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'%3E%3C/path%3E%3C/svg%3E");
+}
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+.markdown-body .full-commit .btn-outline:not(:disabled):hover {
+  color: #005cc5;
+  border-color: #005cc5;
+}
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  cursor: pointer;
+  background: #ffea7f;
+}
+.markdown-body .woap-links .item {
+  display: flex;
+  word-wrap: break-word !important;
+}
+.markdown-body .woap-links .item span {
+  width: 10%;
+  font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, "PingFang SC", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.markdown-body .woap-links .item p {
+  width: 90%;
+  word-break: break-all;
+  margin: 0;
+}
+</style>
+<script>
+function copyElementToClipboard(element) {
+  window.getSelection().removeAllRanges();
+  let range = document.createRange();
+  range.selectNode(typeof element === 'string' ? document.getElementById(element) : element);
+  window.getSelection().addRange(range);
+  document.execCommand('copy');
+  window.getSelection().removeAllRanges();
+}
+window.addEventListener('load', function() {
+  const woapBtn = document.getElementById('woap-btn');
+  const woapHTML = document.getElementById('woap-body');
+  woapBtn.addEventListener('click', function() {
+    copyElementToClipboard(woapHTML);
+    alert('复制到公众号')
+  }, false);
+})
+</script>
+</head>
+<body>
+<h2 class="woap-title" style="padding: 20px 10px; max-width: 678px; margin: 0 auto; font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; color: #4a4a4a; border-bottom: solid 1px #eee; text-align: center;">微信杂谈 - 组件开发的一些思考</h2>
+<div class="markdown-body" id="woap-body" style="padding: 20px 10px; max-width: 678px; margin: 0 auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; line-height: 1.5; color: #24292e; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; font-size: 16px; line-height: 1.5; word-wrap: break-word;">
+<div style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 0;"><p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;"><code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">📅 2021.12.22</code></p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+人们更倾向于根据场景来探索解决方案，成也场景，败也场景。收窄要解决问题的范围，可以降低复杂度，但也降低了普适性。我以前也一直觉得，要实现的东西应该尽可能的剥离业务，但是随着做的业务越来越多，发现业务其实才是核心。当把业务抽象之后，所谓的跨平台其实就是适配的问题。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">我发现可能之前自己想错了，应该抽象的是业务而不是组件，组件只是业务的载体。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">适配层（组件）要做的就是低耦合，用抽象的业务逻辑去驱动适配层。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">其核心就是业务，怎么实现，是个技术问题。技术可以被替换，推翻。以不变（主业务逻辑）应万变（视觉及交互）。</p>
+<hr style="color: #4a4a4a; box-sizing: initial; overflow: hidden; background: transparent; border-bottom: 1px solid #dfe2e5; border-bottom-color: #eee; height: .25em; padding: 0; margin: 24px 0; background-color: #e1e4e8; border: 0;">
+<blockquote style="color: #4a4a4a; box-sizing: border-box; margin: 0; margin-top: 0; margin-bottom: 16px; padding: 0.5rem 1em; border-left: .25em solid #dfe2e5; background: #f8f8f8;">
+<p dir="auto" style="box-sizing: border-box; margin-top: 0; margin-bottom: 0; color: #999999;">产生的讨论</p>
+</blockquote>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">正人 (欧雷):<br style="color: #4a4a4a; box-sizing: border-box;">
+场景化方案基于通用化方案，不冲突</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+其实我是发现可能之前自己想错了，要抽象的可能是业务而不是组件</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">🇨🇳  Promise (🇨🇳  Promise):<br style="color: #4a4a4a; box-sizing: border-box;">
+感觉其实是不同维度</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">正人 (欧雷):<br style="color: #4a4a4a; box-sizing: border-box;">
+所以通用方案的扩展机制很重要</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">正人 (欧雷):<br style="color: #4a4a4a; box-sizing: border-box;">
+都要抽象</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">正人 (欧雷):<br style="color: #4a4a4a; box-sizing: border-box;">
+所以为啥要 MV*，为啥要 DDD[吃瓜]</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">🇨🇳  Promise (🇨🇳  Promise):<br style="color: #4a4a4a; box-sizing: border-box;">
+通用化方案抽离的开发工具本身， 例如打包工具， 组件化是ui 的抽离，例如react、vue，ant</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">🇨🇳  Promise (🇨🇳  Promise):<br style="color: #4a4a4a; box-sizing: border-box;">
+想到一个以前的小品，把大象放进冰箱需要几步，答案是三步。 接下来会对这三步行为不端细化和抽离。为了适配不同的场景（放进其他的东西），就对三步的行为不端抽象，部分不同的做单独适配</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+适配层（组件）我认为要做的就是低耦合，用抽象的业务逻辑去驱动适配层</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">🇨🇳  Promise (🇨🇳  Promise):<br style="color: #4a4a4a; box-sizing: border-box;">
+来驱动适配层怎么来理解</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Shine.:<br style="color: #4a4a4a; box-sizing: border-box;">
+除非业务组件 其他的组件都应该是低耦合吧 就只敢一件事</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Shine.:<br style="color: #4a4a4a; box-sizing: border-box;">
+不应该有任何业务逻辑什么的吧？</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">空:<br style="color: #4a4a4a; box-sizing: border-box;">
+不是有业务组件跟通用组件之分么</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+个人理解：组件开发一般两种模式，无状态组件和业务组件，业务组件会耦合业务逻辑</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+但是如果按照我说的，其实就不存在业务组件了，所有的组件基本和业务都不存在太大的耦合，也就是不会在组件里处理业务相关的东西</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+组件都退化到通用，然后只负责数据的填充。交互其实就是一个个动作，给业务数据所带来的反应。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Shine.:<br style="color: #4a4a4a; box-sizing: border-box;">
+就是说组件不去处理业务 业务都在使用的时候去处理？</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+在抽象的业务核心逻辑里处理，你可以理解为业务核心就是一个个纯函数</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+组件只负责接收数据</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Jack:<br style="color: #4a4a4a; box-sizing: border-box;">
+按我理解</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Jack:<br style="color: #4a4a4a; box-sizing: border-box;">
+理想化状态下，组件就是个书包</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Jack:<br style="color: #4a4a4a; box-sizing: border-box;">
+你给我啥书 我就装啥书</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Jack:<br style="color: #4a4a4a; box-sizing: border-box;">
+具体你给我的是语文书 数学书 马列主义 还是什么其他的</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Jack:<br style="color: #4a4a4a; box-sizing: border-box;">
+我不管</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Jack:<br style="color: #4a4a4a; box-sizing: border-box;">
+我只管把书装进去 让你带着走</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+对，书就是业务核心，组件只负责装</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Jack:<br style="color: #4a4a4a; box-sizing: border-box;">
+这也不是我该管的</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Jack:<br style="color: #4a4a4a; box-sizing: border-box;">
+理想情况下就是这样</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Jack:<br style="color: #4a4a4a; box-sizing: border-box;">
+我该管的只是，你如果不装书，装炸药，那我就报错</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">🇨🇳  Promise (🇨🇳  Promise):<br style="color: #4a4a4a; box-sizing: border-box;">
+这就是抽象与具象的互斥点了</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">🇨🇳  Promise (🇨🇳  Promise):<br style="color: #4a4a4a; box-sizing: border-box;">
+在业务状态下，有时候需要保证书的放入和放出顺序</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Jack:<br style="color: #4a4a4a; box-sizing: border-box;">
+是的 所以理想和现实还是有些差距</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">🇨🇳  Promise (🇨🇳  Promise):<br style="color: #4a4a4a; box-sizing: border-box;">
+书的放置位置和摆放形势</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+所以可能需要有类似流程控制的东西吧</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+我其实也没完全想明白</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Jack:<br style="color: #4a4a4a; box-sizing: border-box;">
+这个见仁见智了 有的倾向于在外边整理完了再塞进去</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Jack:<br style="color: #4a4a4a; box-sizing: border-box;">
+有的倾向于塞进去，背在身上，让书自己动</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">皓夜森林:<br style="color: #4a4a4a; box-sizing: border-box;">
+ui组件的逻辑层都应该是个纯函数，ui层就是只负责渲染。业务组件感觉更偏向于，处理某个特定业务，比如唤起第三方的支付，sdk的支付组件。这种</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Shine.:<br style="color: #4a4a4a; box-sizing: border-box;">
+什么叫纯函数 你给我啥我返回啥 对数据不做处理？</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">皓夜森林:<br style="color: #4a4a4a; box-sizing: border-box;">
+很简单，你想想你这个组件能不能在别的项目直接用</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Shine.:<br style="color: #4a4a4a; box-sizing: border-box;">
+我看网上解释有点太名词了</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">🇨🇳  Promise (🇨🇳  Promise):<br style="color: #4a4a4a; box-sizing: border-box;">
+现在大多数抽象层的处理，都是在外面处理外，整体放进去，但是也有要求这个单独执行动作的。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">皓夜森林:<br style="color: #4a4a4a; box-sizing: border-box;">
+不管啥项目。都能直接用（运行环境允许的情况下）</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Jack:<br style="color: #4a4a4a; box-sizing: border-box;">
+没有副作用的函数</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Jack:<br style="color: #4a4a4a; box-sizing: border-box;">
+比如 sum（1，2，3）</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+纯函数就是个黑盒，接收参数，内部一系列处理后，返回的就是格式化后的标准数据格式</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Jack:<br style="color: #4a4a4a; box-sizing: border-box;">
+我如果输入123 那输出值永远是6</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">🇨🇳  Promise (🇨🇳  Promise):<br style="color: #4a4a4a; box-sizing: border-box;">
+我个人推崇的还是那种微内核的形式， 提供插件机制和默认机制。 同时保留执行 过程外部可以修改的api</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">皓夜森林:<br style="color: #4a4a4a; box-sizing: border-box;">
+你就理解为一个函数如果在输入一样的情况下输出永远不变那就是纯函数</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">皓夜森林:<br style="color: #4a4a4a; box-sizing: border-box;">
+const add = (a ,b) =&gt; a + b 这就是一个纯函数</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">皓夜森林:<br style="color: #4a4a4a; box-sizing: border-box;">
+let effectParam = 1<br style="color: #4a4a4a; box-sizing: border-box;">
+const add = (a, b) =&gt;  a + b + effectParam</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">皓夜森林:<br style="color: #4a4a4a; box-sizing: border-box;">
+因为结果会受effectParam影响</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">皓夜森林:<br style="color: #4a4a4a; box-sizing: border-box;">
+这就不是一个纯函数</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">皓夜森林:<br style="color: #4a4a4a; box-sizing: border-box;">
+这个参数变了结果就变了 即使输入可能都是一样的输入</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Jack:<br style="color: #4a4a4a; box-sizing: border-box;">
+effectParam也可能是某个api的返回值</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Shine.:<br style="color: #4a4a4a; box-sizing: border-box;">
+哦 明白了</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">🇨🇳  Promise (🇨🇳  Promise):<br style="color: #4a4a4a; box-sizing: border-box;">
+像纯函数的编写，也是可以传入单纯的形参，或者传入一个改变执行函数作为结构的再次处理</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Shine.:<br style="color: #4a4a4a; box-sizing: border-box;">
+我一直理解的是 不修改传递的参数那</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">皓夜森林:<br style="color: #4a4a4a; box-sizing: border-box;">
+我寄几玩我寄几的</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">皓夜森林:<br style="color: #4a4a4a; box-sizing: border-box;">
+你别搞我</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">皓夜森林:<br style="color: #4a4a4a; box-sizing: border-box;">
+这就是纯函数</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+业务其实就是一大堆这样的纯函数，做什么功能，调什么函数，职责单一</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Jack:<br style="color: #4a4a4a; box-sizing: border-box;">
+其实本质就是在做取舍</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Shine.:<br style="color: #4a4a4a; box-sizing: border-box;">
+那我好像很多时候违背了这个</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">🇨🇳  Promise (🇨🇳  Promise):<br style="color: #4a4a4a; box-sizing: border-box;">
+能保证单一指责其实在团队中就有点难的</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">皓夜森林:<br style="color: #4a4a4a; box-sizing: border-box;">
+hook很多都是业务组件的逻辑层</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Shine.:<br style="color: #4a4a4a; box-sizing: border-box;">
+看似代码少了</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Shine.:<br style="color: #4a4a4a; box-sizing: border-box;">
+其实维护起来有点麻烦</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Jack:<br style="color: #4a4a4a; box-sizing: border-box;">
+的确</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">皓夜森林:<br style="color: #4a4a4a; box-sizing: border-box;">
+那你的项目做大了就很难维护</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Shine.:<br style="color: #4a4a4a; box-sizing: border-box;">
+一改都得变</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">皓夜森林:<br style="color: #4a4a4a; box-sizing: border-box;">
+这个是肯定的</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Jack:<br style="color: #4a4a4a; box-sizing: border-box;">
+所以要考虑颗粒度</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Jack:<br style="color: #4a4a4a; box-sizing: border-box;">
+这就又扯到很多其他方面了</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Jack:<br style="color: #4a4a4a; box-sizing: border-box;">
+团队规模 业务复杂度 等等</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">皓夜森林:<br style="color: #4a4a4a; box-sizing: border-box;">
+我的话这种都是踩坑踩出来的</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">🇨🇳  Promise (🇨🇳  Promise):<br style="color: #4a4a4a; box-sizing: border-box;">
+这个本身就是一个很大的命题，把这个充满生机的世界在计算机中进行再造，本身就是厉害</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">皓夜森林:<br style="color: #4a4a4a; box-sizing: border-box;">
+最近改公司的支付...越发体会深刻</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+支付的各种逻辑一旦耦合进 ui 里， ui 大改版就痛苦了</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">🇨🇳  Promise (🇨🇳  Promise):<br style="color: #4a4a4a; box-sizing: border-box;">
+其实理解好面向对象也是比较容易，抽象对象， 实例在进行业务适配。 提供插件机制提供实例运行</p><hr style="color: #4a4a4a; box-sizing: initial; overflow: hidden; background: transparent; border-bottom: 1px solid #dfe2e5; border-bottom-color: #eee; height: .25em; padding: 0; margin: 24px 0; background-color: #e1e4e8; border: 0;">
+<h4 style="color: #4a4a4a; box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; font-size: 1em;">参考资料</h4><section class="woap-links" style="color: #4a4a4a; box-sizing: border-box;"></section></div>
+</div>
+<div id="woap-btn" style="position: fixed;top: 10px;right: 10px;width: 43px;height: 41px;box-sizing: border-box;cursor: pointer;background: #fff;border-radius: 50%;padding: 8px;box-shadow: 0 0 2px #d8d8d8;">
+<svg style="width: 100%;height: 100%" height="41" viewBox="0 0 43 41" width="43" xmlns="http://www.w3.org/2000/svg"><g fill="#07c160"><path d="m39.7 15.3c-3.7-4.9-10.2-6.2-16.1-4.1.2.1.4.1.6.2 8.7 2.9 13.3 12.3 10.4 21-.8 2.3-2 4.3-3.5 6 1.9-.5 3.8-1.3 5.4-2.5 6.6-5.1 7.9-14.5 3.2-20.6z"/><path d="m18 10.4c.4-.3.7-.5 1.1-.8h.1c.4-.2.8-.4 1.1-.7 0 0 .1 0 .1-.1.8-.4 1.6-.7 2.4-1 .1 0 .1 0 .2-.1.4-.1.8-.3 1.2-.4h.1c.4-.1.8-.2 1.2-.2h.2c.6-.1 1-.1 1.4-.1h.3c.4 0 .9-.1 1.3-.1.5 0 1 0 1.5.1h.2c.5 0 .9.1 1.4.2h.2c.5.1.9.2 1.3.3.1 0 .1 0 .2.1.5.1 1 .2 1.4.4-.2-.4-.4-.7-.4-.7-2.9-4.6-7.7-7.3-12.9-7.3-3.1 0-7.9 1.1-11.5 5.4-2.4 2.9-3.2 6.3-2.7 9.7.3 2.3 1.6 5.4 3.5 7.3.7-4.9 3.3-9.2 7.1-12z"/><path d="m21.6 30.9c-1.3 0-2.6-.2-3.8-.4-.1 0-.3 0-.5 0-.4 0-.7.1-1 .3l-4 2.6c-.1.1-.2.1-.4.1-.3 0-.6-.3-.7-.6 0-.2 0-.3.1-.5 0-.1.4-2 .7-3.2 0-.1.1-.3 0-.4 0-.4-.2-.8-.6-1-4.3-2.9-7.2-7.5-7.8-12.2-1.1 1.7-1.6 3-2.2 5-2.1 7.3 2.5 16 9.9 18.4 8.6 2.8 16.7-.3 19.5-7.6.3-.9.7-2.4.8-3.6-2.9 2.1-6 3.1-10 3.1z"/></g></svg>
+</div>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<style>
+.markdown-body .anchor:focus {
+  outline: none;
+}
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+.markdown-body h1:hover .anchor .octicon-link:before,
+.markdown-body h2:hover .anchor .octicon-link:before,
+.markdown-body h3:hover .anchor .octicon-link:before,
+.markdown-body h4:hover .anchor .octicon-link:before,
+.markdown-body h5:hover .anchor .octicon-link:before,
+.markdown-body h6:hover .anchor .octicon-link:before {
+  width: 16px;
+  height: 16px;
+  content: ' ';
+  display: inline-block;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'%3E%3C/path%3E%3C/svg%3E");
+}
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+.markdown-body .full-commit .btn-outline:not(:disabled):hover {
+  color: #005cc5;
+  border-color: #005cc5;
+}
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  cursor: pointer;
+  background: #ffea7f;
+}
+.markdown-body .woap-links .item {
+  display: flex;
+  word-wrap: break-word !important;
+}
+.markdown-body .woap-links .item span {
+  width: 10%;
+  font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, "PingFang SC", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.markdown-body .woap-links .item p {
+  width: 90%;
+  word-break: break-all;
+  margin: 0;
+}
+</style>
+<script>
+function copyElementToClipboard(element) {
+  window.getSelection().removeAllRanges();
+  let range = document.createRange();
+  range.selectNode(typeof element === 'string' ? document.getElementById(element) : element);
+  window.getSelection().addRange(range);
+  document.execCommand('copy');
+  window.getSelection().removeAllRanges();
+}
+window.addEventListener('load', function() {
+  const woapBtn = document.getElementById('woap-btn');
+  const woapHTML = document.getElementById('woap-body');
+  woapBtn.addEventListener('click', function() {
+    copyElementToClipboard(woapHTML);
+    alert('复制到公众号')
+  }, false);
+})
+</script>
+</head>
+<body>
+<h2 class="woap-title" style="padding: 20px 10px; max-width: 678px; margin: 0 auto; font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; color: #4a4a4a; border-bottom: solid 1px #eee; text-align: center;">微信杂谈 - 解决问题方法论</h2>
+<div class="markdown-body" id="woap-body" style="padding: 20px 10px; max-width: 678px; margin: 0 auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; line-height: 1.5; color: #24292e; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; font-size: 16px; line-height: 1.5; word-wrap: break-word;">
+<div style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 0;"><p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;"><code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">📅 2022.01.07</code></p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+Vue问题求教：在 watch 里面，我先用 splice 清空了数组，再 for 循环 push 进去，控制台打印数组是更新了、但是页面还是没有重新渲染</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+小哥，你遇到过吗</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+vue 我不熟</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+你用的是 vue2 吗</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+[可怜]对</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+看看代码</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+Vue3 应该没这个问题了</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+代码在公司，只能下周一过去看了</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+[捂脸] 有时间跑个最小 demo</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+可能自己就发现问题了</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+最小 demo 是啥意思</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+就是复现问题的最小用例</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+奥奥是这个意思啊</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+那我回家了写一个跑一下试试</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+<span style="box-sizing: border-box; color: #1e6bb8;" href="https://codesandbox.io/" rel="nofollow">https://codesandbox.io/<sup style="box-sizing: border-box; line-height: 0; color: #1e6bb8;">[1]</sup></span></p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+可以用这个创建</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+好的，感谢</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+比较方便，写完直接分享链接，就是一个在线版的</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+好、我去试一试，之前还没用过这种工具</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+嗯嗯，不客气，这类工具都是比较常用的，还有 codepen 之类的</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+学技术，只盯着公众号，很有限。要自己拓宽知识面，而不是吃别人嚼过的。如何学习，如何获取信息，如何思考，如何解决问题，我觉得才是最重要的。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+如何学习：<br style="color: #4a4a4a; box-sizing: border-box;">
+最常用的是视频学习方式：拉勾、慕课网、B站，一般边看边敲，或看完几节再动手敲<br style="color: #4a4a4a; box-sizing: border-box;">
+获取信息：<br style="color: #4a4a4a; box-sizing: border-box;">
+搜索引擎、各种技术网站、公众号</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+解决问题：<br style="color: #4a4a4a; box-sizing: border-box;">
+一般是搜索引擎，谷歌或百度，如果实在解决不了就问别人</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+如何高效、深度思考我太欠缺了，很多问题只能看到表面，看不透深层</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+这些只属于入门级学习方式</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+学习方式也有问题，大部分时间属于被动接受。。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+高效的学习方式，是知道自己想要什么</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+我是感觉自己效率不太高，但是却不知道怎么改善[流泪]</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+就是被这帮公众号惯坏了，丧失了捕猎的技巧，只会等着被投喂</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+工作之余，晚上回去不晚的话会学一点，周末学一些，可利用的学习时间也不多</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+你要学会主动获取自己想要的信息，这是第一步，然后就是根据自己的需求，拓宽知识面，然后就是读文档。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+最难的还有一步，就是不知道自己想要什么。。。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+就是有一股劲，不知道往哪个方向上使</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+今天遇到的问题，我可能需要去看一下 vue 的源码、以及再过一下它的文档</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+这是不是“主动获取自己想要的信息”的一种表现[可怜]</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+还是别的其他的理解，啥都可以直说的哈，我在工作中也是直性子有啥说啥的[破涕为笑]</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+这个不是看不看文档的问题，我现在问你，你能把自己遇到的问题，拆解成 1, 2, 3, ... 步骤吗</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:</p>
+<ol dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; padding-left: 2em;">
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word;"><span style="color: #4a4a4a; box-sizing: border-box;">我遇到了什么问题</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">为什么会出现这个问题</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">这个问题出现后，我应该怎么办</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">我如何分析这个问题</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">别人遇到同样的问题，如何定位，思考</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">文档我是否都了解清楚了</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">我尝试了哪些方法</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">问题解决了，我学会了什么</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">如果下次遇到同样的问题，我该怎么办</span></li>
+</ol>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">我暂时就想到这些，你觉得你做到了哪些</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+这是解决问题的基本流程</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+答案毫无用处，因为它并不能让你举一反三</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+这些东西，大部分，从公众号，视频上，是学不到的。需要自己动手折腾，思考</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+只做到了三四条。。。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+形成自己解决问题的方法论，它是一个通用的解决问题的手段。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+折腾了，但思考的太少了</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+很多时候，别人问我的问题，我也不会，但是有些问题，我可以解答，那是因为，我有自己的解题思路</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+我是动手的时间比思考的时间多，这样看是搞反了</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+是总结少了，而且少了解题的步骤，但是这个步骤恰恰是最关键的，它需要你去分析问题，拆解问题，将未知变成已知，用已经掌握的去推导陌生的</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+说的太对了</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+我经常会遇到那种重复性的问题，很久以前遇到过的，但就是想不起来当初是怎么解决的了，只有去翻看以前的代码或笔记才能想起来</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+动手没有错，错的是光动手其实没啥太大意义。因为动手是机械性的动作。代码是你逻辑思维的具象化。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+如果没有代码或笔记参考，我就得重新把那个问题再来解决一遍</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+你需要做的事抽象为自身可以理解的事物，而不是去记代码，记以前解决问题的答案，毫无意义（一些固定流程，可以笔记，作为参考，快速查阅）。你需要记住的是你是如何拆解问题，如何解决问题的流程，然后去强化它。这样，任何时候，碰到这个问题，或者是新问题，你都可以套用你解决问题的流程模板</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+我之前都没往这方面想过，这似乎也适用于生活等其他方面的问题解决</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+感谢你的提点，提醒了我，我有必要重新审视自己的学习习惯、思考方式了</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+还有好长的路要走</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+是的</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+这个没有什么捷径，我自己也走了好几年的弯路</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+所以我把我很多的经验，拿出来分享了，但是似乎群友看的并不多。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+每个人都有自己选择的自由，我也会重新审视自己</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+还是看人，就像现在很多时候流量至上，写的好呢东西有深度的东西看得人就少了，被看得多的倒是那些浅显的。。<br style="color: #4a4a4a; box-sizing: border-box;">
+你的分享给我了很多启发、指导，这些经验也会慢慢沉淀，到了一定时候好的东西自然会被发现也被大众接受的</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+你的分享我觉得很受用，所以坚持做对的事啦</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+我的分享，有一二人懂，足以。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+一起坚持、</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+坚持比努力更重要、哈哈这是我喜欢的一句话</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+嗯嗯，时间复利</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+嗯嗯新的一年，一起加油</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+那我再告诉你一句话：正确的坚持比坚持更重要，不然就是南辕北辙</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Veda@Angie:<br style="color: #4a4a4a; box-sizing: border-box;">
+对，因为还有一句话，选择比努力更重要</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+嗯嗯</p><hr style="color: #4a4a4a; box-sizing: initial; overflow: hidden; background: transparent; border-bottom: 1px solid #dfe2e5; border-bottom-color: #eee; height: .25em; padding: 0; margin: 24px 0; background-color: #e1e4e8; border: 0;">
+<h4 style="color: #4a4a4a; box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; font-size: 1em;">参考资料</h4><section class="woap-links" style="color: #4a4a4a; box-sizing: border-box;"><span class="item" style="color: #4a4a4a; box-sizing: border-box; display: flex; font-size: 14px; word-wrap: break-word;"><span style="box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #555;">[1]</span><p style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; width: 90%; word-break: break-all; margin: 0;"><span style="color: #4a4a4a; box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right: 5px;">https://codesandbox.io/:</span> <em style="box-sizing: border-box; color: #999;">https://codesandbox.io/</em></p></span></section></div>
+</div>
+<div id="woap-btn" style="position: fixed;top: 10px;right: 10px;width: 43px;height: 41px;box-sizing: border-box;cursor: pointer;background: #fff;border-radius: 50%;padding: 8px;box-shadow: 0 0 2px #d8d8d8;">
+<svg style="width: 100%;height: 100%" height="41" viewBox="0 0 43 41" width="43" xmlns="http://www.w3.org/2000/svg"><g fill="#07c160"><path d="m39.7 15.3c-3.7-4.9-10.2-6.2-16.1-4.1.2.1.4.1.6.2 8.7 2.9 13.3 12.3 10.4 21-.8 2.3-2 4.3-3.5 6 1.9-.5 3.8-1.3 5.4-2.5 6.6-5.1 7.9-14.5 3.2-20.6z"/><path d="m18 10.4c.4-.3.7-.5 1.1-.8h.1c.4-.2.8-.4 1.1-.7 0 0 .1 0 .1-.1.8-.4 1.6-.7 2.4-1 .1 0 .1 0 .2-.1.4-.1.8-.3 1.2-.4h.1c.4-.1.8-.2 1.2-.2h.2c.6-.1 1-.1 1.4-.1h.3c.4 0 .9-.1 1.3-.1.5 0 1 0 1.5.1h.2c.5 0 .9.1 1.4.2h.2c.5.1.9.2 1.3.3.1 0 .1 0 .2.1.5.1 1 .2 1.4.4-.2-.4-.4-.7-.4-.7-2.9-4.6-7.7-7.3-12.9-7.3-3.1 0-7.9 1.1-11.5 5.4-2.4 2.9-3.2 6.3-2.7 9.7.3 2.3 1.6 5.4 3.5 7.3.7-4.9 3.3-9.2 7.1-12z"/><path d="m21.6 30.9c-1.3 0-2.6-.2-3.8-.4-.1 0-.3 0-.5 0-.4 0-.7.1-1 .3l-4 2.6c-.1.1-.2.1-.4.1-.3 0-.6-.3-.7-.6 0-.2 0-.3.1-.5 0-.1.4-2 .7-3.2 0-.1.1-.3 0-.4 0-.4-.2-.8-.6-1-4.3-2.9-7.2-7.5-7.8-12.2-1.1 1.7-1.6 3-2.2 5-2.1 7.3 2.5 16 9.9 18.4 8.6 2.8 16.7-.3 19.5-7.6.3-.9.7-2.4.8-3.6-2.9 2.1-6 3.1-10 3.1z"/></g></svg>
+</div>
+</body>
+</html>

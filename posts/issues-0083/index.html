@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<style>
+.markdown-body .anchor:focus {
+  outline: none;
+}
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+.markdown-body h1:hover .anchor .octicon-link:before,
+.markdown-body h2:hover .anchor .octicon-link:before,
+.markdown-body h3:hover .anchor .octicon-link:before,
+.markdown-body h4:hover .anchor .octicon-link:before,
+.markdown-body h5:hover .anchor .octicon-link:before,
+.markdown-body h6:hover .anchor .octicon-link:before {
+  width: 16px;
+  height: 16px;
+  content: ' ';
+  display: inline-block;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'%3E%3C/path%3E%3C/svg%3E");
+}
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+.markdown-body .full-commit .btn-outline:not(:disabled):hover {
+  color: #005cc5;
+  border-color: #005cc5;
+}
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  cursor: pointer;
+  background: #ffea7f;
+}
+.markdown-body .woap-links .item {
+  display: flex;
+  word-wrap: break-word !important;
+}
+.markdown-body .woap-links .item span {
+  width: 10%;
+  font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, "PingFang SC", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.markdown-body .woap-links .item p {
+  width: 90%;
+  word-break: break-all;
+  margin: 0;
+}
+</style>
+<script>
+function copyElementToClipboard(element) {
+  window.getSelection().removeAllRanges();
+  let range = document.createRange();
+  range.selectNode(typeof element === 'string' ? document.getElementById(element) : element);
+  window.getSelection().addRange(range);
+  document.execCommand('copy');
+  window.getSelection().removeAllRanges();
+}
+window.addEventListener('load', function() {
+  const woapBtn = document.getElementById('woap-btn');
+  const woapHTML = document.getElementById('woap-body');
+  woapBtn.addEventListener('click', function() {
+    copyElementToClipboard(woapHTML);
+    alert('复制到公众号')
+  }, false);
+})
+</script>
+</head>
+<body>
+<h2 class="woap-title" style="padding: 20px 10px; max-width: 678px; margin: 0 auto; font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; color: #4a4a4a; border-bottom: solid 1px #eee; text-align: center;">微信杂谈 - 代码优化</h2>
+<div class="markdown-body" id="woap-body" style="padding: 20px 10px; max-width: 678px; margin: 0 auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; line-height: 1.5; color: #24292e; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; font-size: 16px; line-height: 1.5; word-wrap: break-word;">
+<div style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 0;"><p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;"><code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">📅 2022.02.23</code></p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Ice:<br style="color: #4a4a4a; box-sizing: border-box;">
+这种代码怎么优化一下<br style="color: #4a4a4a; box-sizing: border-box;">
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/16164244/155441847-4c785923-cb38-41d4-91a9-d8b7242bf519.png" style="box-sizing: border-box; background-color: initial; color: #0366d6; text-decoration: none;"><img width="480" alt="image" src="https://user-images.githubusercontent.com/16164244/155441847-4c785923-cb38-41d4-91a9-d8b7242bf519.png" style="color: #4a4a4a; border-style: none; box-sizing: initial; background-color: #fff; max-width: 100%;"></a></p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+策略模式</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Ice:<br style="color: #4a4a4a; box-sizing: border-box;">
+什么意思</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+额，或者 switch</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+其实 if 也还好吧</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Ice:<br style="color: #4a4a4a; box-sizing: border-box;">
+要写好长if</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+其实这么写条件不好</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Ice:<br style="color: #4a4a4a; box-sizing: border-box;">
+那我该怎么写</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+最好是把校验规则抽象出来</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+至于校验规则怎么抽象，需要看业务需求</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Ice:<br style="color: #4a4a4a; box-sizing: border-box;">
+我就判断每一行的单元格不能为空保存的时候</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">张浩:<br style="color: #4a4a4a; box-sizing: border-box;">
+switch</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">张浩:<br style="color: #4a4a4a; box-sizing: border-box;">
+据说性能会很高</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+其实我建议根据需求把规则做抽象，每个字段对应的校验文案其实是固定的，然后就是一个拼装问题</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+但是过度抽象反而不如 if 这种更直白，所以需要自己权衡一下未来需求的迭代，保证一定的可扩展性</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+其实就是做一个通用的校验器</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+只需要接收数据源就可以返回校验文案</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+以及是否通过的状态</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+举个例子，看你这个截图，其实每个字段都对应一个文案，比如最高分，最低分，然后通过逗号连接，不能为空！<br style="color: #4a4a4a; box-sizing: border-box;">
+这就是规则：aaa, bbb, ccc 不能为空！<br style="color: #4a4a4a; box-sizing: border-box;">
+aaa, bbb, ccc 可以通过数组做收集</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Ice:<br style="color: #4a4a4a; box-sizing: border-box;">
+是噢</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">张浩:<br style="color: #4a4a4a; box-sizing: border-box;">
+哦，然后封装一个方法，循环这个规则数组，如果有一项false，直接返回具体原因</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">张浩:<br style="color: #4a4a4a; box-sizing: border-box;">
+否则返回true？</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+数组做收集，你只需要对字段做遍历就好了，不满足的就收集。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">张浩:<br style="color: #4a4a4a; box-sizing: border-box;">
+哦哦</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+这个看个人，实现方法有很多，我只是举例而已。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">张浩:<br style="color: #4a4a4a; box-sizing: border-box;">
+好的学习了</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">柒冉:<br style="color: #4a4a4a; box-sizing: border-box;">
+学到了</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+这样你可以针对分数写一个校验器，只接收数据源，然后返回处理结果，后期需求变更，只需要重新实现校验器即可。数据做好格式化输出。你的校验器对调用者来说就是一个黑盒。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">张浩:<br style="color: #4a4a4a; box-sizing: border-box;">
+大佬，那如果是一个表单，里面有很多条件，那种校验应该如何封装比较好</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">张浩:<br style="color: #4a4a4a; box-sizing: border-box;">
+也要对每个字段分别封装吗</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+一样的思路，核心思想就是做到：UI，Data, 业务逻辑之间的解耦。按照这个思路去拆。函数式编程思想。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">张浩:<br style="color: #4a4a4a; box-sizing: border-box;">
+嗯嗯，我想下</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+你抽象的东西就是一个黑盒，保证输入，输出源的一致性，内部怎么实现我并不关系。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">张浩:<br style="color: #4a4a4a; box-sizing: border-box;">
+嗯嗯</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+这个没有什么通用式，一站式解决方案，多写，多思考，自己慢慢就找到感觉了，当你觉得某个地方的代码特别繁琐，改起来很复杂，牵一发而动全身，一般就是对代码结构的思考有所欠缺了。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">张浩:<br style="color: #4a4a4a; box-sizing: border-box;">
+嗯嗯</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">张浩:<br style="color: #4a4a4a; box-sizing: border-box;">
+感觉自己还是抽象的不够彻底，每次都是写完代码之后，发现，这地方为啥不抽个方法出来。。。。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+代码都是边写边优化的，过早优化，可能会导致扩展性不足。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+反而越改越麻烦</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">张浩:<br style="color: #4a4a4a; box-sizing: border-box;">
+嗯嗯</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+写代码的一般流程：<br style="color: #4a4a4a; box-sizing: border-box;">
+先实现功能 -&gt; 找代码共性 -&gt; 思考优化 -&gt; 重构<br style="color: #4a4a4a; box-sizing: border-box;">
+比较厉害的，可以根据自己的经验给未来的需求留出口子，方便扩展</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">张浩:<br style="color: #4a4a4a; box-sizing: border-box;">
+我都是写完之后就拉倒了哈哈，以后注意下，review一下[捂脸]</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+虽然不可以一步抽象到位，但是可以边写边思考，边优化。这就是迭代。需求需要迭代，代码也需要迭代。</p><hr style="color: #4a4a4a; box-sizing: initial; overflow: hidden; background: transparent; border-bottom: 1px solid #dfe2e5; border-bottom-color: #eee; height: .25em; padding: 0; margin: 24px 0; background-color: #e1e4e8; border: 0;">
+<h4 style="color: #4a4a4a; box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; font-size: 1em;">参考资料</h4><section class="woap-links" style="color: #4a4a4a; box-sizing: border-box;"></section></div>
+</div>
+<div id="woap-btn" style="position: fixed;top: 10px;right: 10px;width: 43px;height: 41px;box-sizing: border-box;cursor: pointer;background: #fff;border-radius: 50%;padding: 8px;box-shadow: 0 0 2px #d8d8d8;">
+<svg style="width: 100%;height: 100%" height="41" viewBox="0 0 43 41" width="43" xmlns="http://www.w3.org/2000/svg"><g fill="#07c160"><path d="m39.7 15.3c-3.7-4.9-10.2-6.2-16.1-4.1.2.1.4.1.6.2 8.7 2.9 13.3 12.3 10.4 21-.8 2.3-2 4.3-3.5 6 1.9-.5 3.8-1.3 5.4-2.5 6.6-5.1 7.9-14.5 3.2-20.6z"/><path d="m18 10.4c.4-.3.7-.5 1.1-.8h.1c.4-.2.8-.4 1.1-.7 0 0 .1 0 .1-.1.8-.4 1.6-.7 2.4-1 .1 0 .1 0 .2-.1.4-.1.8-.3 1.2-.4h.1c.4-.1.8-.2 1.2-.2h.2c.6-.1 1-.1 1.4-.1h.3c.4 0 .9-.1 1.3-.1.5 0 1 0 1.5.1h.2c.5 0 .9.1 1.4.2h.2c.5.1.9.2 1.3.3.1 0 .1 0 .2.1.5.1 1 .2 1.4.4-.2-.4-.4-.7-.4-.7-2.9-4.6-7.7-7.3-12.9-7.3-3.1 0-7.9 1.1-11.5 5.4-2.4 2.9-3.2 6.3-2.7 9.7.3 2.3 1.6 5.4 3.5 7.3.7-4.9 3.3-9.2 7.1-12z"/><path d="m21.6 30.9c-1.3 0-2.6-.2-3.8-.4-.1 0-.3 0-.5 0-.4 0-.7.1-1 .3l-4 2.6c-.1.1-.2.1-.4.1-.3 0-.6-.3-.7-.6 0-.2 0-.3.1-.5 0-.1.4-2 .7-3.2 0-.1.1-.3 0-.4 0-.4-.2-.8-.6-1-4.3-2.9-7.2-7.5-7.8-12.2-1.1 1.7-1.6 3-2.2 5-2.1 7.3 2.5 16 9.9 18.4 8.6 2.8 16.7-.3 19.5-7.6.3-.9.7-2.4.8-3.6-2.9 2.1-6 3.1-10 3.1z"/></g></svg>
+</div>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<style>
+.markdown-body .anchor:focus {
+  outline: none;
+}
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+.markdown-body h1:hover .anchor .octicon-link:before,
+.markdown-body h2:hover .anchor .octicon-link:before,
+.markdown-body h3:hover .anchor .octicon-link:before,
+.markdown-body h4:hover .anchor .octicon-link:before,
+.markdown-body h5:hover .anchor .octicon-link:before,
+.markdown-body h6:hover .anchor .octicon-link:before {
+  width: 16px;
+  height: 16px;
+  content: ' ';
+  display: inline-block;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'%3E%3C/path%3E%3C/svg%3E");
+}
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+.markdown-body .full-commit .btn-outline:not(:disabled):hover {
+  color: #005cc5;
+  border-color: #005cc5;
+}
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  cursor: pointer;
+  background: #ffea7f;
+}
+.markdown-body .woap-links .item {
+  display: flex;
+  word-wrap: break-word !important;
+}
+.markdown-body .woap-links .item span {
+  width: 10%;
+  font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, "PingFang SC", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.markdown-body .woap-links .item p {
+  width: 90%;
+  word-break: break-all;
+  margin: 0;
+}
+</style>
+<script>
+function copyElementToClipboard(element) {
+  window.getSelection().removeAllRanges();
+  let range = document.createRange();
+  range.selectNode(typeof element === 'string' ? document.getElementById(element) : element);
+  window.getSelection().addRange(range);
+  document.execCommand('copy');
+  window.getSelection().removeAllRanges();
+}
+window.addEventListener('load', function() {
+  const woapBtn = document.getElementById('woap-btn');
+  const woapHTML = document.getElementById('woap-body');
+  woapBtn.addEventListener('click', function() {
+    copyElementToClipboard(woapHTML);
+    alert('复制到公众号')
+  }, false);
+})
+</script>
+</head>
+<body>
+<h2 class="woap-title" style="padding: 20px 10px; max-width: 678px; margin: 0 auto; font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; color: #4a4a4a; border-bottom: solid 1px #eee; text-align: center;">什么字体更适合程序员？</h2>
+<div class="markdown-body" id="woap-body" style="padding: 20px 10px; max-width: 678px; margin: 0 auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; line-height: 1.5; color: #24292e; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; font-size: 16px; line-height: 1.5; word-wrap: break-word;">
+<div style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 0;"><ul dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; padding-left: 2em;">
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word;">
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-bottom: 16px; margin-top: 16px;"><span style="box-sizing: border-box; color: #1e6bb8;" href="https://github.com/tonsky/FiraCode">Fira Code<sup style="box-sizing: border-box; line-height: 0; color: #1e6bb8;">[1]</sup></span> - 带有连字的免费等宽字体</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-bottom: 16px; margin-top: 16px;"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/16164244/153377008-908b4921-86d6-4ec5-afe7-02b504f6e960.png" style="box-sizing: border-box; background-color: initial; color: #0366d6; text-decoration: none;"><img src="https://user-images.githubusercontent.com/16164244/153377008-908b4921-86d6-4ec5-afe7-02b504f6e960.png" alt="fira code" style="color: #4a4a4a; border-style: none; box-sizing: initial; background-color: #fff; max-width: 100%;"></a></p>
+</li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;">
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-bottom: 16px; margin-top: 16px;"><span style="box-sizing: border-box; color: #1e6bb8;" href="https://github.com/ryanoasis/nerd-fonts">Nerd Fonts<sup style="box-sizing: border-box; line-height: 0; color: #1e6bb8;">[2]</sup></span> - 修补了具有大量字形（图标）的开发人员目标字体。特别是从流行的“标志性字体”中添加大量额外的字形，例如 <span style="box-sizing: border-box; color: #1e6bb8;" href="https://github.com/FortAwesome/Font-Awesome">Font Awesome<sup style="box-sizing: border-box; line-height: 0; color: #1e6bb8;">[3]</sup></span>、<span style="box-sizing: border-box; color: #1e6bb8;" href="http://vorillaz.github.io/devicons/" rel="nofollow">Devicons<sup style="box-sizing: border-box; line-height: 0; color: #1e6bb8;">[4]</sup></span>、<span style="box-sizing: border-box; color: #1e6bb8;" href="https://github.com/github/octicons">Octicons<sup style="box-sizing: border-box; line-height: 0; color: #1e6bb8;">[5]</sup></span>等。3,600 多个图标，50 多种修补字体，如 Hack、Source Code Pro 等。<br style="color: #4a4a4a; box-sizing: border-box;">
+​<br style="color: #4a4a4a; box-sizing: border-box;">
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/16164244/153377057-7121dc84-fff2-4610-b6cd-a651899972b7.png" style="box-sizing: border-box; background-color: initial; color: #0366d6; text-decoration: none;"><img src="https://user-images.githubusercontent.com/16164244/153377057-7121dc84-fff2-4610-b6cd-a651899972b7.png" alt="nerd fonts" style="color: #4a4a4a; border-style: none; box-sizing: initial; background-color: #fff; max-width: 100%;"></a></p>
+</li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;">
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-bottom: 16px; margin-top: 16px;"><span style="box-sizing: border-box; color: #1e6bb8;" href="https://www.typography.com/fonts/operator/styles" rel="nofollow">Operator Mono<sup style="box-sizing: border-box; line-height: 0; color: #1e6bb8;">[6]</sup></span> - 对编码友好的字体，Operator Mono 字体本身并不支持类似于 Fira Code 的连字，但是在社区有个工具专门针对 Operator Mono 字体做连字处理。<br style="color: #4a4a4a; box-sizing: border-box;">
+​<br style="color: #4a4a4a; box-sizing: border-box;">
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/16164244/153377101-7d513eb1-bd33-410d-b3c9-5b2edf58010f.png" style="box-sizing: border-box; background-color: initial; color: #0366d6; text-decoration: none;"><img src="https://user-images.githubusercontent.com/16164244/153377101-7d513eb1-bd33-410d-b3c9-5b2edf58010f.png" alt="operator" style="color: #4a4a4a; border-style: none; box-sizing: initial; background-color: #fff; max-width: 100%;"></a></p>
+</li>
+</ul>
+<h2 dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; padding-bottom: .3em; border-bottom: 1px solid #eaecef; font-size: 1.5em;">制作连字的 Operator Mono 字体</h2>
+<h3 dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; font-size: 1.25em;">第一步：下载项目</h3>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">首先要有 Operator Mono 字体（网上自行搜索），然后访问下面这个项目，下载到本地。</p>
+<ul dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; padding-left: 2em;">
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word;"><span style="color: #4a4a4a; box-sizing: border-box;">项目： <span style="box-sizing: border-box; color: #1e6bb8;" href="https://github.com/kiliman/operator-mono-lig">https://github.com/kiliman/operator-mono-lig<sup style="box-sizing: border-box; line-height: 0; color: #1e6bb8;">[7]</sup></span> - 向 Operator Mono 添加连字，类似于 Fira Code。</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">压缩包下载链接：<span style="box-sizing: border-box; color: #1e6bb8;" href="https://github.com/kiliman/operator-mono-lig/archive/refs/tags/v2.4.1.zip">点击下载<sup style="box-sizing: border-box; line-height: 0; color: #1e6bb8;">[8]</sup></span></span></li>
+</ul>
+<h3 dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; font-size: 1.25em;">第二步：前置环境准备</h3>
+<blockquote style="color: #4a4a4a; box-sizing: border-box; margin: 0; margin-top: 0; margin-bottom: 16px; padding: 0.5rem 1em; border-left: .25em solid #dfe2e5; background: #f8f8f8;">
+<p dir="auto" style="box-sizing: border-box; margin-top: 0; margin-bottom: 0; color: #999999;">如果遇到环境安装问题，可以在评论区交流</p>
+</blockquote>
+<ul dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; padding-left: 2em;">
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word;"><span style="color: #4a4a4a; box-sizing: border-box;">Operator Mono 字体文件</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">Python (v2.7+)</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">Node.js</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;">从 <span style="box-sizing: border-box; color: #1e6bb8;" href="https://github.com/fonttools/fonttools">fonttools/fonttools<sup style="box-sizing: border-box; line-height: 0; color: #1e6bb8;">[9]</sup></span> 安装 fonttools
+<ul dir="auto" style="color: #4a4a4a; box-sizing: border-box; padding-left: 2em; margin-top: 0; margin-bottom: 0;">
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word;"><span style="color: #4a4a4a; box-sizing: border-box;">Windows/Linux: <code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">pip install fonttools</code></span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">注意事项:  对于 Windows，如果您的 Python 位于 <code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">C:\PythonX</code> 下，您应该使用具有管理权限的控制台</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">注意事项: 对于 WSL/WSL2 中的 Linux，请确保安装后将 <code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">fonttools</code> 添加到 PATH。或者，考虑通过 <code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">sudo apt install fonttools</code> 安装。</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">Mac: <code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">pip3 install fonttools</code></span></li>
+</ul>
+</li>
+</ul>
+<h3 dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; font-size: 1.25em;">第三步：安装依赖及构建</h3>
+<ol dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; padding-left: 2em;">
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word;">
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-bottom: 16px; margin-top: 16px;">压缩包解压，然后进入到文件夹下执行</p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="# 使用 npm 安装可能会出现 node-gyp 之类的错误，可以尝试使用 yarn 安装
+npm install" style="color: #4a4a4a; box-sizing: border-box; margin-bottom: 16px; overflow: hidden;"><pre class="notranslate" style="color: #4a4a4a; box-sizing: border-box; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; margin-top: 0; overflow-x: auto; display: block; padding: 16px; font-size: 85%; line-height: 1.45; background-color: #f6f8fa; border-radius: 3px; margin-bottom: 5px; word-break: normal; white-space: pre;"><span class="pl-c" style="box-sizing: border-box; color: #6a737d;"><span class="pl-c" style="box-sizing: border-box; color: #6a737d;">#</span> 使用 npm 安装可能会出现 node-gyp 之类的错误，可以尝试使用 yarn 安装</span>
+npm install</pre></div>
+</li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;">
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-bottom: 16px; margin-top: 16px;">将 Operator Mono字体文件放到 original 目录下，然后执行脚本</p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="# Windows
+build
+
+# Linux/Mac
+./build.sh" style="color: #4a4a4a; box-sizing: border-box; margin-bottom: 16px; overflow: hidden;"><pre class="notranslate" style="color: #4a4a4a; box-sizing: border-box; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; margin-top: 0; overflow-x: auto; display: block; padding: 16px; font-size: 85%; line-height: 1.45; background-color: #f6f8fa; border-radius: 3px; margin-bottom: 5px; word-break: normal; white-space: pre;"><span class="pl-c" style="box-sizing: border-box; color: #6a737d;"><span class="pl-c" style="box-sizing: border-box; color: #6a737d;">#</span> Windows</span>
+build
+
+<span class="pl-c" style="box-sizing: border-box; color: #6a737d;"><span class="pl-c" style="box-sizing: border-box; color: #6a737d;">#</span> Linux/Mac</span>
+./build.sh</pre></div>
+</li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;">
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-bottom: 16px; margin-top: 16px;">生成的 Operator Mono Lig 字体在 build 文件夹下，点击安装即可</p>
+</li>
+</ol>
+<h3 dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; font-size: 1.25em;">字体效果预览</h3>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;"><span style="box-sizing: border-box; color: #1e6bb8;" href="https://github.com/lencx/z/discussions/41">我的 vscode 配置<sup style="box-sizing: border-box; line-height: 0; color: #1e6bb8;">[10]</sup></span></p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/16164244/153384949-c4f7612c-71b1-42c1-9d6c-775ed53b8b99.png" style="box-sizing: border-box; background-color: initial; color: #0366d6; text-decoration: none;"><img src="https://user-images.githubusercontent.com/16164244/153384949-c4f7612c-71b1-42c1-9d6c-775ed53b8b99.png" alt="font preview" style="color: #4a4a4a; border-style: none; box-sizing: initial; background-color: #fff; max-width: 100%;"></a></p><hr style="color: #4a4a4a; box-sizing: initial; overflow: hidden; background: transparent; border-bottom: 1px solid #dfe2e5; border-bottom-color: #eee; height: .25em; padding: 0; margin: 24px 0; background-color: #e1e4e8; border: 0;">
+<h4 style="color: #4a4a4a; box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; font-size: 1em;">参考资料</h4><section class="woap-links" style="color: #4a4a4a; box-sizing: border-box;"><span class="item" style="color: #4a4a4a; box-sizing: border-box; display: flex; font-size: 14px; word-wrap: break-word;"><span style="box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #555;">[1]</span><p style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; width: 90%; word-break: break-all; margin: 0;"><span style="color: #4a4a4a; box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right: 5px;">Fira Code:</span> <em style="box-sizing: border-box; color: #999;">https://github.com/tonsky/FiraCode</em></p></span>
+<span class="item" style="color: #4a4a4a; box-sizing: border-box; display: flex; font-size: 14px; word-wrap: break-word;"><span style="box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #555;">[2]</span><p style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; width: 90%; word-break: break-all; margin: 0;"><span style="color: #4a4a4a; box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right: 5px;">Nerd Fonts:</span> <em style="box-sizing: border-box; color: #999;">https://github.com/ryanoasis/nerd-fonts</em></p></span>
+<span class="item" style="color: #4a4a4a; box-sizing: border-box; display: flex; font-size: 14px; word-wrap: break-word;"><span style="box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #555;">[3]</span><p style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; width: 90%; word-break: break-all; margin: 0;"><span style="color: #4a4a4a; box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right: 5px;">Font Awesome:</span> <em style="box-sizing: border-box; color: #999;">https://github.com/FortAwesome/Font-Awesome</em></p></span>
+<span class="item" style="color: #4a4a4a; box-sizing: border-box; display: flex; font-size: 14px; word-wrap: break-word;"><span style="box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #555;">[4]</span><p style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; width: 90%; word-break: break-all; margin: 0;"><span style="color: #4a4a4a; box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right: 5px;">Devicons:</span> <em style="box-sizing: border-box; color: #999;">http://vorillaz.github.io/devicons/</em></p></span>
+<span class="item" style="color: #4a4a4a; box-sizing: border-box; display: flex; font-size: 14px; word-wrap: break-word;"><span style="box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #555;">[5]</span><p style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; width: 90%; word-break: break-all; margin: 0;"><span style="color: #4a4a4a; box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right: 5px;">Octicons:</span> <em style="box-sizing: border-box; color: #999;">https://github.com/github/octicons</em></p></span>
+<span class="item" style="color: #4a4a4a; box-sizing: border-box; display: flex; font-size: 14px; word-wrap: break-word;"><span style="box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #555;">[6]</span><p style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; width: 90%; word-break: break-all; margin: 0;"><span style="color: #4a4a4a; box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right: 5px;">Operator Mono:</span> <em style="box-sizing: border-box; color: #999;">https://www.typography.com/fonts/operator/styles</em></p></span>
+<span class="item" style="color: #4a4a4a; box-sizing: border-box; display: flex; font-size: 14px; word-wrap: break-word;"><span style="box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #555;">[7]</span><p style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; width: 90%; word-break: break-all; margin: 0;"><span style="color: #4a4a4a; box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right: 5px;">https://github.com/kiliman/operator-mono-lig:</span> <em style="box-sizing: border-box; color: #999;">https://github.com/kiliman/operator-mono-lig</em></p></span>
+<span class="item" style="color: #4a4a4a; box-sizing: border-box; display: flex; font-size: 14px; word-wrap: break-word;"><span style="box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #555;">[8]</span><p style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; width: 90%; word-break: break-all; margin: 0;"><span style="color: #4a4a4a; box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right: 5px;">点击下载:</span> <em style="box-sizing: border-box; color: #999;">https://github.com/kiliman/operator-mono-lig/archive/refs/tags/v2.4.1.zip</em></p></span>
+<span class="item" style="color: #4a4a4a; box-sizing: border-box; display: flex; font-size: 14px; word-wrap: break-word;"><span style="box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #555;">[9]</span><p style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; width: 90%; word-break: break-all; margin: 0;"><span style="color: #4a4a4a; box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right: 5px;">fonttools/fonttools:</span> <em style="box-sizing: border-box; color: #999;">https://github.com/fonttools/fonttools</em></p></span>
+<span class="item" style="color: #4a4a4a; box-sizing: border-box; display: flex; font-size: 14px; word-wrap: break-word;"><span style="box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #555;">[10]</span><p style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; width: 90%; word-break: break-all; margin: 0;"><span style="color: #4a4a4a; box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right: 5px;">我的 vscode 配置:</span> <em style="box-sizing: border-box; color: #999;">https://github.com/lencx/z/discussions/41</em></p></span></section></div>
+</div>
+<div id="woap-btn" style="position: fixed;top: 10px;right: 10px;width: 43px;height: 41px;box-sizing: border-box;cursor: pointer;background: #fff;border-radius: 50%;padding: 8px;box-shadow: 0 0 2px #d8d8d8;">
+<svg style="width: 100%;height: 100%" height="41" viewBox="0 0 43 41" width="43" xmlns="http://www.w3.org/2000/svg"><g fill="#07c160"><path d="m39.7 15.3c-3.7-4.9-10.2-6.2-16.1-4.1.2.1.4.1.6.2 8.7 2.9 13.3 12.3 10.4 21-.8 2.3-2 4.3-3.5 6 1.9-.5 3.8-1.3 5.4-2.5 6.6-5.1 7.9-14.5 3.2-20.6z"/><path d="m18 10.4c.4-.3.7-.5 1.1-.8h.1c.4-.2.8-.4 1.1-.7 0 0 .1 0 .1-.1.8-.4 1.6-.7 2.4-1 .1 0 .1 0 .2-.1.4-.1.8-.3 1.2-.4h.1c.4-.1.8-.2 1.2-.2h.2c.6-.1 1-.1 1.4-.1h.3c.4 0 .9-.1 1.3-.1.5 0 1 0 1.5.1h.2c.5 0 .9.1 1.4.2h.2c.5.1.9.2 1.3.3.1 0 .1 0 .2.1.5.1 1 .2 1.4.4-.2-.4-.4-.7-.4-.7-2.9-4.6-7.7-7.3-12.9-7.3-3.1 0-7.9 1.1-11.5 5.4-2.4 2.9-3.2 6.3-2.7 9.7.3 2.3 1.6 5.4 3.5 7.3.7-4.9 3.3-9.2 7.1-12z"/><path d="m21.6 30.9c-1.3 0-2.6-.2-3.8-.4-.1 0-.3 0-.5 0-.4 0-.7.1-1 .3l-4 2.6c-.1.1-.2.1-.4.1-.3 0-.6-.3-.7-.6 0-.2 0-.3.1-.5 0-.1.4-2 .7-3.2 0-.1.1-.3 0-.4 0-.4-.2-.8-.6-1-4.3-2.9-7.2-7.5-7.8-12.2-1.1 1.7-1.6 3-2.2 5-2.1 7.3 2.5 16 9.9 18.4 8.6 2.8 16.7-.3 19.5-7.6.3-.9.7-2.4.8-3.6-2.9 2.1-6 3.1-10 3.1z"/></g></svg>
+</div>
+</body>
+</html>

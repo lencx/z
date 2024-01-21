@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<style>
+.markdown-body .anchor:focus {
+  outline: none;
+}
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+.markdown-body h1:hover .anchor .octicon-link:before,
+.markdown-body h2:hover .anchor .octicon-link:before,
+.markdown-body h3:hover .anchor .octicon-link:before,
+.markdown-body h4:hover .anchor .octicon-link:before,
+.markdown-body h5:hover .anchor .octicon-link:before,
+.markdown-body h6:hover .anchor .octicon-link:before {
+  width: 16px;
+  height: 16px;
+  content: ' ';
+  display: inline-block;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'%3E%3C/path%3E%3C/svg%3E");
+}
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+.markdown-body .full-commit .btn-outline:not(:disabled):hover {
+  color: #005cc5;
+  border-color: #005cc5;
+}
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  cursor: pointer;
+  background: #ffea7f;
+}
+.markdown-body .woap-links .item {
+  display: flex;
+  word-wrap: break-word !important;
+}
+.markdown-body .woap-links .item span {
+  width: 10%;
+  font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, "PingFang SC", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.markdown-body .woap-links .item p {
+  width: 90%;
+  word-break: break-all;
+  margin: 0;
+}
+</style>
+<script>
+function copyElementToClipboard(element) {
+  window.getSelection().removeAllRanges();
+  let range = document.createRange();
+  range.selectNode(typeof element === 'string' ? document.getElementById(element) : element);
+  window.getSelection().addRange(range);
+  document.execCommand('copy');
+  window.getSelection().removeAllRanges();
+}
+window.addEventListener('load', function() {
+  const woapBtn = document.getElementById('woap-btn');
+  const woapHTML = document.getElementById('woap-body');
+  woapBtn.addEventListener('click', function() {
+    copyElementToClipboard(woapHTML);
+    alert('复制到公众号')
+  }, false);
+})
+</script>
+</head>
+<body>
+<h2 class="woap-title" style="padding: 20px 10px; max-width: 678px; margin: 0 auto; font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; color: #4a4a4a; border-bottom: solid 1px #eee; text-align: center;">开源 - 原创打卡</h2>
+<div class="markdown-body" id="woap-body" style="padding: 20px 10px; max-width: 678px; margin: 0 auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; line-height: 1.5; color: #24292e; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; font-size: 16px; line-height: 1.5; word-wrap: break-word;">
+<div style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 0;"><blockquote style="color: #4a4a4a; box-sizing: border-box; margin: 0; margin-top: 0; margin-bottom: 16px; padding: 0.5rem 1em; border-left: .25em solid #dfe2e5; background: #f8f8f8;">
+<p dir="auto" style="box-sizing: border-box; margin-top: 0; margin-bottom: 0; color: #999999;">我发起了一个原创写作计划，通过开源打卡的形式来相互监督。</p>
+</blockquote>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">目前计划刚刚启动，还有很多地方需要完善，如果有感兴趣的朋友，欢迎参与。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">仓库：<span style="box-sizing: border-box; color: #1e6bb8;" href="https://github.com/zkuhut/monthly">zkuhut/monthly<sup style="box-sizing: border-box; line-height: 0; color: #1e6bb8;">[1]</sup></span><br style="color: #4a4a4a; box-sizing: border-box;">
+网站：<span style="box-sizing: border-box; color: #1e6bb8;" href="https://zkuhut.github.io/monthly/" rel="nofollow">臻苦舍月刊<sup style="box-sizing: border-box; line-height: 0; color: #1e6bb8;">[2]</sup></span></p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">有两种参与方式，选择其中一种即可：</p>
+<ul dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; padding-left: 2em;">
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word;"><span style="color: #4a4a4a; box-sizing: border-box;">关注公众号：<code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">浮之静</code>，回复 <code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">开源打卡</code></span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;"><code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">Fork</code> 仓库，提交 <code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">PR</code>，可参考 <span style="box-sizing: border-box; color: #1e6bb8;" href="https://zkuhut.github.io/monthly/lencx/general/how-to-start-monthly/" rel="nofollow">怎样贡献一篇文章？<sup style="box-sizing: border-box; line-height: 0; color: #1e6bb8;">[3]</sup></span></span></li>
+</ul>
+<h2 dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; padding-bottom: .3em; border-bottom: 1px solid #eaecef; font-size: 1.5em;">关于</h2>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;"><code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">zkuhut</code>：臻（z）苦（ku）舍（hut）<br style="color: #4a4a4a; box-sizing: border-box;">
+<code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">臻，至也；苦，始也。</code> - 谐音 <code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">真苦</code>，想要到达高的，完美的（臻），一切只是刚刚开始（苦）。</p>
+<h2 dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; padding-bottom: .3em; border-bottom: 1px solid #eaecef; font-size: 1.5em;">背景</h2>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">在信息爆炸的时代，我们最缺的不是如何获取信息，有价值的信息沉淀下来才是真正的知识。我们每个人都会阅读，思考，但是要把这些思考想法输出的人似乎并没有想象中那么多。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">人都是有惰性的，会因为种种原因而放弃自己的一些计划或目标，三分钟热度。此次发起学习小组，就是想基于 GitHub 来进行协作监督，记录自己。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">很多人，包括我自己都会有这样的困惑：</p>
+<ul dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; padding-left: 2em;">
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word;"><span style="color: #4a4a4a; box-sizing: border-box;">我很菜，不知道该写点什么。</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">我会的东西那么简单，写出来会不会被别人笑话。</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">我想写的东西似乎很多人都写过了，还有必要自己写吗？</span></li>
+</ul>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">对此我想谈谈自己对于有价值信息的理解。输出文章是为了记录，梳理，引发一些思考及观点。其次才是分享（别太高看自己，你写的东西没几个人会看到的）。用最直白的语言讲清楚一件事或一个东西，就是有价值的信息。</p>
+<h2 dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; padding-bottom: .3em; border-bottom: 1px solid #eaecef; font-size: 1.5em;">技术栈</h2>
+<h3 dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; font-size: 1.25em;">写作平台</h3>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">现在的写作形式就那么几种：</p>
+<ul dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; padding-left: 2em;">
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word;">第三方平台
+<ul dir="auto" style="color: #4a4a4a; box-sizing: border-box; padding-left: 2em; margin-top: 0; margin-bottom: 0;">
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word;"><span style="color: #4a4a4a; box-sizing: border-box;">国内：<code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">知乎</code>，<code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">掘金</code>，<code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">公众号</code>，<code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">简书</code>，<code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">CSDN</code> 等</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">国外：<code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">dev.to</code>，<code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">medium</code> 等</span></li>
+</ul>
+</li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;">自建博客
+<ul dir="auto" style="color: #4a4a4a; box-sizing: border-box; padding-left: 2em; margin-top: 0; margin-bottom: 0;">
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word;"><span style="color: #4a4a4a; box-sizing: border-box;">自己搭建服务器</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">基于 <code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">GitHub</code>，<code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">Gitee</code> 的 <code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">pages</code> 搭建网站</span></li>
+</ul>
+</li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">云笔记：<code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">Notion</code>，<code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">有道云笔记</code> 等</span></li>
+</ul>
+<h3 dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; font-size: 1.25em;">方案确定</h3>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">最终选择 GitHub 作为代码及文章托管平台，<span style="box-sizing: border-box; color: #1e6bb8;" href="https://vitepress.vuejs.org/" rel="nofollow">vitepress<sup style="box-sizing: border-box; line-height: 0; color: #1e6bb8;">[4]</sup></span> + <span style="box-sizing: border-box; color: #1e6bb8;" href="https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions">github actions<sup style="box-sizing: border-box; line-height: 0; color: #1e6bb8;">[5]</sup></span> + <span style="box-sizing: border-box; color: #1e6bb8;" href="https://pages.github.com/">github pages<sup style="box-sizing: border-box; line-height: 0; color: #1e6bb8;">[6]</sup></span> + <span style="box-sizing: border-box; color: #1e6bb8;" href="https://giscus.app/" rel="nofollow">giscus<sup style="box-sizing: border-box; line-height: 0; color: #1e6bb8;">[7]</sup></span> 构建网站。原因有以下几点：</p>
+<ul dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; padding-left: 2em;">
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word;"><span style="color: #4a4a4a; box-sizing: border-box;">多人协作</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">不受平台制约</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">github + git 常用操作学习</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">github actions 自动执行一些脚本或发布任务</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">方便进行扩展及二次开发</span></li>
+</ul>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">不过缺点也十分明显，就是无法通过平台引流。不过其目标为了记录自己，所以这个缺点可以忽略不计。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">身为一名程序员，如果不会使用 GitHub，不能够在全球最大的同性交友网站畅游与学习，我认为不是一名合格的程序员。而参与项目就是最好的学习。</p>
+<h2 dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; padding-bottom: .3em; border-bottom: 1px solid #eaecef; font-size: 1.5em;">写作环境</h2>
+<ul dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; padding-left: 2em;">
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word;"><span style="color: #4a4a4a; box-sizing: border-box;"><code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">Node.js</code> - 基于 vitepress 搭建</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;"><code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">GitHub</code> - 用于多人协作</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;"><code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">zkuhut</code> - 加入 GitHub 组织（非必需）</span></li>
+</ul>
+<h2 dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; padding-bottom: .3em; border-bottom: 1px solid #eaecef; font-size: 1.5em;">写作要求</h2>
+<ul dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; padding-left: 2em;">
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word;"><span style="color: #4a4a4a; box-sizing: border-box;">✅ 人/月至少输出一篇原创，坚持下来的，欢迎申请加入 <code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">zkuhut</code> 组织</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">✅ 内容不限，技术，思考，新技术尝试等皆可</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">✅ 严谨性，专业术语，相关资源要有出处</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">🚫 打广告，卖课</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">🚫 搬运，抄袭</span></li>
+</ul>
+<h2 dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; padding-bottom: .3em; border-bottom: 1px solid #eaecef; font-size: 1.5em;">微信群</h2>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;"><span style="box-sizing: border-box; color: #1e6bb8;" target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/16164244/143778088-eda0b390-4846-41f5-9e7d-522f73254c88.JPG"><img width="240" src="https://user-images.githubusercontent.com/16164244/143778088-eda0b390-4846-41f5-9e7d-522f73254c88.JPG" style="color: #4a4a4a; border-style: none; box-sizing: initial; background-color: #fff; max-width: 100%;"><sup style="box-sizing: border-box; line-height: 0; color: #1e6bb8;">[8]</sup></span></p><hr style="color: #4a4a4a; box-sizing: initial; overflow: hidden; background: transparent; border-bottom: 1px solid #dfe2e5; border-bottom-color: #eee; height: .25em; padding: 0; margin: 24px 0; background-color: #e1e4e8; border: 0;">
+<h4 style="color: #4a4a4a; box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; font-size: 1em;">参考资料</h4><section class="woap-links" style="color: #4a4a4a; box-sizing: border-box;"><span class="item" style="color: #4a4a4a; box-sizing: border-box; display: flex; font-size: 14px; word-wrap: break-word;"><span style="box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #555;">[1]</span><p style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; width: 90%; word-break: break-all; margin: 0;"><span style="color: #4a4a4a; box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right: 5px;">zkuhut/monthly:</span> <em style="box-sizing: border-box; color: #999;">https://github.com/zkuhut/monthly</em></p></span>
+<span class="item" style="color: #4a4a4a; box-sizing: border-box; display: flex; font-size: 14px; word-wrap: break-word;"><span style="box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #555;">[2]</span><p style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; width: 90%; word-break: break-all; margin: 0;"><span style="color: #4a4a4a; box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right: 5px;">臻苦舍月刊:</span> <em style="box-sizing: border-box; color: #999;">https://zkuhut.github.io/monthly/</em></p></span>
+<span class="item" style="color: #4a4a4a; box-sizing: border-box; display: flex; font-size: 14px; word-wrap: break-word;"><span style="box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #555;">[3]</span><p style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; width: 90%; word-break: break-all; margin: 0;"><span style="color: #4a4a4a; box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right: 5px;">怎样贡献一篇文章？:</span> <em style="box-sizing: border-box; color: #999;">https://zkuhut.github.io/monthly/lencx/general/how-to-start-monthly/</em></p></span>
+<span class="item" style="color: #4a4a4a; box-sizing: border-box; display: flex; font-size: 14px; word-wrap: break-word;"><span style="box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #555;">[4]</span><p style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; width: 90%; word-break: break-all; margin: 0;"><span style="color: #4a4a4a; box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right: 5px;">vitepress:</span> <em style="box-sizing: border-box; color: #999;">https://vitepress.vuejs.org/</em></p></span>
+<span class="item" style="color: #4a4a4a; box-sizing: border-box; display: flex; font-size: 14px; word-wrap: break-word;"><span style="box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #555;">[5]</span><p style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; width: 90%; word-break: break-all; margin: 0;"><span style="color: #4a4a4a; box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right: 5px;">github actions:</span> <em style="box-sizing: border-box; color: #999;">https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions</em></p></span>
+<span class="item" style="color: #4a4a4a; box-sizing: border-box; display: flex; font-size: 14px; word-wrap: break-word;"><span style="box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #555;">[6]</span><p style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; width: 90%; word-break: break-all; margin: 0;"><span style="color: #4a4a4a; box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right: 5px;">github pages:</span> <em style="box-sizing: border-box; color: #999;">https://pages.github.com/</em></p></span>
+<span class="item" style="color: #4a4a4a; box-sizing: border-box; display: flex; font-size: 14px; word-wrap: break-word;"><span style="box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #555;">[7]</span><p style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; width: 90%; word-break: break-all; margin: 0;"><span style="color: #4a4a4a; box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right: 5px;">giscus:</span> <em style="box-sizing: border-box; color: #999;">https://giscus.app/</em></p></span>
+<span class="item" style="color: #4a4a4a; box-sizing: border-box; display: flex; font-size: 14px; word-wrap: break-word;"><span style="box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #555;">[8]</span><p style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; width: 90%; word-break: break-all; margin: 0;"><span style="color: #4a4a4a; box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right: 5px;"><img width="240" src="https://user-images.githubusercontent.com/16164244/143778088-eda0b390-4846-41f5-9e7d-522f73254c88.JPG" style="color: #4a4a4a; border-style: none; box-sizing: initial; background-color: #fff; max-width: 100%;">:</span> <em style="box-sizing: border-box; color: #999;">https://user-images.githubusercontent.com/16164244/143778088-eda0b390-4846-41f5-9e7d-522f73254c88.JPG</em></p></span></section></div>
+</div>
+<div id="woap-btn" style="position: fixed;top: 10px;right: 10px;width: 43px;height: 41px;box-sizing: border-box;cursor: pointer;background: #fff;border-radius: 50%;padding: 8px;box-shadow: 0 0 2px #d8d8d8;">
+<svg style="width: 100%;height: 100%" height="41" viewBox="0 0 43 41" width="43" xmlns="http://www.w3.org/2000/svg"><g fill="#07c160"><path d="m39.7 15.3c-3.7-4.9-10.2-6.2-16.1-4.1.2.1.4.1.6.2 8.7 2.9 13.3 12.3 10.4 21-.8 2.3-2 4.3-3.5 6 1.9-.5 3.8-1.3 5.4-2.5 6.6-5.1 7.9-14.5 3.2-20.6z"/><path d="m18 10.4c.4-.3.7-.5 1.1-.8h.1c.4-.2.8-.4 1.1-.7 0 0 .1 0 .1-.1.8-.4 1.6-.7 2.4-1 .1 0 .1 0 .2-.1.4-.1.8-.3 1.2-.4h.1c.4-.1.8-.2 1.2-.2h.2c.6-.1 1-.1 1.4-.1h.3c.4 0 .9-.1 1.3-.1.5 0 1 0 1.5.1h.2c.5 0 .9.1 1.4.2h.2c.5.1.9.2 1.3.3.1 0 .1 0 .2.1.5.1 1 .2 1.4.4-.2-.4-.4-.7-.4-.7-2.9-4.6-7.7-7.3-12.9-7.3-3.1 0-7.9 1.1-11.5 5.4-2.4 2.9-3.2 6.3-2.7 9.7.3 2.3 1.6 5.4 3.5 7.3.7-4.9 3.3-9.2 7.1-12z"/><path d="m21.6 30.9c-1.3 0-2.6-.2-3.8-.4-.1 0-.3 0-.5 0-.4 0-.7.1-1 .3l-4 2.6c-.1.1-.2.1-.4.1-.3 0-.6-.3-.7-.6 0-.2 0-.3.1-.5 0-.1.4-2 .7-3.2 0-.1.1-.3 0-.4 0-.4-.2-.8-.6-1-4.3-2.9-7.2-7.5-7.8-12.2-1.1 1.7-1.6 3-2.2 5-2.1 7.3 2.5 16 9.9 18.4 8.6 2.8 16.7-.3 19.5-7.6.3-.9.7-2.4.8-3.6-2.9 2.1-6 3.1-10 3.1z"/></g></svg>
+</div>
+</body>
+</html>

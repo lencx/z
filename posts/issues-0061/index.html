@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<style>
+.markdown-body .anchor:focus {
+  outline: none;
+}
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+.markdown-body h1:hover .anchor .octicon-link:before,
+.markdown-body h2:hover .anchor .octicon-link:before,
+.markdown-body h3:hover .anchor .octicon-link:before,
+.markdown-body h4:hover .anchor .octicon-link:before,
+.markdown-body h5:hover .anchor .octicon-link:before,
+.markdown-body h6:hover .anchor .octicon-link:before {
+  width: 16px;
+  height: 16px;
+  content: ' ';
+  display: inline-block;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'%3E%3C/path%3E%3C/svg%3E");
+}
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+.markdown-body .full-commit .btn-outline:not(:disabled):hover {
+  color: #005cc5;
+  border-color: #005cc5;
+}
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  cursor: pointer;
+  background: #ffea7f;
+}
+.markdown-body .woap-links .item {
+  display: flex;
+  word-wrap: break-word !important;
+}
+.markdown-body .woap-links .item span {
+  width: 10%;
+  font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, "PingFang SC", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.markdown-body .woap-links .item p {
+  width: 90%;
+  word-break: break-all;
+  margin: 0;
+}
+</style>
+<script>
+function copyElementToClipboard(element) {
+  window.getSelection().removeAllRanges();
+  let range = document.createRange();
+  range.selectNode(typeof element === 'string' ? document.getElementById(element) : element);
+  window.getSelection().addRange(range);
+  document.execCommand('copy');
+  window.getSelection().removeAllRanges();
+}
+window.addEventListener('load', function() {
+  const woapBtn = document.getElementById('woap-btn');
+  const woapHTML = document.getElementById('woap-body');
+  woapBtn.addEventListener('click', function() {
+    copyElementToClipboard(woapHTML);
+    alert('复制到公众号')
+  }, false);
+})
+</script>
+</head>
+<body>
+<h2 class="woap-title" style="padding: 20px 10px; max-width: 678px; margin: 0 auto; font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; color: #4a4a4a; border-bottom: solid 1px #eee; text-align: center;">微信杂谈 - 技术栈</h2>
+<div class="markdown-body" id="woap-body" style="padding: 20px 10px; max-width: 678px; margin: 0 auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; line-height: 1.5; color: #24292e; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; font-size: 16px; line-height: 1.5; word-wrap: break-word;">
+<div style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 0;"><p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;"><code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">📅 2021.07.30</code></p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">易潇:<br style="color: #4a4a4a; box-sizing: border-box;">
+大佬们可以聊聊 选前端还是后端吗<br style="color: #4a4a4a; box-sizing: border-box;">
+现在在选组 有两个 都是全栈 但一个偏前端 一个偏后端<br style="color: #4a4a4a; box-sizing: border-box;">
+可以聊聊不同方向的职业成长路线 或者 哪里可以了解到这些方向的职业成长路线吗<br style="color: #4a4a4a; box-sizing: border-box;">
+感谢~</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">小和尚:<br style="color: #4a4a4a; box-sizing: border-box;">
+喜欢啥就选啥</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+技术方向做到后面可以自由切换的吧，我也觉得喜欢什么就选什么没错</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">小和尚:<br style="color: #4a4a4a; box-sizing: border-box;">
+我都写过[苦涩]但我不喜欢后端</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;"> :<br style="color: #4a4a4a; box-sizing: border-box;">
+全栈吧，一般大佬，前后端运维都会，样样精通。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+我感觉最大的区别就是要积累的东西经验，是不一样的，这个需要花时间</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">小和尚:<br style="color: #4a4a4a; box-sizing: border-box;">
+我是觉得后端做的事情，我并不是很感兴趣</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">小和尚:<br style="color: #4a4a4a; box-sizing: border-box;">
+如果只是做接口写服务，其实还好</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">小和尚:<br style="color: #4a4a4a; box-sizing: border-box;">
+但是如果搞docker，k8s，我就很怂</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+如果让我选，我可能会选全干，可惜能力不够[旺柴]</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">小和尚:<br style="color: #4a4a4a; box-sizing: border-box;">
+如果不涉及这些，我早就全干过了</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">小和尚:<br style="color: #4a4a4a; box-sizing: border-box;">
+但是后来明显的弱爆了，尤其是当我想搞tripworker的时候</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">小和尚:<br style="color: #4a4a4a; box-sizing: border-box;">
+因为后端现在比较流行的架构就是serverless</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">小和尚:<br style="color: #4a4a4a; box-sizing: border-box;">
+要么，跑wasm，要么，搞一些fass啥的</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">小和尚:<br style="color: #4a4a4a; box-sizing: border-box;">
+他们在v8上跑wasm很舒服，支持多种语言的serverless</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+学习其实就是循序渐进，不断扩宽知识面，我刚开始只会 html，css，现在会写点 js 了，如果想继续深入，可以学其他语言技术，我觉得语言不是限制自己的条件，时间才是。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+我最近也很焦虑，感觉什么都学不进去了</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+知识它就是不进脑子，一看东西就烦躁</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">小和尚:<br style="color: #4a4a4a; box-sizing: border-box;">
+所以我从来不看知识</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">小和尚:<br style="color: #4a4a4a; box-sizing: border-box;">
+我基本上不看基础的东西，上来就写代码，写不对就改</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">小和尚:<br style="color: #4a4a4a; box-sizing: border-box;">
+慢慢的，很多年后，基础也就都理解了</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+还是解决问题吧，遇到问题就学习</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+从解决问题中学习</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">小和尚:<br style="color: #4a4a4a; box-sizing: border-box;">
+我会积累一些东西，但仅仅只是多看一眼</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">云谦:<br style="color: #4a4a4a; box-sizing: border-box;">
+@🐶 - 0 - 易潇 我理解的前端：离用户近，多终端支持和兼容，交互多，技术深度相比后端浅，普通业务话语权没后端大（富交互业务除外），竞争压力相比后端小一些？，主 JavaScript 语言，开源社区活跃。然后就看自己选了。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">另外，长远看，前端的深度到 p8 p9 还好，再往前走会比较困难，后端则可以走地更远。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">易潇:<br style="color: #4a4a4a; box-sizing: border-box;">
+弱弱的问为什么后端技术深度高但是竞争更高？正常不应该是技术壁垒低的地方初级的竞争更激烈吗，比如说做销售</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">永远八岁:<br style="color: #4a4a4a; box-sizing: border-box;">
+因为前端的概念，是这几年才有的。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">🇨🇳  Promise:<br style="color: #4a4a4a; box-sizing: border-box;">
+我的理解是基数大</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+是因为普通java烂大街吧</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">永远八岁:<br style="color: #4a4a4a; box-sizing: border-box;">
+前10年那些人，都是去搞后端的</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Mr.Black:<br style="color: #4a4a4a; box-sizing: border-box;">
+后端学校有教，前端大部分都是自己学的。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">🇨🇳  Promise:<br style="color: #4a4a4a; box-sizing: border-box;">
+现在基本本科java 考研python</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">🇨🇳  Promise:<br style="color: #4a4a4a; box-sizing: border-box;">
+出来学学框架就可以了</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">永远八岁:<br style="color: #4a4a4a; box-sizing: border-box;">
+这就导致大环境（包括老师、资深开发者）认为后端才是真正的敲代码的，前端都是闹着玩的</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">🇨🇳  Promise:<br style="color: #4a4a4a; box-sizing: border-box;">
+我个人觉得是 谁离数据源更近，谁更具有话语权</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">永远八岁:<br style="color: #4a4a4a; box-sizing: border-box;">
+我倒是觉得前端比后端更难，从现在来说</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">永远八岁:<br style="color: #4a4a4a; box-sizing: border-box;">
+后端已经太久没变化了。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">永远八岁:<br style="color: #4a4a4a; box-sizing: border-box;">
+前端从 生命周期 -&gt; hooks，这是发生了翻天覆地的变化。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">永远八岁:<br style="color: #4a4a4a; box-sizing: border-box;">
+写页面时考虑已经变了。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">永远八岁:<br style="color: #4a4a4a; box-sizing: border-box;">
+就像是当年栅格布局一样。即使Bootstrap没人用了（包括react），但是他们的思想会推动整个前端继续发展下去，影响深远。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">永远八岁:<br style="color: #4a4a4a; box-sizing: border-box;">
+能思考出 生命周期 -&gt; hooks 这个想法的人和团队，我认为这才是真的强的人。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">永远八岁:<br style="color: #4a4a4a; box-sizing: border-box;">
+那后端已经很久没有这种大的翻天覆地的东西了。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">易潇:<br style="color: #4a4a4a; box-sizing: border-box;">
+大家对选择 大的，已经很成熟的组 vs 小的，做什么不用跟那么多组沟通，但是scope也小的组；有啥建议吗</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">🇨🇳  Promise:<br style="color: #4a4a4a; box-sizing: border-box;">
+其实是不是也意味着后端思想很多的时候已经在当下环境下已经穷尽了大多数的方案和技术，更新的只是末节</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">Mr. 🍊:<br style="color: #4a4a4a; box-sizing: border-box;">
+从jq到react都算是翻天覆地的变化的[旺柴]</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">🇨🇳  Promise:<br style="color: #4a4a4a; box-sizing: border-box;">
+而前端作为新的产物，还是在一个快速生长的时期</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">永远八岁:<br style="color: #4a4a4a; box-sizing: border-box;">
+是的，大多数都是在框架以下，延伸工具链</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">小和尚:<br style="color: #4a4a4a; box-sizing: border-box;">
+前端不只是web啊</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">永远八岁:<br style="color: #4a4a4a; box-sizing: border-box;">
+jq-&gt;react 这是一定的。因为那时候大家已经认识到jq的缺陷了</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">永远八岁:<br style="color: #4a4a4a; box-sizing: border-box;">
+show 一个组件，写一大片模版。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">小和尚:<br style="color: #4a4a4a; box-sizing: border-box;">
+前端框架这种纯web的东西其实和前端架构没什么关系的，除非你写组件库</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">永远八岁:<br style="color: #4a4a4a; box-sizing: border-box;">
+只不过缺一个有担当团队做出来。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+react 肯定也不会是结局</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">阿西吧~~~:<br style="color: #4a4a4a; box-sizing: border-box;">
+大多数公司都是这个状态。你有钱了，可以不工作，用你会的技术实现你自己的想法。当你出结果的时候，你就是意识形态</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">永远八岁:<br style="color: #4a4a4a; box-sizing: border-box;">
+react属于时势造英雄</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+我觉得技术的核心，还是产品吧，是场景孕育出技术的</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">永远八岁:<br style="color: #4a4a4a; box-sizing: border-box;">
+但是 react hook 可就是纯思维啦。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">永远八岁:<br style="color: #4a4a4a; box-sizing: border-box;">
+产品是挣钱的。挣了钱满足物质，才有精力想继续发展技术。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">永远八岁:<br style="color: #4a4a4a; box-sizing: border-box;">
+场景我觉得只能孕育链路。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">🇨🇳  Promise:<br style="color: #4a4a4a; box-sizing: border-box;">
+赞同， 产品的思想是0-1的过程，是始端</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">永远八岁:<br style="color: #4a4a4a; box-sizing: border-box;">
+比如 抢购场景。只能孕育这条线的流程。不会产生出伟大的思想来。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">🇨🇳  Promise:<br style="color: #4a4a4a; box-sizing: border-box;">
+我感觉多年以来思想没有变，变得只有方式</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">lencx:<br style="color: #4a4a4a; box-sizing: border-box;">
+比如现在的场景是lot，如果没有相关技术来实现，就会出现一些新技术，用来解决场景中的一些需求痛点吧，我是这么理解的。但是技术的发展需要有理论作支撑，所以这又是一个演化创造的过程</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">🇨🇳  Promise:<br style="color: #4a4a4a; box-sizing: border-box;">
+例如卡兰尼克创立了uber，还是打车业务，只不过方式更加的适应现代化</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">永远八岁:<br style="color: #4a4a4a; box-sizing: border-box;">
+是的，你说的，正是我的想法。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">永远八岁:<br style="color: #4a4a4a; box-sizing: border-box;">
+并不是redis支撑了抢购，不是redis多厉害，而是人们需要他。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">永远八岁:<br style="color: #4a4a4a; box-sizing: border-box;">
+但是他的本质就是一个db</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">永远八岁:<br style="color: #4a4a4a; box-sizing: border-box;">
+db人们研究了几个世纪了，所以拿着这个思想来做个redis，肯定是简单许多的。</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">🇨🇳  Promise:<br style="color: #4a4a4a; box-sizing: border-box;">
+今天的分享，干货满满啊，👍</p><hr style="color: #4a4a4a; box-sizing: initial; overflow: hidden; background: transparent; border-bottom: 1px solid #dfe2e5; border-bottom-color: #eee; height: .25em; padding: 0; margin: 24px 0; background-color: #e1e4e8; border: 0;">
+<h4 style="color: #4a4a4a; box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; font-size: 1em;">参考资料</h4><section class="woap-links" style="color: #4a4a4a; box-sizing: border-box;"></section></div>
+</div>
+<div id="woap-btn" style="position: fixed;top: 10px;right: 10px;width: 43px;height: 41px;box-sizing: border-box;cursor: pointer;background: #fff;border-radius: 50%;padding: 8px;box-shadow: 0 0 2px #d8d8d8;">
+<svg style="width: 100%;height: 100%" height="41" viewBox="0 0 43 41" width="43" xmlns="http://www.w3.org/2000/svg"><g fill="#07c160"><path d="m39.7 15.3c-3.7-4.9-10.2-6.2-16.1-4.1.2.1.4.1.6.2 8.7 2.9 13.3 12.3 10.4 21-.8 2.3-2 4.3-3.5 6 1.9-.5 3.8-1.3 5.4-2.5 6.6-5.1 7.9-14.5 3.2-20.6z"/><path d="m18 10.4c.4-.3.7-.5 1.1-.8h.1c.4-.2.8-.4 1.1-.7 0 0 .1 0 .1-.1.8-.4 1.6-.7 2.4-1 .1 0 .1 0 .2-.1.4-.1.8-.3 1.2-.4h.1c.4-.1.8-.2 1.2-.2h.2c.6-.1 1-.1 1.4-.1h.3c.4 0 .9-.1 1.3-.1.5 0 1 0 1.5.1h.2c.5 0 .9.1 1.4.2h.2c.5.1.9.2 1.3.3.1 0 .1 0 .2.1.5.1 1 .2 1.4.4-.2-.4-.4-.7-.4-.7-2.9-4.6-7.7-7.3-12.9-7.3-3.1 0-7.9 1.1-11.5 5.4-2.4 2.9-3.2 6.3-2.7 9.7.3 2.3 1.6 5.4 3.5 7.3.7-4.9 3.3-9.2 7.1-12z"/><path d="m21.6 30.9c-1.3 0-2.6-.2-3.8-.4-.1 0-.3 0-.5 0-.4 0-.7.1-1 .3l-4 2.6c-.1.1-.2.1-.4.1-.3 0-.6-.3-.7-.6 0-.2 0-.3.1-.5 0-.1.4-2 .7-3.2 0-.1.1-.3 0-.4 0-.4-.2-.8-.6-1-4.3-2.9-7.2-7.5-7.8-12.2-1.1 1.7-1.6 3-2.2 5-2.1 7.3 2.5 16 9.9 18.4 8.6 2.8 16.7-.3 19.5-7.6.3-.9.7-2.4.8-3.6-2.9 2.1-6 3.1-10 3.1z"/></g></svg>
+</div>
+</body>
+</html>

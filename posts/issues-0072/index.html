@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<style>
+.markdown-body .anchor:focus {
+  outline: none;
+}
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+.markdown-body h1:hover .anchor .octicon-link:before,
+.markdown-body h2:hover .anchor .octicon-link:before,
+.markdown-body h3:hover .anchor .octicon-link:before,
+.markdown-body h4:hover .anchor .octicon-link:before,
+.markdown-body h5:hover .anchor .octicon-link:before,
+.markdown-body h6:hover .anchor .octicon-link:before {
+  width: 16px;
+  height: 16px;
+  content: ' ';
+  display: inline-block;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'%3E%3C/path%3E%3C/svg%3E");
+}
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+.markdown-body .full-commit .btn-outline:not(:disabled):hover {
+  color: #005cc5;
+  border-color: #005cc5;
+}
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  cursor: pointer;
+  background: #ffea7f;
+}
+.markdown-body .woap-links .item {
+  display: flex;
+  word-wrap: break-word !important;
+}
+.markdown-body .woap-links .item span {
+  width: 10%;
+  font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, "PingFang SC", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.markdown-body .woap-links .item p {
+  width: 90%;
+  word-break: break-all;
+  margin: 0;
+}
+</style>
+<script>
+function copyElementToClipboard(element) {
+  window.getSelection().removeAllRanges();
+  let range = document.createRange();
+  range.selectNode(typeof element === 'string' ? document.getElementById(element) : element);
+  window.getSelection().addRange(range);
+  document.execCommand('copy');
+  window.getSelection().removeAllRanges();
+}
+window.addEventListener('load', function() {
+  const woapBtn = document.getElementById('woap-btn');
+  const woapHTML = document.getElementById('woap-body');
+  woapBtn.addEventListener('click', function() {
+    copyElementToClipboard(woapHTML);
+    alert('复制到公众号')
+  }, false);
+})
+</script>
+</head>
+<body>
+<h2 class="woap-title" style="padding: 20px 10px; max-width: 678px; margin: 0 auto; font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; color: #4a4a4a; border-bottom: solid 1px #eee; text-align: center;">滚动进度条</h2>
+<div class="markdown-body" id="woap-body" style="padding: 20px 10px; max-width: 678px; margin: 0 auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; line-height: 1.5; color: #24292e; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; font-size: 16px; line-height: 1.5; word-wrap: break-word;">
+<div style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 0;"><blockquote style="color: #4a4a4a; box-sizing: border-box; margin: 0; margin-top: 0; margin-bottom: 16px; padding: 0.5rem 1em; border-left: .25em solid #dfe2e5; background: #f8f8f8;">
+<p dir="auto" style="box-sizing: border-box; margin-top: 0; margin-bottom: 0; color: #999999;">学习框架语言，写代码是最快的入门方式。为了给基于 <code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">vitepress</code> 构建的 Blog 新增功能，现学 <code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">Vue3</code>，诞生了下面的进度条组件。</p>
+</blockquote>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;"><span style="box-sizing: border-box; color: #1e6bb8;" href="https://code.lencx.tech/" rel="nofollow">体验地址<sup style="box-sizing: border-box; line-height: 0; color: #1e6bb8;">[1]</sup></span> - 手写 Code Snippets 系列</p>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;">创建一个进度条，用来指示页面滚动百分比，主要有两点注意事项及一个思考：</p>
+<ul dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; padding-left: 2em;">
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word;"><span style="color: #4a4a4a; box-sizing: border-box;">使用 <code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">position: fixed</code> 将滚动进度条置于页面顶部，<code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">z-index</code> 设置一个较大的值是为了保证元素在页面内容的最上层。</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">使用 <code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">EventTarget.addEventListener</code> 和 <code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">Element.scrollTop</code> 来确定文档的滚动百分比并将其设置为滚动进度条的宽度。</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;">思考 - 如果页面容器高度发生变化，会发生什么？</span></li>
+</ul>
+<h2 dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; padding-bottom: .3em; border-bottom: 1px solid #eaecef; font-size: 1.5em;">💠 核心</h2>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;div id=&quot;scroll_progress_bar&quot;&gt;&lt;/div&gt;" style="color: #4a4a4a; box-sizing: border-box; margin-bottom: 16px; overflow: hidden;"><pre class="notranslate" style="color: #4a4a4a; box-sizing: border-box; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; margin-top: 0; overflow-x: auto; display: block; padding: 16px; font-size: 85%; line-height: 1.45; background-color: #f6f8fa; border-radius: 3px; margin-bottom: 5px; word-break: normal; white-space: pre;"><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">&lt;</span><span class="pl-ent" style="box-sizing: border-box; color: #22863a;">div</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">id</span>="<span class="pl-s" style="box-sizing: border-box; color: #032f62;">scroll_progress_bar</span>"<span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">&gt;</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">&lt;/</span><span class="pl-ent" style="box-sizing: border-box; color: #22863a;">div</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">&gt;</span></pre></div>
+<div class="highlight highlight-source-css notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="#scroll_progress_bar {
+  position: fixed;
+  top: 0;
+  width: 0%;
+  height: 4px;
+  background: #7983ff;
+  z-index: 10000;
+}" style="color: #4a4a4a; box-sizing: border-box; margin-bottom: 16px; overflow: hidden;"><pre class="notranslate" style="color: #4a4a4a; box-sizing: border-box; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; margin-top: 0; overflow-x: auto; display: block; padding: 16px; font-size: 85%; line-height: 1.45; background-color: #f6f8fa; border-radius: 3px; margin-bottom: 5px; word-break: normal; white-space: pre;"><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">#</span><span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">scroll_progress_bar</span> {
+  <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">position</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">:</span> fixed;
+  <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">top</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">:</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">0</span>;
+  <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">width</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">:</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">0<span class="pl-smi" style="box-sizing: border-box; color: #24292e;">%</span></span>;
+  <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">height</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">:</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">4<span class="pl-smi" style="box-sizing: border-box; color: #24292e;">px</span></span>;
+  <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">background</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">:</span> <span class="pl-pds" style="box-sizing: border-box; color: #032f62;"><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">#</span>7983ff</span>;
+  <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">z-index</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">:</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">10000</span>;
+}</pre></div>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="const scrollProgress = document.getElementById('scroll_progress_bar');
+// 滚动条高度
+const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+window.addEventListener('scroll', () =&gt; {
+  const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+  // 当前进度条进度 = 当前滚动条位置 / 滚动条高度
+  scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
+});" style="color: #4a4a4a; box-sizing: border-box; margin-bottom: 16px; overflow: hidden;"><pre class="notranslate" style="color: #4a4a4a; box-sizing: border-box; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; margin-top: 0; overflow-x: auto; display: block; padding: 16px; font-size: 85%; line-height: 1.45; background-color: #f6f8fa; border-radius: 3px; margin-bottom: 5px; word-break: normal; white-space: pre;"><span class="pl-k" style="box-sizing: border-box; color: #d73a49;">const</span> <span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">scrollProgress</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">=</span> <span class="pl-smi" style="box-sizing: border-box; color: #24292e;">document</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">.</span><span class="pl-en" style="box-sizing: border-box; color: #6f42c1;">getElementById</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">(</span><span class="pl-s" style="box-sizing: border-box; color: #032f62;">'scroll_progress_bar'</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">)</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">;</span>
+<span class="pl-c" style="box-sizing: border-box; color: #6a737d;">// 滚动条高度</span>
+<span class="pl-k" style="box-sizing: border-box; color: #d73a49;">const</span> <span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">height</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">=</span> <span class="pl-smi" style="box-sizing: border-box; color: #24292e;">document</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">.</span><span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">documentElement</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">.</span><span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">scrollHeight</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">-</span> <span class="pl-smi" style="box-sizing: border-box; color: #24292e;">document</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">.</span><span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">documentElement</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">.</span><span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">clientHeight</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">;</span>
+
+<span class="pl-smi" style="box-sizing: border-box; color: #24292e;">window</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">.</span><span class="pl-en" style="box-sizing: border-box; color: #6f42c1;">addEventListener</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">(</span><span class="pl-s" style="box-sizing: border-box; color: #032f62;">'scroll'</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">,</span> <span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">(</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">)</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">=&gt;</span> <span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">{</span>
+  <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">const</span> <span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">scrollTop</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">=</span> <span class="pl-smi" style="box-sizing: border-box; color: #24292e;">document</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">.</span><span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">body</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">.</span><span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">scrollTop</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">||</span> <span class="pl-smi" style="box-sizing: border-box; color: #24292e;">document</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">.</span><span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">documentElement</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">.</span><span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">scrollTop</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">;</span>
+  <span class="pl-c" style="box-sizing: border-box; color: #6a737d;">// 当前进度条进度 = 当前滚动条位置 / 滚动条高度</span>
+  <span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">scrollProgress</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">.</span><span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">style</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">.</span><span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">width</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">=</span> <span class="pl-s" style="box-sizing: border-box; color: #032f62;">`<span class="pl-s1" style="box-sizing: border-box; color: #24292e;"><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">${</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">(</span><span class="pl-s1" style="box-sizing: border-box; color: #24292e;">scrollTop</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">/</span> <span class="pl-s1" style="box-sizing: border-box; color: #24292e;">height</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">)</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">*</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">100</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">}</span></span>%`</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">;</span>
+<span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">}</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">)</span><span class="pl-kos" style="color: #4a4a4a; box-sizing: border-box;">;</span></pre></div>
+<h2 dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; padding-bottom: .3em; border-bottom: 1px solid #eaecef; font-size: 1.5em;">✍️ 实现</h2>
+<h3 dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; font-size: 1.25em;">🔶 Vue3</h3>
+<div class="highlight highlight-text-html-vue notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="&lt;!-- ScrollProgress.vue --&gt;
+
+&lt;script setup lang=&quot;ts&quot;&gt;
+import { ref, onMounted, onUnmounted } from 'vue'
+
+// 在 `&lt;script setup&gt;` 标签下要使用 `props`，则需要使用 `defineProps` 进行声明
+const props = defineProps({
+  // 滚动容器 - 如果容器高度会发生变化，则需要对其进行监听，否则会滚动进度会出现计算误差
+  root: {
+    type: String,
+    default: '#app',
+    required: false,
+  },
+  // 滚动条的高度
+  height: {
+    type: String,
+    default: '4px',
+    required: false,
+  },
+  // 滚动条颜色
+  theme: {
+    type: String,
+    default: '#3eaf7c',
+    required: false,
+    validator: (v: string) =&gt; {
+      document.head.style.color = v
+      const q = document.head.style.color
+      document.head.style.color = ''
+      return !!q
+    },
+  },
+  // 滚动条放置的位置：顶部或底部
+  placement: {
+    type: String,
+    default: 'top',
+    required: false,
+    validator: (v: string) =&gt; {
+      if (!['top', 'bottom'].includes(v)) {
+        console.error(`[ScrollProgress(placement)] The value must match one of these strings: 'top' | 'bottom'`)
+        return false
+      }
+      return true
+    },
+  },
+  // 滚动条在页面中的层级
+  zIndex: {
+    type: [Number, String],
+    default: 10000,
+    required: false,
+    validator: (v: string) =&gt; /^-?[\d]+$/.test(v),
+  },
+})
+
+const el = ref(null)
+const appHeight = ref(0)
+
+// 为了避免进度条因页面容器高度变化导致计算偏差，需要对页面容器进行监听，动态获取其高度
+onMounted(() =&gt; {
+  // 需要观察变动的节点
+  const targetNode = document.querySelector(props.root)
+  if (!targetNode) return console.error(`[ScrollProgress(root)] '${props.root}' is invalid`)
+  // 观察器的配置（需要观察什么变动）
+  const config = { attributes: true, childList: false, subtree: true }
+  // 创建一个观察器实例并传入当观察到变动时执行的回调函数
+  const observer = new MutationObserver((mutationsList: MutationRecord[]) =&gt; {
+    // Use traditional 'for loops' for IE 11
+    for(let mutation of mutationsList) {
+      if (mutation.type === 'attributes') {
+        appHeight.value = document.documentElement.scrollHeight
+      }
+    }
+  })
+  // 开始观察目标节点
+  observer.observe(targetNode, config)
+})
+
+// 滚动事件执行的回调函数
+const listener = () =&gt; {
+  const scrollProgress = el.value
+  const height = appHeight.value - document.documentElement.clientHeight
+  const scrollTop = document.body.scrollTop || document.documentElement.scrollTop
+  scrollProgress.style.width = `${(scrollTop / height) * 100}%`
+}
+
+onMounted(() =&gt; window.addEventListener('scroll', listener))
+onUnmounted(() =&gt; window.removeEventListener('scroll', listener))
+
+const style: any = {
+  background: props.theme,
+  zIndex: props.zIndex,
+  height: props.height,
+}
+
+if (props.placement === 'top') style.top = 0
+if (props.placement === 'bottom') style.bottom = 0
+
+// 在 `&lt;script setup&gt;` 标签下显式公开属性，则需要使用 `defineExpose`
+defineExpose({ style })
+&lt;/script&gt;
+
+&lt;template&gt;
+  &lt;div id=&quot;scroll_progress&quot; ref=&quot;el&quot; :style=&quot;style&quot; /&gt;
+&lt;/template&gt;
+
+&lt;style scoped&gt;
+#scroll_progress {
+  position: fixed;
+  width: 0%;
+  transition: width 300ms ease-out;
+}
+&lt;/style&gt;" style="color: #4a4a4a; box-sizing: border-box; margin-bottom: 16px; overflow: hidden;"><pre class="notranslate" style="color: #4a4a4a; box-sizing: border-box; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; margin-top: 0; overflow-x: auto; display: block; padding: 16px; font-size: 85%; line-height: 1.45; background-color: #f6f8fa; border-radius: 3px; margin-bottom: 5px; word-break: normal; white-space: pre;"><span class="pl-c" style="box-sizing: border-box; color: #6a737d;"><span class="pl-c" style="box-sizing: border-box; color: #6a737d;">&lt;!--</span> ScrollProgress.vue <span class="pl-c" style="box-sizing: border-box; color: #6a737d;">--&gt;</span></span>
+
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">&lt;<span class="pl-ent" style="box-sizing: border-box; color: #22863a;">script</span> <span class="pl-e" style="box-sizing: border-box; color: #6f42c1;">setup</span> <span class="pl-e" style="box-sizing: border-box; color: #6f42c1;">lang</span>=<span class="pl-s" style="box-sizing: border-box; color: #032f62;"><span class="pl-pds" style="box-sizing: border-box; color: #032f62;">"</span>ts<span class="pl-pds" style="box-sizing: border-box; color: #032f62;">"</span></span>&gt;</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;"><span class="pl-k" style="box-sizing: border-box; color: #d73a49;">import</span> { <span class="pl-smi" style="box-sizing: border-box; color: #24292e;">ref</span>, <span class="pl-smi" style="box-sizing: border-box; color: #24292e;">onMounted</span>, <span class="pl-smi" style="box-sizing: border-box; color: #24292e;">onUnmounted</span> } <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">from</span> <span class="pl-s" style="box-sizing: border-box; color: #032f62;"><span class="pl-pds" style="box-sizing: border-box; color: #032f62;">'</span>vue<span class="pl-pds" style="box-sizing: border-box; color: #032f62;">'</span></span></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;"></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;"><span class="pl-c" style="box-sizing: border-box; color: #6a737d;"><span class="pl-c" style="box-sizing: border-box; color: #6a737d;">//</span> 在 `&lt;script setup&gt;` 标签下要使用 `props`，则需要使用 `defineProps` 进行声明</span></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;"><span class="pl-k" style="box-sizing: border-box; color: #d73a49;"><span class="pl-k" style="box-sizing: border-box; color: #d73a49;">const</span></span> props <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">=</span> <span class="pl-en" style="box-sizing: border-box; color: #6f42c1;">defineProps</span>({</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  <span class="pl-c" style="box-sizing: border-box; color: #6a737d;"><span class="pl-c" style="box-sizing: border-box; color: #6a737d;">//</span> 滚动容器 - 如果容器高度会发生变化，则需要对其进行监听，否则会滚动进度会出现计算误差</span></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  root: {</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">    type: <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">String</span>,</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">    default: <span class="pl-s" style="box-sizing: border-box; color: #032f62;"><span class="pl-pds" style="box-sizing: border-box; color: #032f62;">'</span>#app<span class="pl-pds" style="box-sizing: border-box; color: #032f62;">'</span></span>,</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">    required: <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">false</span>,</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  },</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  <span class="pl-c" style="box-sizing: border-box; color: #6a737d;"><span class="pl-c" style="box-sizing: border-box; color: #6a737d;">//</span> 滚动条的高度</span></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  height: {</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">    type: <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">String</span>,</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">    default: <span class="pl-s" style="box-sizing: border-box; color: #032f62;"><span class="pl-pds" style="box-sizing: border-box; color: #032f62;">'</span>4px<span class="pl-pds" style="box-sizing: border-box; color: #032f62;">'</span></span>,</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">    required: <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">false</span>,</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  },</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  <span class="pl-c" style="box-sizing: border-box; color: #6a737d;"><span class="pl-c" style="box-sizing: border-box; color: #6a737d;">//</span> 滚动条颜色</span></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  theme: {</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">    type: <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">String</span>,</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">    default: <span class="pl-s" style="box-sizing: border-box; color: #032f62;"><span class="pl-pds" style="box-sizing: border-box; color: #032f62;">'</span>#3eaf7c<span class="pl-pds" style="box-sizing: border-box; color: #032f62;">'</span></span>,</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">    required: <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">false</span>,</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">    <span class="pl-en" style="box-sizing: border-box; color: #6f42c1;">validator</span>: (<span class="pl-v" style="box-sizing: border-box; color: #e36209;">v</span><span class="pl-k" style="box-sizing: border-box; color: #d73a49;">:</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">string</span>) <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">=&gt;</span> {</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">      <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">document</span>.<span class="pl-smi" style="box-sizing: border-box; color: #24292e;">head</span>.<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">style</span>.<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">color</span> <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">=</span> <span class="pl-smi" style="box-sizing: border-box; color: #24292e;">v</span></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">      <span class="pl-k" style="box-sizing: border-box; color: #d73a49;"><span class="pl-k" style="box-sizing: border-box; color: #d73a49;">const</span></span> q <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">=</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">document</span>.<span class="pl-smi" style="box-sizing: border-box; color: #24292e;">head</span>.<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">style</span>.<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">color</span></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">      <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">document</span>.<span class="pl-smi" style="box-sizing: border-box; color: #24292e;">head</span>.<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">style</span>.<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">color</span> <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">=</span> <span class="pl-s" style="box-sizing: border-box; color: #032f62;"><span class="pl-pds" style="box-sizing: border-box; color: #032f62;">'</span><span class="pl-pds" style="box-sizing: border-box; color: #032f62;">'</span></span></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">      <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">return</span> <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">!!</span><span class="pl-smi" style="box-sizing: border-box; color: #24292e;">q</span></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">    },</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  },</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  <span class="pl-c" style="box-sizing: border-box; color: #6a737d;"><span class="pl-c" style="box-sizing: border-box; color: #6a737d;">//</span> 滚动条放置的位置：顶部或底部</span></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  placement: {</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">    type: <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">String</span>,</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">    default: <span class="pl-s" style="box-sizing: border-box; color: #032f62;"><span class="pl-pds" style="box-sizing: border-box; color: #032f62;">'</span>top<span class="pl-pds" style="box-sizing: border-box; color: #032f62;">'</span></span>,</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">    required: <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">false</span>,</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">    <span class="pl-en" style="box-sizing: border-box; color: #6f42c1;">validator</span>: (<span class="pl-v" style="box-sizing: border-box; color: #e36209;">v</span><span class="pl-k" style="box-sizing: border-box; color: #d73a49;">:</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">string</span>) <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">=&gt;</span> {</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">      <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">if</span> (<span class="pl-k" style="box-sizing: border-box; color: #d73a49;">!</span>[<span class="pl-s" style="box-sizing: border-box; color: #032f62;"><span class="pl-pds" style="box-sizing: border-box; color: #032f62;">'</span>top<span class="pl-pds" style="box-sizing: border-box; color: #032f62;">'</span></span>, <span class="pl-s" style="box-sizing: border-box; color: #032f62;"><span class="pl-pds" style="box-sizing: border-box; color: #032f62;">'</span>bottom<span class="pl-pds" style="box-sizing: border-box; color: #032f62;">'</span></span>].<span class="pl-en" style="box-sizing: border-box; color: #6f42c1;">includes</span>(<span class="pl-smi" style="box-sizing: border-box; color: #24292e;">v</span>)) {</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">        <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">console</span>.<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">error</span>(<span class="pl-s" style="box-sizing: border-box; color: #032f62;">`</span><span class="pl-s" style="box-sizing: border-box; color: #032f62;">[ScrollProgress(placement)] The value must match one of these strings: 'top' | 'bottom'</span><span class="pl-s" style="box-sizing: border-box; color: #032f62;">`</span>)</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">        <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">return</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">false</span></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">      }</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">      <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">return</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">true</span></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">    },</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  },</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  <span class="pl-c" style="box-sizing: border-box; color: #6a737d;"><span class="pl-c" style="box-sizing: border-box; color: #6a737d;">//</span> 滚动条在页面中的层级</span></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  zIndex: {</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">    type: [<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">Number</span>, <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">String</span>],</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">    default: <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">10000</span>,</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">    required: <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">false</span>,</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">    <span class="pl-en" style="box-sizing: border-box; color: #6f42c1;">validator</span>: (<span class="pl-v" style="box-sizing: border-box; color: #e36209;">v</span><span class="pl-k" style="box-sizing: border-box; color: #d73a49;">:</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">string</span>) <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">=&gt;</span><span class="pl-sr" style="box-sizing: border-box; color: #032f62;"> <span class="pl-pds" style="box-sizing: border-box; color: #032f62;">/</span><span class="pl-k" style="box-sizing: border-box; color: #d73a49;">^</span>-<span class="pl-k" style="box-sizing: border-box; color: #d73a49;">?</span><span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">[<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">\d</span>]</span><span class="pl-k" style="box-sizing: border-box; color: #d73a49;">+</span><span class="pl-k" style="box-sizing: border-box; color: #d73a49;">$</span><span class="pl-pds" style="box-sizing: border-box; color: #032f62;">/</span></span>.<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">test</span>(<span class="pl-smi" style="box-sizing: border-box; color: #24292e;">v</span>),</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  },</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">})</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;"></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;"><span class="pl-k" style="box-sizing: border-box; color: #d73a49;"><span class="pl-k" style="box-sizing: border-box; color: #d73a49;">const</span></span> el <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">=</span> <span class="pl-en" style="box-sizing: border-box; color: #6f42c1;">ref</span>(<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">null</span>)</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;"><span class="pl-k" style="box-sizing: border-box; color: #d73a49;"><span class="pl-k" style="box-sizing: border-box; color: #d73a49;">const</span></span> appHeight <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">=</span> <span class="pl-en" style="box-sizing: border-box; color: #6f42c1;">ref</span>(<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">0</span>)</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;"></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;"><span class="pl-c" style="box-sizing: border-box; color: #6a737d;"><span class="pl-c" style="box-sizing: border-box; color: #6a737d;">//</span> 为了避免进度条因页面容器高度变化导致计算偏差，需要对页面容器进行监听，动态获取其高度</span></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;"><span class="pl-en" style="box-sizing: border-box; color: #6f42c1;">onMounted</span>(() <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">=&gt;</span> {</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  <span class="pl-c" style="box-sizing: border-box; color: #6a737d;"><span class="pl-c" style="box-sizing: border-box; color: #6a737d;">//</span> 需要观察变动的节点</span></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  <span class="pl-k" style="box-sizing: border-box; color: #d73a49;"><span class="pl-k" style="box-sizing: border-box; color: #d73a49;">const</span></span> targetNode <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">=</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">document</span>.<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">querySelector</span>(<span class="pl-smi" style="box-sizing: border-box; color: #24292e;">props</span>.<span class="pl-smi" style="box-sizing: border-box; color: #24292e;">root</span>)</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">if</span> (<span class="pl-k" style="box-sizing: border-box; color: #d73a49;">!</span><span class="pl-smi" style="box-sizing: border-box; color: #24292e;">targetNode</span>) <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">return</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">console</span>.<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">error</span>(<span class="pl-s" style="box-sizing: border-box; color: #032f62;">`</span><span class="pl-s" style="box-sizing: border-box; color: #032f62;">[ScrollProgress(root)] '${<span class="pl-smi" style="box-sizing: border-box; color: #24292e;">props</span>.<span class="pl-smi" style="box-sizing: border-box; color: #24292e;">root</span>}' is invalid</span><span class="pl-s" style="box-sizing: border-box; color: #032f62;">`</span>)</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  <span class="pl-c" style="box-sizing: border-box; color: #6a737d;"><span class="pl-c" style="box-sizing: border-box; color: #6a737d;">//</span> 观察器的配置（需要观察什么变动）</span></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  <span class="pl-k" style="box-sizing: border-box; color: #d73a49;"><span class="pl-k" style="box-sizing: border-box; color: #d73a49;">const</span></span> config <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">=</span> { attributes: <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">true</span>, childList: <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">false</span>, subtree: <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">true</span> }</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  <span class="pl-c" style="box-sizing: border-box; color: #6a737d;"><span class="pl-c" style="box-sizing: border-box; color: #6a737d;">//</span> 创建一个观察器实例并传入当观察到变动时执行的回调函数</span></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  <span class="pl-k" style="box-sizing: border-box; color: #d73a49;"><span class="pl-k" style="box-sizing: border-box; color: #d73a49;">const</span></span> observer <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">=</span> <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">new</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">MutationObserver</span>((<span class="pl-v" style="box-sizing: border-box; color: #e36209;">mutationsList</span><span class="pl-k" style="box-sizing: border-box; color: #d73a49;">:</span> <span class="pl-en" style="box-sizing: border-box; color: #6f42c1;">MutationRecord</span>[]) <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">=&gt;</span> {</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">    <span class="pl-c" style="box-sizing: border-box; color: #6a737d;"><span class="pl-c" style="box-sizing: border-box; color: #6a737d;">//</span> Use traditional 'for loops' for IE 11</span></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">    <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">for</span>(<span class="pl-k" style="box-sizing: border-box; color: #d73a49;">let</span> mutation <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">of</span> <span class="pl-smi" style="box-sizing: border-box; color: #24292e;">mutationsList</span>) {</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">      <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">if</span> (<span class="pl-smi" style="box-sizing: border-box; color: #24292e;">mutation</span>.<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">type</span> <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">===</span> <span class="pl-s" style="box-sizing: border-box; color: #032f62;"><span class="pl-pds" style="box-sizing: border-box; color: #032f62;">'</span>attributes<span class="pl-pds" style="box-sizing: border-box; color: #032f62;">'</span></span>) {</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">        <span class="pl-smi" style="box-sizing: border-box; color: #24292e;">appHeight</span>.<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">value</span> <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">=</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">document</span>.<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">documentElement</span>.<span class="pl-smi" style="box-sizing: border-box; color: #24292e;">scrollHeight</span></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">      }</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">    }</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  })</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  <span class="pl-c" style="box-sizing: border-box; color: #6a737d;"><span class="pl-c" style="box-sizing: border-box; color: #6a737d;">//</span> 开始观察目标节点</span></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  <span class="pl-smi" style="box-sizing: border-box; color: #24292e;">observer</span>.<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">observe</span>(<span class="pl-smi" style="box-sizing: border-box; color: #24292e;">targetNode</span>, <span class="pl-smi" style="box-sizing: border-box; color: #24292e;">config</span>)</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">})</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;"></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;"><span class="pl-c" style="box-sizing: border-box; color: #6a737d;"><span class="pl-c" style="box-sizing: border-box; color: #6a737d;">//</span> 滚动事件执行的回调函数</span></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;"><span class="pl-k" style="box-sizing: border-box; color: #d73a49;"><span class="pl-k" style="box-sizing: border-box; color: #d73a49;">const</span></span> listener <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">=</span> () <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">=&gt;</span> {</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  <span class="pl-k" style="box-sizing: border-box; color: #d73a49;"><span class="pl-k" style="box-sizing: border-box; color: #d73a49;">const</span></span> scrollProgress <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">=</span> <span class="pl-smi" style="box-sizing: border-box; color: #24292e;">el</span>.<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">value</span></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  <span class="pl-k" style="box-sizing: border-box; color: #d73a49;"><span class="pl-k" style="box-sizing: border-box; color: #d73a49;">const</span></span> height <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">=</span> <span class="pl-smi" style="box-sizing: border-box; color: #24292e;">appHeight</span>.<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">value</span> <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">-</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">document</span>.<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">documentElement</span>.<span class="pl-smi" style="box-sizing: border-box; color: #24292e;">clientHeight</span></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  <span class="pl-k" style="box-sizing: border-box; color: #d73a49;"><span class="pl-k" style="box-sizing: border-box; color: #d73a49;">const</span></span> scrollTop <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">=</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">document</span>.<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">body</span>.<span class="pl-smi" style="box-sizing: border-box; color: #24292e;">scrollTop</span> <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">||</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">document</span>.<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">documentElement</span>.<span class="pl-smi" style="box-sizing: border-box; color: #24292e;">scrollTop</span></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  <span class="pl-smi" style="box-sizing: border-box; color: #24292e;">scrollProgress</span>.<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">style</span>.<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">width</span> <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">=</span> <span class="pl-s" style="box-sizing: border-box; color: #032f62;">`</span><span class="pl-s" style="box-sizing: border-box; color: #032f62;">${(<span class="pl-smi" style="box-sizing: border-box; color: #24292e;">scrollTop</span> <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">/</span> <span class="pl-smi" style="box-sizing: border-box; color: #24292e;">height</span>) <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">*</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">100</span>}%</span><span class="pl-s" style="box-sizing: border-box; color: #032f62;">`</span></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">}</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;"></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;"><span class="pl-en" style="box-sizing: border-box; color: #6f42c1;">onMounted</span>(() <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">=&gt;</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">window</span>.<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">addEventListener</span>(<span class="pl-s" style="box-sizing: border-box; color: #032f62;"><span class="pl-pds" style="box-sizing: border-box; color: #032f62;">'</span>scroll<span class="pl-pds" style="box-sizing: border-box; color: #032f62;">'</span></span>, <span class="pl-smi" style="box-sizing: border-box; color: #24292e;">listener</span>))</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;"><span class="pl-en" style="box-sizing: border-box; color: #6f42c1;">onUnmounted</span>(() <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">=&gt;</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">window</span>.<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">removeEventListener</span>(<span class="pl-s" style="box-sizing: border-box; color: #032f62;"><span class="pl-pds" style="box-sizing: border-box; color: #032f62;">'</span>scroll<span class="pl-pds" style="box-sizing: border-box; color: #032f62;">'</span></span>, <span class="pl-smi" style="box-sizing: border-box; color: #24292e;">listener</span>))</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;"></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;"><span class="pl-k" style="box-sizing: border-box; color: #d73a49;"><span class="pl-k" style="box-sizing: border-box; color: #d73a49;">const</span></span> style<span class="pl-k" style="box-sizing: border-box; color: #d73a49;">:</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">any</span> <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">=</span> {</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  background: <span class="pl-smi" style="box-sizing: border-box; color: #24292e;">props</span>.<span class="pl-smi" style="box-sizing: border-box; color: #24292e;">theme</span>,</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  zIndex: <span class="pl-smi" style="box-sizing: border-box; color: #24292e;">props</span>.<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">zIndex</span>,</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  height: <span class="pl-smi" style="box-sizing: border-box; color: #24292e;">props</span>.<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">height</span>,</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">}</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;"></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;"><span class="pl-k" style="box-sizing: border-box; color: #d73a49;">if</span> (<span class="pl-smi" style="box-sizing: border-box; color: #24292e;">props</span>.<span class="pl-smi" style="box-sizing: border-box; color: #24292e;">placement</span> <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">===</span> <span class="pl-s" style="box-sizing: border-box; color: #032f62;"><span class="pl-pds" style="box-sizing: border-box; color: #032f62;">'</span>top<span class="pl-pds" style="box-sizing: border-box; color: #032f62;">'</span></span>) <span class="pl-smi" style="box-sizing: border-box; color: #24292e;">style</span>.<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">top</span> <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">=</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">0</span></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;"><span class="pl-k" style="box-sizing: border-box; color: #d73a49;">if</span> (<span class="pl-smi" style="box-sizing: border-box; color: #24292e;">props</span>.<span class="pl-smi" style="box-sizing: border-box; color: #24292e;">placement</span> <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">===</span> <span class="pl-s" style="box-sizing: border-box; color: #032f62;"><span class="pl-pds" style="box-sizing: border-box; color: #032f62;">'</span>bottom<span class="pl-pds" style="box-sizing: border-box; color: #032f62;">'</span></span>) <span class="pl-smi" style="box-sizing: border-box; color: #24292e;">style</span>.<span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">bottom</span> <span class="pl-k" style="box-sizing: border-box; color: #d73a49;">=</span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">0</span></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;"></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;"><span class="pl-c" style="box-sizing: border-box; color: #6a737d;"><span class="pl-c" style="box-sizing: border-box; color: #6a737d;">//</span> 在 `&lt;script setup&gt;` 标签下显式公开属性，则需要使用 `defineExpose`</span></span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;"><span class="pl-en" style="box-sizing: border-box; color: #6f42c1;">defineExpose</span>({ <span class="pl-smi" style="box-sizing: border-box; color: #24292e;">style</span> })</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">&lt;/<span class="pl-ent" style="box-sizing: border-box; color: #22863a;">script</span>&gt;</span>
+
+&lt;<span class="pl-ent" style="box-sizing: border-box; color: #22863a;">template</span>&gt;
+  &lt;<span class="pl-ent" style="box-sizing: border-box; color: #22863a;">div</span> <span class="pl-e" style="box-sizing: border-box; color: #6f42c1;">id</span>=<span class="pl-s" style="box-sizing: border-box; color: #032f62;"><span class="pl-pds" style="box-sizing: border-box; color: #032f62;">"</span>scroll_progress<span class="pl-pds" style="box-sizing: border-box; color: #032f62;">"</span></span> <span class="pl-e" style="box-sizing: border-box; color: #6f42c1;">ref</span>=<span class="pl-s" style="box-sizing: border-box; color: #032f62;"><span class="pl-pds" style="box-sizing: border-box; color: #032f62;">"</span>el<span class="pl-pds" style="box-sizing: border-box; color: #032f62;">"</span></span> :<span class="pl-e" style="box-sizing: border-box; color: #6f42c1;">style</span>=<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;"><span class="pl-pds" style="box-sizing: border-box; color: #032f62;">"</span>style<span class="pl-pds" style="box-sizing: border-box; color: #032f62;">"</span></span> /&gt;
+&lt;/<span class="pl-ent" style="box-sizing: border-box; color: #22863a;">template</span>&gt;
+
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">&lt;<span class="pl-ent" style="box-sizing: border-box; color: #22863a;">style</span> <span class="pl-e" style="box-sizing: border-box; color: #6f42c1;">scoped</span>&gt;</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;"><span class="pl-e" style="box-sizing: border-box; color: #6f42c1;">#scroll_progress</span> {</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;"><span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">position</span></span>: <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">fixed</span>;</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;"><span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">width</span></span>: <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">0<span class="pl-k" style="box-sizing: border-box; color: #d73a49;">%</span></span>;</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">  <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;"><span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">transition</span></span>: width <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">300<span class="pl-k" style="box-sizing: border-box; color: #d73a49;">ms</span></span> <span class="pl-c1" style="box-sizing: border-box; color: #005cc5;">ease-out</span>;</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">}</span>
+<span class="pl-s1" style="color: #4a4a4a; box-sizing: border-box;">&lt;/<span class="pl-ent" style="box-sizing: border-box; color: #22863a;">style</span>&gt;</span></pre></div>
+<h2 dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; padding-bottom: .3em; border-bottom: 1px solid #eaecef; font-size: 1.5em;">🎥 演示</h2>
+<p dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px;"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/16164244/133965898-4994f377-68de-4c6c-8d19-d00a61625c06.gif" style="box-sizing: border-box; background-color: initial; color: #0366d6; text-decoration: none;"><img src="https://user-images.githubusercontent.com/16164244/133965898-4994f377-68de-4c6c-8d19-d00a61625c06.gif" alt="scroll_progress_bar" data-animated-image style="color: #4a4a4a; border-style: none; box-sizing: initial; background-color: #fff; max-width: 100%;"></a></p>
+<hr style="color: #4a4a4a; box-sizing: initial; overflow: hidden; background: transparent; border-bottom: 1px solid #dfe2e5; border-bottom-color: #eee; height: .25em; padding: 0; margin: 24px 0; background-color: #e1e4e8; border: 0;">
+<h2 dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; padding-bottom: .3em; border-bottom: 1px solid #eaecef; font-size: 1.5em;">🔗 参考</h2>
+<ul dir="auto" style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; padding-left: 2em;">
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word;"><span style="color: #4a4a4a; box-sizing: border-box;"><span style="box-sizing: border-box; color: #1e6bb8;" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Document/scroll_event" rel="nofollow">[MDN] Document: scroll event<sup style="box-sizing: border-box; line-height: 0; color: #1e6bb8;">[2]</sup></span> - 文档视图或者一个元素在滚动时，会触发元素的scroll事件。</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;"><span style="box-sizing: border-box; color: #1e6bb8;" href="https://developer.mozilla.org/zh-CN/docs/Web/API/MutationObserver" rel="nofollow">[MDN] MutationObserver<sup style="box-sizing: border-box; line-height: 0; color: #1e6bb8;">[3]</sup></span> - 接口提供了监视对 <code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">DOM树</code> 所做更改的能力。它被设计为旧的 <code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">Mutation Events</code> 功能的替代品，该功能是 <code class="notranslate" style="box-sizing: border-box; color: #1e6bb8; font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; padding: .2em .4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,.05); border-radius: 3px;">DOM3 Events</code> 规范的一部分。</span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="box-sizing: border-box; color: #1e6bb8;" href="https://v3.vuejs.org/" rel="nofollow">Vue3 API<sup style="box-sizing: border-box; line-height: 0; color: #1e6bb8;">[4]</sup></span>
+<ul dir="auto" style="color: #4a4a4a; box-sizing: border-box; padding-left: 2em; margin-top: 0; margin-bottom: 0;">
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word;"><span style="color: #4a4a4a; box-sizing: border-box;"><span style="box-sizing: border-box; color: #1e6bb8;" href="https://v3.vuejs.org/api/options-data.html#props" rel="nofollow">props<sup style="box-sizing: border-box; line-height: 0; color: #1e6bb8;">[5]</sup></span></span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;"><span style="box-sizing: border-box; color: #1e6bb8;" href="https://v3.vuejs.org/api/sfc-script-setup.html#basic-syntax" rel="nofollow">&lt;script setup&gt;<sup style="box-sizing: border-box; line-height: 0; color: #1e6bb8;">[6]</sup></span></span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;"><span style="box-sizing: border-box; color: #1e6bb8;" href="https://v3.vuejs.org/api/composition-api.html#lifecycle-hooks" rel="nofollow">Lifecycle Hooks<sup style="box-sizing: border-box; line-height: 0; color: #1e6bb8;">[7]</sup></span></span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;"><span style="box-sizing: border-box; color: #1e6bb8;" href="https://v3.vuejs.org/api/sfc-script-setup.html#defineprops-and-defineemits" rel="nofollow">defineProps and defineEmits<sup style="box-sizing: border-box; line-height: 0; color: #1e6bb8;">[8]</sup></span></span></li>
+<li style="color: #4a4a4a; box-sizing: border-box; word-break: break-word; margin-top: .25em;"><span style="color: #4a4a4a; box-sizing: border-box;"><span style="box-sizing: border-box; color: #1e6bb8;" href="https://v3.vuejs.org/api/sfc-script-setup.html#defineexpose" rel="nofollow">defineExpose<sup style="box-sizing: border-box; line-height: 0; color: #1e6bb8;">[9]</sup></span></span></li>
+</ul>
+</li>
+</ul><hr style="color: #4a4a4a; box-sizing: initial; overflow: hidden; background: transparent; border-bottom: 1px solid #dfe2e5; border-bottom-color: #eee; height: .25em; padding: 0; margin: 24px 0; background-color: #e1e4e8; border: 0;">
+<h4 style="color: #4a4a4a; box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; font-size: 1em;">参考资料</h4><section class="woap-links" style="color: #4a4a4a; box-sizing: border-box;"><span class="item" style="color: #4a4a4a; box-sizing: border-box; display: flex; font-size: 14px; word-wrap: break-word;"><span style="box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #555;">[1]</span><p style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; width: 90%; word-break: break-all; margin: 0;"><span style="color: #4a4a4a; box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right: 5px;">体验地址:</span> <em style="box-sizing: border-box; color: #999;">https://code.lencx.tech/</em></p></span>
+<span class="item" style="color: #4a4a4a; box-sizing: border-box; display: flex; font-size: 14px; word-wrap: break-word;"><span style="box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #555;">[2]</span><p style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; width: 90%; word-break: break-all; margin: 0;"><span style="color: #4a4a4a; box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right: 5px;">[MDN] Document: scroll event:</span> <em style="box-sizing: border-box; color: #999;">https://developer.mozilla.org/zh-CN/docs/Web/API/Document/scroll_event</em></p></span>
+<span class="item" style="color: #4a4a4a; box-sizing: border-box; display: flex; font-size: 14px; word-wrap: break-word;"><span style="box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #555;">[3]</span><p style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; width: 90%; word-break: break-all; margin: 0;"><span style="color: #4a4a4a; box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right: 5px;">[MDN] MutationObserver:</span> <em style="box-sizing: border-box; color: #999;">https://developer.mozilla.org/zh-CN/docs/Web/API/MutationObserver</em></p></span>
+<span class="item" style="color: #4a4a4a; box-sizing: border-box; display: flex; font-size: 14px; word-wrap: break-word;"><span style="box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #555;">[4]</span><p style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; width: 90%; word-break: break-all; margin: 0;"><span style="color: #4a4a4a; box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right: 5px;">Vue3 API:</span> <em style="box-sizing: border-box; color: #999;">https://v3.vuejs.org/</em></p></span>
+<span class="item" style="color: #4a4a4a; box-sizing: border-box; display: flex; font-size: 14px; word-wrap: break-word;"><span style="box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #555;">[5]</span><p style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; width: 90%; word-break: break-all; margin: 0;"><span style="color: #4a4a4a; box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right: 5px;">props:</span> <em style="box-sizing: border-box; color: #999;">https://v3.vuejs.org/api/options-data.html#props</em></p></span>
+<span class="item" style="color: #4a4a4a; box-sizing: border-box; display: flex; font-size: 14px; word-wrap: break-word;"><span style="box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #555;">[6]</span><p style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; width: 90%; word-break: break-all; margin: 0;"><span style="color: #4a4a4a; box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right: 5px;">&lt;script setup&gt;:</span> <em style="box-sizing: border-box; color: #999;">https://v3.vuejs.org/api/sfc-script-setup.html#basic-syntax</em></p></span>
+<span class="item" style="color: #4a4a4a; box-sizing: border-box; display: flex; font-size: 14px; word-wrap: break-word;"><span style="box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #555;">[7]</span><p style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; width: 90%; word-break: break-all; margin: 0;"><span style="color: #4a4a4a; box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right: 5px;">Lifecycle Hooks:</span> <em style="box-sizing: border-box; color: #999;">https://v3.vuejs.org/api/composition-api.html#lifecycle-hooks</em></p></span>
+<span class="item" style="color: #4a4a4a; box-sizing: border-box; display: flex; font-size: 14px; word-wrap: break-word;"><span style="box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #555;">[8]</span><p style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; width: 90%; word-break: break-all; margin: 0;"><span style="color: #4a4a4a; box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right: 5px;">defineProps and defineEmits:</span> <em style="box-sizing: border-box; color: #999;">https://v3.vuejs.org/api/sfc-script-setup.html#defineprops-and-defineemits</em></p></span>
+<span class="item" style="color: #4a4a4a; box-sizing: border-box; display: flex; font-size: 14px; word-wrap: break-word;"><span style="box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #555;">[9]</span><p style="color: #4a4a4a; box-sizing: border-box; margin-top: 0; margin-bottom: 16px; width: 90%; word-break: break-all; margin: 0;"><span style="color: #4a4a4a; box-sizing: border-box; width: 10%; font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right: 5px;">defineExpose:</span> <em style="box-sizing: border-box; color: #999;">https://v3.vuejs.org/api/sfc-script-setup.html#defineexpose</em></p></span></section></div>
+</div>
+<div id="woap-btn" style="position: fixed;top: 10px;right: 10px;width: 43px;height: 41px;box-sizing: border-box;cursor: pointer;background: #fff;border-radius: 50%;padding: 8px;box-shadow: 0 0 2px #d8d8d8;">
+<svg style="width: 100%;height: 100%" height="41" viewBox="0 0 43 41" width="43" xmlns="http://www.w3.org/2000/svg"><g fill="#07c160"><path d="m39.7 15.3c-3.7-4.9-10.2-6.2-16.1-4.1.2.1.4.1.6.2 8.7 2.9 13.3 12.3 10.4 21-.8 2.3-2 4.3-3.5 6 1.9-.5 3.8-1.3 5.4-2.5 6.6-5.1 7.9-14.5 3.2-20.6z"/><path d="m18 10.4c.4-.3.7-.5 1.1-.8h.1c.4-.2.8-.4 1.1-.7 0 0 .1 0 .1-.1.8-.4 1.6-.7 2.4-1 .1 0 .1 0 .2-.1.4-.1.8-.3 1.2-.4h.1c.4-.1.8-.2 1.2-.2h.2c.6-.1 1-.1 1.4-.1h.3c.4 0 .9-.1 1.3-.1.5 0 1 0 1.5.1h.2c.5 0 .9.1 1.4.2h.2c.5.1.9.2 1.3.3.1 0 .1 0 .2.1.5.1 1 .2 1.4.4-.2-.4-.4-.7-.4-.7-2.9-4.6-7.7-7.3-12.9-7.3-3.1 0-7.9 1.1-11.5 5.4-2.4 2.9-3.2 6.3-2.7 9.7.3 2.3 1.6 5.4 3.5 7.3.7-4.9 3.3-9.2 7.1-12z"/><path d="m21.6 30.9c-1.3 0-2.6-.2-3.8-.4-.1 0-.3 0-.5 0-.4 0-.7.1-1 .3l-4 2.6c-.1.1-.2.1-.4.1-.3 0-.6-.3-.7-.6 0-.2 0-.3.1-.5 0-.1.4-2 .7-3.2 0-.1.1-.3 0-.4 0-.4-.2-.8-.6-1-4.3-2.9-7.2-7.5-7.8-12.2-1.1 1.7-1.6 3-2.2 5-2.1 7.3 2.5 16 9.9 18.4 8.6 2.8 16.7-.3 19.5-7.6.3-.9.7-2.4.8-3.6-2.9 2.1-6 3.1-10 3.1z"/></g></svg>
+</div>
+</body>
+</html>
